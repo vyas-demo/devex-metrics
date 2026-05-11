@@ -112,23 +112,42 @@ export async function collect(
         graphqlData.prNodes
       );
       const reviewerLogins = extractReviewerLogins(graphqlData.prNodes);
-      [contributors, dependentCount] = await Promise.all([
+      const results = await Promise.allSettled([
         collectContributors(repoOwner, repoName, reviewerLogins),
         collectDependentCount(repoOwner, repoName),
       ]);
+      contributors = results[0].status === "fulfilled" ? results[0].value : { committerCount: 0, reviewerCount: 0, contributorCount: 0 };
+      dependentCount = results[1].status === "fulfilled" ? results[1].value : 0;
+      if (results[0].status === "rejected") {
+        console.warn(`  ⚠ ${fullName}: failed to collect contributors: ${String((results[0] as PromiseRejectedResult).reason)}`);
+      }
+      if (results[1].status === "rejected") {
+        console.warn(`  ⚠ ${fullName}: failed to collect dependent count: ${String((results[1] as PromiseRejectedResult).reason)}`);
+      }
       // Store PR nodes for the trends collector (avoids pulls.get detail fetches).
       prDataByRepo.set(fullName, graphqlData.prNodes);
     } else {
       // Fallback: full REST path (GraphQL returned null = not found/forbidden).
-      [issues, prCounts, prDetails, mergedPRTimeline, contributors, dependentCount] =
-        await Promise.all([
-          collectIssueCounts(repoOwner, repoName),
-          collectPullRequestCounts(repoOwner, repoName),
-          collectPullRequestDetails(repoOwner, repoName),
-          collectMergedPRTimeline(repoOwner, repoName),
-          collectContributors(repoOwner, repoName),
-          collectDependentCount(repoOwner, repoName),
-        ]);
+      const results = await Promise.allSettled([
+        collectIssueCounts(repoOwner, repoName),
+        collectPullRequestCounts(repoOwner, repoName),
+        collectPullRequestDetails(repoOwner, repoName),
+        collectMergedPRTimeline(repoOwner, repoName),
+        collectContributors(repoOwner, repoName),
+        collectDependentCount(repoOwner, repoName),
+      ]);
+      issues = results[0].status === "fulfilled" ? results[0].value : { open: 0, closed: 0 };
+      prCounts = results[1].status === "fulfilled" ? results[1].value : { open: 0, closed: 0, merged: 0 };
+      prDetails = results[2].status === "fulfilled" ? results[2].value : [];
+      mergedPRTimeline = results[3].status === "fulfilled" ? results[3].value : [];
+      contributors = results[4].status === "fulfilled" ? results[4].value : { committerCount: 0, reviewerCount: 0, contributorCount: 0 };
+      dependentCount = results[5].status === "fulfilled" ? results[5].value : 0;
+      for (let i = 0; i < results.length; i++) {
+        if (results[i].status === "rejected") {
+          const collectors = ["issues", "prs", "pr-details", "pr-timeline", "contributors", "dependents"];
+          console.warn(`  ⚠ ${fullName}: failed to collect ${collectors[i]}: ${String((results[i] as PromiseRejectedResult).reason)}`);
+        }
+      }
     }
 
     // Fetch issue lead times for PRs that reference issues

@@ -13,14 +13,19 @@ export { collect } from "./collect.js";
  */
 async function main(): Promise<void> {
   const owner = process.argv[2];
-  const ownerType = (process.argv[3] ?? "org") as "org" | "user";
+  const ownerType = process.argv[3] ?? "org";
 
   if (!owner) {
     console.error("Usage: devex-metrics <owner> [org|user]");
     process.exit(1);
   }
 
-  const metrics = await collect(owner, ownerType);
+  if (ownerType !== "org" && ownerType !== "user") {
+    console.error(`Invalid owner type: "${ownerType}". Must be 'org' or 'user'.`);
+    process.exit(1);
+  }
+
+  const metrics = await collect(owner, ownerType as "org" | "user");
   const report = generateReport(metrics);
   const reportPath = path.resolve(process.cwd(), "data", `${owner}-report.md`);
   fs.mkdirSync(path.dirname(reportPath), { recursive: true });

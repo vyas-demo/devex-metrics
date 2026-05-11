@@ -359,7 +359,7 @@ function buildDashboardHtml(
       ${dataRangeHtml ? `<div class="subtitle-bottom">${dataRangeHtml}</div>` : ''}
     </div>
     <nav class="hero-nav">
-      <a href="https://github.com/rajbos" class="hero-nav-link">Made with &#x2764;&#xFE0F; by rajbos</a>
+      ${process.env.ATTRIBUTION_LINK ? `<a href="${escapeHtml(process.env.ATTRIBUTION_LINK)}" class="hero-nav-link">${escapeHtml(process.env.ATTRIBUTION_TEXT || 'View source')}</a>` : ''}
     </nav>
   </div>
   <h1>DevEx Metrics</h1>

@@ -16,10 +16,15 @@ import { loadFixture, saveFixture } from "./cache.js";
  */
 async function main(): Promise<void> {
   const owner = process.argv[2];
-  const ownerType = (process.argv[3] ?? "org") as "org" | "user";
+  const ownerType = process.argv[3] ?? "org";
 
   if (!owner) {
     console.error("Usage: save-fixture <owner> [org|user] [--force]");
+    process.exit(1);
+  }
+
+  if (ownerType !== "org" && ownerType !== "user") {
+    console.error(`Invalid owner type: "${ownerType}". Must be 'org' or 'user'.`);
     process.exit(1);
   }
 
@@ -44,7 +49,7 @@ async function main(): Promise<void> {
       ? `Fetching fresh metrics for ${owner} (forced)…`
       : `Fetching fresh metrics for ${owner} (no fixture for today yet)…`
   );
-  const metrics = await collect(owner, ownerType, { skipCache: true });
+  const metrics = await collect(owner, ownerType as "org" | "user", { skipCache: true });
 
   saveFixture(owner, metrics);
 
