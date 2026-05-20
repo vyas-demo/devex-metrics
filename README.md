@@ -92,10 +92,11 @@ The installation ID is retrieved automatically at runtime.
 
 1. Enable **GitHub Pages** in your repo settings (set source to *GitHub Actions*).
 2. The workflow runs daily at 06:00 UTC. It:
-   - Restores the previous day's cached data from `actions/cache`
-   - Collects only new / changed metrics (skips if cached data is still fresh)
-   - Saves the updated cache for the next run
-   - Builds an HTML dashboard and deploys it to GitHub Pages
+    - Restores the previous day's cached data from `actions/cache`
+    - Collects only new / changed metrics (skips if cached data is still fresh)
+    - Opens or updates a fixture-data pull request for optional manual merge
+    - Saves the updated cache for the next run
+    - Builds an HTML dashboard and deploys it to GitHub Pages
 3. You can also trigger it manually via *Actions → Collect DevEx Metrics → Run workflow*.
 
 No data is committed to the main branch — the cache lives in GitHub Actions and the report is published via GitHub Pages.

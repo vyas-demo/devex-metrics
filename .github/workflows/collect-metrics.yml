@@ -143,12 +143,6 @@ jobs:
           add-paths: "data/${{ steps.target.outputs.target_key }}.fixture.json"
           delete-branch: true
 
-      - name: Enable auto-merge on fixture data PR
-        if: steps.create-pr.outputs.pull-request-operation == 'created' || steps.create-pr.outputs.pull-request-operation == 'updated'
-        env:
-          GH_TOKEN: ${{ steps.app-token.outputs.token || github.token }}
-        run: gh pr merge --auto --squash "${{ steps.create-pr.outputs.pull-request-url }}"
-
       # actions/cache@v5 automatically saves the data/ folder at job end.
 
       # Build the GitHub Pages site from the collected data and deploy.
