@@ -146,10 +146,10 @@ function computeMedian(values: number[]): number {
 }
 
 function formatDurationHtml(hours: number): string {
-  if (hours < 1) return `${Math.round(hours * 60)}m`;
-  if (hours < 24) return `${hours.toFixed(1)}h`;
+  if (hours < 1) return `${Math.round(hours * 60)}min`;
+  if (hours < 24) return `${hours.toFixed(1)}hr`;
   const days = hours / 24;
-  return `${days.toFixed(1)}d`;
+  return `${days.toFixed(1)}days`;
 }
 
 /** Mirrors the client-side weekToDate() — returns the Monday of the given ISO week. */
@@ -232,6 +232,7 @@ function buildDashboardHtml(
         author: p.author,
         isBotAuthor: p.isBotAuthor,
         isCopilotAuthored: p.isCopilotAuthored,
+        aiAuthorType: p.aiAuthorType,
         timeToMergeHours: p.timeToMergeHours,
         linesAdded: p.linesAdded,
         linesDeleted: p.linesDeleted,
@@ -246,6 +247,7 @@ function buildDashboardHtml(
         author: pr.author,
         isBotAuthor: false,
         isCopilotAuthored: pr.isCopilotAuthored,
+        aiAuthorType: pr.aiAuthorType,
         timeToMergeHours: pr.timeToMergeHours ?? 0,
         linesAdded: pr.linesAdded,
         linesDeleted: pr.linesDeleted,
@@ -261,6 +263,52 @@ function buildDashboardHtml(
       copilotTotalMerged += r.copilotAdoption.totalMergedPRs;
       copilotTotalDetailed += r.copilotAdoption.totalDetailedPRs;
     }
+  }
+
+  // AI author breakdown by tool (computed from the full merged-PR timeline)
+  const aiByType = { copilot: 0, claude: 0, codex: 0 };
+  for (const p of allPRDetails) {
+    if (p.aiAuthorType === "copilot") aiByType.copilot++;
+    else if (p.aiAuthorType === "claude") aiByType.claude++;
+    else if (p.aiAuthorType === "codex") aiByType.codex++;
+  }
+
+  // Aggregate Copilot agent metrics
+  let agentTotalTasks = 0, agentCompleted = 0, agentFailed = 0, agentCancelled = 0,
+    agentTimedOut = 0, agentActive = 0, agentTotalSessions = 0, agentCloudSessions = 0,
+    agentCliSessions = 0, agentCredits = 0, agentPRs = 0, agentActionsMinutes = 0;
+  const agentByRepo: Record<string, {
+    totalTasks: number; completed: number; failed: number;
+    cancelled: number; timedOut: number; active: number;
+    sessions: number; credits: number; agentPRs: number; actionsMinutes: number;
+  }> = {};
+  for (const r of data.repos) {
+    const a = r.copilotAgentMetrics;
+    if (!a || a.totalTasks === 0) continue;
+    agentTotalTasks += a.totalTasks;
+    agentCompleted += a.completedTasks;
+    agentFailed += a.failedTasks;
+    agentCancelled += a.cancelledTasks;
+    agentTimedOut += a.timedOutTasks;
+    agentActive += a.activeTasksCount;
+    agentTotalSessions += a.totalSessions;
+    agentCloudSessions += a.cloudAgentSessions;
+    agentCliSessions += a.cliRemoteSessions;
+    agentCredits += a.totalCreditsUsed;
+    agentPRs += a.agentCreatedPRs;
+    agentActionsMinutes += a.agentActionsMinutes ?? 0;
+    agentByRepo[r.name] = {
+      totalTasks: a.totalTasks,
+      completed: a.completedTasks,
+      failed: a.failedTasks,
+      cancelled: a.cancelledTasks,
+      timedOut: a.timedOutTasks,
+      active: a.activeTasksCount,
+      sessions: a.totalSessions,
+      credits: a.totalCreditsUsed,
+      agentPRs: a.agentCreatedPRs,
+      actionsMinutes: a.agentActionsMinutes ?? 0,
+    };
   }
 
   // Aggregate issue lead times
@@ -303,6 +351,7 @@ function buildDashboardHtml(
   }));
 
   const chartPayload = JSON.stringify({
+    owner: data.owner,
     issues: { open: totals.openIssues, closed: totals.closedIssues },
     prs: {
       open: totals.openPRs,
@@ -326,6 +375,10 @@ function buildDashboardHtml(
             week: t.week,
             issuesOpened: t.issuesOpened ?? 0,
             issuesClosed: t.issuesClosed ?? 0,
+            prsOpened: t.prsOpened ?? 0,
+            prsMerged: t.prsMerged ?? 0,
+            linesAdded: t.linesAdded ?? 0,
+            linesDeleted: t.linesDeleted ?? 0,
           })),
         ])
     ),
@@ -336,6 +389,22 @@ function buildDashboardHtml(
       reviewed: copilotReviewed,
       totalMerged: copilotTotalMerged,
       totalDetailed: copilotTotalDetailed,
+      byType: aiByType,
+    },
+    copilotAgent: {
+      totalTasks: agentTotalTasks,
+      completed: agentCompleted,
+      failed: agentFailed,
+      cancelled: agentCancelled,
+      timedOut: agentTimedOut,
+      active: agentActive,
+      totalSessions: agentTotalSessions,
+      cloudSessions: agentCloudSessions,
+      cliSessions: agentCliSessions,
+      totalCredits: Math.round(agentCredits * 100) / 100,
+      agentPRs,
+      totalActionsMinutes: Math.round(agentActionsMinutes * 100) / 100,
+      byRepo: agentByRepo,
     },
     collectedAt: data.collectedAt,
   });
@@ -346,7 +415,8 @@ function buildDashboardHtml(
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>DevEx Metrics &ndash; ${escapeHtml(data.owner)}</title>
-  <script defer src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@3.0.1/dist/chartjs-plugin-annotation.min.js"></script>
   <style>${getCSS()}</style>
 </head>
 <body>
@@ -421,8 +491,14 @@ function buildDashboardHtml(
     <div class="kpi">
       <div class="kpi-icon" aria-hidden="true">&#x1F916;</div>
       <div class="kpi-val" id="kpiCopilotVal">${copilotTotalMerged > 0 ? ((copilotAuthored / copilotTotalMerged) * 100).toFixed(1) + '%' : '–'}</div>
-      <div class="kpi-lbl" id="kpiCopilotLbl">Copilot PRs</div>
-      <div class="kpi-sub" id="kpiCopilotSub">${copilotAuthored} authored &middot; ${copilotReviewed} reviewed</div>
+      <div class="kpi-lbl" id="kpiCopilotLbl">AI PRs</div>
+      <div class="kpi-sub" id="kpiCopilotSub">${copilotAuthored} AI-authored &middot; ${copilotReviewed} reviewed</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-icon" aria-hidden="true">&#x1F6E0;&#xFE0F;</div>
+      <div class="kpi-val" id="kpiAgentVal">${agentTotalTasks > 0 ? agentTotalTasks : '–'}</div>
+      <div class="kpi-lbl">Agent Tasks (30d)</div>
+      <div class="kpi-sub" id="kpiAgentSub">${agentTotalTasks > 0 ? `${agentCompleted} completed &middot; ${agentPRs} PRs` : 'no agent data'}</div>
     </div>
     <div class="kpi">
       <div class="kpi-icon" aria-hidden="true">&#x23F1;&#xFE0F;</div>
@@ -440,15 +516,21 @@ function buildDashboardHtml(
 
   <section class="charts" aria-label="Trend charts">
     <div class="card card-chart card-wide"><h2>PR Trends (per week)</h2><canvas id="chartPRTrends"></canvas></div>
-    <div class="card card-chart card-wide"><h2>Issue Trends (per week)</h2><div class="trends-org-note" style="display:none">&#x2139;&#xFE0F; Issue trend data is org-wide and cannot be filtered by repository.</div><canvas id="chartIssueTrends"></canvas></div>
+    <div class="card card-chart card-wide"><h2>Issue Trends (per week)</h2><canvas id="chartIssueTrends"></canvas></div>
     <div class="card card-chart card-wide"><h2>PR Size Trends (lines/week)</h2><canvas id="chartPRSizeTrends"></canvas></div>
   </section>
 
   <section class="charts" aria-label="Delivery metric charts">
     <div class="card card-chart card-wide"><h2>PR Cycle Time (weekly median, hours)</h2><canvas id="chartCycleTime"></canvas></div>
     <div class="card card-chart card-wide"><h2>Actor Breakdown (PRs merged per week)</h2><canvas id="chartActorBreakdown"></canvas></div>
-    <div class="card card-chart"><h2>Copilot Adoption</h2><canvas id="chartCopilotAdoption"></canvas></div>
+    <div class="card card-chart"><h2>AI Adoption</h2><canvas id="chartCopilotAdoption"></canvas></div>
+    <div class="card card-chart"><h2>AI Author Breakdown</h2><canvas id="chartAIAuthorBreakdown"></canvas></div>
     <div class="card card-chart"><h2>Issue &rarr; PR Lead Time</h2><canvas id="chartLeadTime"></canvas></div>
+  </section>
+
+  <section class="charts" aria-label="Copilot and Agent metrics">
+    <div class="card card-chart card-wide"><h2>Copilot-authored PRs merged per week</h2><canvas id="chartCopilotPRTrend"></canvas></div>
+    <div class="card card-chart card-wide"><h2>Agent Tasks by Repository (30&nbsp;d)</h2><canvas id="chartAgentTasks"></canvas></div>
   </section>
 
   <section class="repos-section" aria-label="Repositories">
@@ -465,6 +547,7 @@ function buildDashboardHtml(
           <option value="dependents">Dependents</option>
           <option value="pushed">Last Updated</option>
           <option value="linesAdded">Lines Added</option>
+          <option value="agentTasks">Agent Tasks</option>
         </select>
       </div>
     </div>
@@ -480,6 +563,7 @@ function buildDashboardHtml(
           <th class="col-num th-sortable" data-sort="dependents">Dependents <span class="sort-ind" aria-hidden="true"></span></th>
           <th class="col-date th-sortable" data-sort="pushed">Last Updated <span class="sort-ind" aria-hidden="true"></span></th>
           <th class="col-lines th-sortable" data-sort="linesAdded" title="Total lines added/removed across merged PRs in the last ~13 months (or last 10 detailed PRs when full timeline data is unavailable)">Lines +/- <span class="sort-ind" aria-hidden="true"></span></th>
+          <th class="col-num th-sortable" data-sort="agentTasks" title="Copilot agent tasks in the 30-day collection window">Agent Tasks <span class="sort-ind" aria-hidden="true"></span></th>
         </tr></thead>
         <tbody id="repoList">${repoRows}</tbody>
       </table>
@@ -523,7 +607,7 @@ function buildRepoRow(repo: RepoMetrics): string {
       (pr) =>
         `<tr><td>#${pr.number} ${escapeHtml(pr.title)}</td>` +
         `<td>${pr.mergedAt ? pr.mergedAt.slice(0, 10) : ""}</td>` +
-        `<td><span class="add">+${pr.linesAdded}</span> <span class="del">-${pr.linesDeleted}</span></td>` +
+        `<td class="td-lines"><span class="add">+${pr.linesAdded}</span><span class="del">-${pr.linesDeleted}</span></td>` +
         `<td>${pr.commentCount}</td><td>${pr.commitCount}</td><td>${pr.actionsMinutes}</td></tr>`,
     )
     .join("");
@@ -557,6 +641,7 @@ function buildRepoRow(repo: RepoMetrics): string {
     .replace(/[^a-zA-Z0-9]/g, "-")
     .replace(/-+/g, "-");
 
+  const agentTaskCount = repo.copilotAgentMetrics?.totalTasks ?? 0;
   const dataRow =
     `<tr class="repo-row" ` +
     `data-name="${escapeHtml(repo.fullName.toLowerCase())}" ` +
@@ -570,6 +655,7 @@ function buildRepoRow(repo: RepoMetrics): string {
     `data-pushed="${escapeHtml(repo.pushedAt ?? "")}" ` +
     `data-lines-added="${linesAdded}" ` +
     `data-lines-deleted="${linesDeleted}" ` +
+    `data-agent-tasks="${agentTaskCount}" ` +
     `data-repo-id="${repoId}">` +
     `<td><div class="repo-name-cell">` +
     `<button class="repo-expand-btn" onclick="toggleRepo(this)" aria-expanded="false" aria-label="Toggle details for ${escapeHtml(repo.fullName)}"><span class="chev" aria-hidden="true">&rsaquo;</span></button>` +
@@ -582,17 +668,33 @@ function buildRepoRow(repo: RepoMetrics): string {
     `<td title="${repo.committerCount} committers, ${repo.reviewerCount} reviewers">${totalContrib}</td>` +
     `<td>${repo.dependentCount}</td>` +
     `<td>${pushedDate}</td>` +
-    `<td><span class="add">+${linesAdded}</span> <span class="del">-${linesDeleted}</span></td>` +
+    `<td class="td-lines"><span class="add">+${linesAdded}</span><span class="del">-${linesDeleted}</span></td>` +
+    `<td>${agentTaskCount > 0 ? agentTaskCount : '<span class="col-muted">&ndash;</span>'}</td>` +
     `</tr>`;
 
   const detailRow =
     `<tr class="repo-detail-row" id="detail-${repoId}" hidden>` +
-    `<td colspan="8" class="repo-detail-cell">` +
+    `<td colspan="9" class="repo-detail-cell">` +
     `<div class="stats-grid">` +
     `<div class="sg"><h4>Issues</h4><dl><div class="dr"><dt>Open</dt><dd>${repo.issues.open}</dd></div><div class="dr"><dt>Closed</dt><dd>${repo.issues.closed}</dd></div></dl></div>` +
     `<div class="sg"><h4>Pull Requests</h4><dl><div class="dr"><dt>Open</dt><dd>${repo.pullRequests.open}</dd></div><div class="dr"><dt>Merged</dt><dd>${repo.pullRequests.merged}</dd></div><div class="dr"><dt>Closed</dt><dd>${repo.pullRequests.closed}</dd></div></dl></div>` +
     `<div class="sg"><h4>People (90 d)</h4><dl><div class="dr"><dt>Committers</dt><dd>${repo.committerCount}</dd></div><div class="dr"><dt>Reviewers</dt><dd>${repo.reviewerCount}</dd></div></dl></div>` +
     `<div class="sg"><h4>Dependents</h4><dl><div class="dr"><dt>Repos</dt><dd>${repo.dependentCount}</dd></div></dl></div>` +
+    (repo.copilotAgentMetrics && repo.copilotAgentMetrics.totalTasks > 0
+      ? `<div class="sg"><h4>Agent Tasks (30 d)</h4><dl>` +
+        `<div class="dr"><dt>Total</dt><dd>${repo.copilotAgentMetrics.totalTasks}</dd></div>` +
+        `<div class="dr"><dt>Completed</dt><dd>${repo.copilotAgentMetrics.completedTasks}</dd></div>` +
+        (repo.copilotAgentMetrics.failedTasks > 0 ? `<div class="dr"><dt>Failed</dt><dd>${repo.copilotAgentMetrics.failedTasks}</dd></div>` : "") +
+        (repo.copilotAgentMetrics.cancelledTasks > 0 ? `<div class="dr"><dt>Cancelled</dt><dd>${repo.copilotAgentMetrics.cancelledTasks}</dd></div>` : "") +
+        (repo.copilotAgentMetrics.timedOutTasks > 0 ? `<div class="dr"><dt>Timed out</dt><dd>${repo.copilotAgentMetrics.timedOutTasks}</dd></div>` : "") +
+        (repo.copilotAgentMetrics.activeTasksCount > 0 ? `<div class="dr"><dt>Active</dt><dd>${repo.copilotAgentMetrics.activeTasksCount}</dd></div>` : "") +
+        `<div class="dr"><dt>Sessions</dt><dd>${repo.copilotAgentMetrics.totalSessions}</dd></div>` +
+        (repo.copilotAgentMetrics.totalCreditsUsed > 0 ? `<div class="dr"><dt>Credits</dt><dd>${repo.copilotAgentMetrics.totalCreditsUsed.toFixed(1)}</dd></div>` : "") +
+        (repo.copilotAgentMetrics.avgCompletedSessionHours != null ? `<div class="dr"><dt>Avg&nbsp;duration</dt><dd>${formatDurationHtml(repo.copilotAgentMetrics.avgCompletedSessionHours)}</dd></div>` : "") +
+        (repo.copilotAgentMetrics.agentCreatedPRs > 0 ? `<div class="dr"><dt>PRs created</dt><dd>${repo.copilotAgentMetrics.agentCreatedPRs}</dd></div>` : "") +
+        ((repo.copilotAgentMetrics.agentActionsMinutes ?? 0) > 0 ? `<div class="dr"><dt>Actions&nbsp;min</dt><dd>${(repo.copilotAgentMetrics.agentActionsMinutes ?? 0).toFixed(1)}</dd></div>` : "") +
+        `</dl></div>`
+      : "") +
     `</div>` +
     prTable +
     `</td>` +
@@ -688,7 +790,8 @@ a{color:var(--accent)}
 .rname:hover{text-decoration:underline}
 .col-muted{color:var(--muted);font-size:.8rem}
 .col-num{text-align:right}
-.col-date,.col-lines{white-space:nowrap}
+.col-date,.col-lines{white-space:nowrap;text-align:right}
+.td-lines{text-align:right}.td-lines span{display:block}
 .grp-hdr-row{cursor:pointer;user-select:none}
 .grp-hdr-cell{padding:.5rem .8rem;font-size:.82rem;font-weight:600;
   background:var(--bg);color:var(--muted);border-bottom:1px solid var(--border)}
@@ -757,8 +860,7 @@ footer{max-width:1400px;margin:0 auto;padding:1rem;text-align:center;font-size:.
   font-size:.83rem;cursor:pointer;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .repo-picker-item:hover{background:var(--accent-s)}
 .repo-picker-item input{accent-color:var(--accent);cursor:pointer;flex-shrink:0}
-.trends-org-note{font-size:.75rem;color:var(--muted);padding:.3rem .5rem .1rem;
-  background:var(--warn-s);border-left:3px solid var(--warn);border-radius:0 var(--rs) var(--rs) 0;margin-bottom:.5rem}`;
+`;
 }
 
 /* ------------------------------------------------------------------ */
@@ -784,8 +886,17 @@ document.addEventListener("DOMContentLoaded",function(){
   setupSortHeaders();
   setupFilter();
   setupRepoPicker();
+  formatLineNumbers();
   applyFilter("30days");
 });
+function formatLineNumbers(){
+  document.querySelectorAll(".td-lines .add,.td-lines .del").forEach(function(el){
+    var t=el.textContent||"";
+    var sign=t.charAt(0);
+    var n=parseInt(t.slice(1),10);
+    if(!isNaN(n))el.textContent=sign+n.toLocaleString();
+  });
+}
 function renderCharts(){
   function hexToRgba(hex,a){
     var h=(hex||"").replace("#","");
@@ -865,6 +976,70 @@ function renderCharts(){
 function getISOWeek(d){var date=new Date(d);date.setUTCDate(date.getUTCDate()+4-(date.getUTCDay()||7));var y=date.getUTCFullYear();var jan1=new Date(Date.UTC(y,0,1));var wn=Math.ceil(((date.getTime()-jan1.getTime())/86400000+1)/7);return y+"-W"+(wn<10?"0":"")+wn;}
 function medianOf(arr){if(!arr.length)return 0;var s=arr.slice().sort(function(a,b){return a-b;});var m=Math.floor(s.length/2);return s.length%2?s[m]:(s[m-1]+s[m])/2;}
 function fmtDur(h){if(h<1)return Math.round(h*60)+"m";if(h<24)return h.toFixed(1)+"h";return(h/24).toFixed(1)+"d";}
+/**
+ * Build Chart.js annotation plugin config with vertical lines at year
+ * boundaries and centered year labels between them.
+ * @param labels Array of ISO week labels ("YYYY-Www") currently displayed.
+ * @returns annotation plugin options object (empty when <2 years spanned).
+ */
+function yearBoundaryAnnotations(labels){
+  if(!labels||labels.length<2)return {};
+  // Determine the set of distinct years present in the labels.
+  var years=[];
+  labels.forEach(function(lbl){
+    var y=parseInt(lbl.slice(0,4),10);
+    if(years.indexOf(y)===-1)years.push(y);
+  });
+  years.sort();
+  if(years.length<2)return {};
+  // For each year boundary, find the index of the first week of the new year.
+  var annotations={};
+  for(var i=1;i<years.length;i++){
+    var yearStr=String(years[i]);
+    var boundaryLabel=yearStr+"-W01";
+    var idx=labels.indexOf(boundaryLabel);
+    // If W01 is not in the data, find the first label that belongs to this year.
+    if(idx===-1){
+      for(var j=0;j<labels.length;j++){
+        if(labels[j].slice(0,4)===yearStr){idx=j;break;}
+      }
+    }
+    if(idx>0){
+      annotations["yearLine"+i]={
+        type:"line",
+        xMin:idx-0.5,xMax:idx-0.5,
+        borderColor:cssColors.muted||"#888",
+        borderWidth:1,
+        borderDash:[4,4]
+      };
+    }
+  }
+  // Add year label in the center of each year's range.
+  for(var k=0;k<years.length;k++){
+    var yStr=String(years[k]);
+    var first=-1,last=-1;
+    for(var m=0;m<labels.length;m++){
+      if(labels[m].slice(0,4)===yStr){
+        if(first===-1)first=m;
+        last=m;
+      }
+    }
+    if(first!==-1){
+      var center=(first+last)/2;
+      annotations["yearLabel"+k]={
+        type:"label",
+        xValue:center,
+        yValue:0,
+        yAdjust:-12,
+        content:[yStr],
+        color:cssColors.muted||"#888",
+        font:{size:11,weight:"bold"},
+        position:"start"
+      };
+    }
+  }
+  return {annotation:{annotations:annotations}};
+}
 function renderDeliveryCharts(){
   var lineOpts={responsive:true,maintainAspectRatio:true,
     scales:{x:{grid:{display:false}},y:{beginAtZero:true,grid:{color:cssColors.border}}},
@@ -903,15 +1078,26 @@ function renderDeliveryCharts(){
         scales:{x:{stacked:true,grid:{display:false}},y:{stacked:true,beginAtZero:true,grid:{color:cssColors.border}}},
         plugins:{legend:{position:"top",align:"end"}}}});
   }
-  // Copilot adoption doughnut
+  // AI adoption doughnut
   var cop=CHART_DATA.copilot||{};
   if(cop.totalMerged>0){
     var dOpts2={cutout:"62%",plugins:{legend:{position:"bottom"}},responsive:true,maintainAspectRatio:true};
     charts.copilotAdoption=new Chart(document.getElementById("chartCopilotAdoption"),{type:"doughnut",
-      data:{labels:["Copilot-authored","Human-authored"],
+      data:{labels:["AI-authored","Human-authored"],
         datasets:[{data:[cop.authored,cop.totalMerged-cop.authored],
           backgroundColor:[cssColors.purple||"#8250df",cssColors.accent],borderWidth:0,hoverOffset:6}]},
       options:dOpts2});
+  }
+  // AI author breakdown doughnut (Copilot vs Claude vs Codex)
+  var aiByType=cop.byType||{};
+  var aiTotal=(aiByType.copilot||0)+(aiByType.claude||0)+(aiByType.codex||0);
+  if(aiTotal>0){
+    var dOpts3={cutout:"62%",plugins:{legend:{position:"bottom"}},responsive:true,maintainAspectRatio:true};
+    charts.aiAuthorBreakdown=new Chart(document.getElementById("chartAIAuthorBreakdown"),{type:"doughnut",
+      data:{labels:["Copilot","Claude","Codex"],
+        datasets:[{data:[aiByType.copilot||0,aiByType.claude||0,aiByType.codex||0],
+          backgroundColor:[cssColors.purple||"#8250df","#da3f85","#0099e5"],borderWidth:0,hoverOffset:6}]},
+      options:dOpts3});
   }
   // Issue lead time scatter
   var lts=CHART_DATA.allIssueLeadTimes||[];
@@ -924,6 +1110,68 @@ function renderDeliveryCharts(){
       options:{responsive:true,maintainAspectRatio:true,
         scales:{x:{grid:{display:false}},y:{beginAtZero:true,title:{display:true,text:"Days"},grid:{color:cssColors.border}}},
         plugins:{legend:{display:false}}}});
+  }
+  // Copilot-authored PRs merged per week (line chart)
+  var copPRs=CHART_DATA.allPRDetails||[];
+  if(copPRs.length>0){
+    var wCopPR={};
+    copPRs.forEach(function(p){if(p.isCopilotAuthored){var w=getISOWeek(p.mergedAt);wCopPR[w]=(wCopPR[w]||0)+1;}});
+    var copWeeks=Object.keys(wCopPR).sort();
+    if(copWeeks.length>0){
+      charts.copilotPRTrend=new Chart(document.getElementById("chartCopilotPRTrend"),{type:"line",
+        data:{labels:copWeeks,datasets:[
+          {label:"Copilot-authored PRs merged",data:copWeeks.map(function(w){return wCopPR[w];}),
+            borderColor:cssColors.purple||"#8250df",backgroundColor:"transparent",tension:0.3,fill:false,pointRadius:3}]},
+        options:lineOpts});
+    }
+  }
+  // Agent tasks by repo — horizontal stacked bar (30d window, static)
+  var agentByRepo=(CHART_DATA.copilotAgent||{}).byRepo||{};
+  var agentRepoNames=Object.keys(agentByRepo).filter(function(n){return agentByRepo[n].totalTasks>0;})
+    .sort(function(a,b){return agentByRepo[b].totalTasks-agentByRepo[a].totalTasks;}).slice(0,15);
+  if(agentRepoNames.length>0){
+    charts.agentTasks=new Chart(document.getElementById("chartAgentTasks"),{type:"bar",
+      data:{labels:agentRepoNames,datasets:[
+        {label:"Completed",data:agentRepoNames.map(function(n){return agentByRepo[n].completed||0;}),backgroundColor:cssColors.ok,borderRadius:2},
+        {label:"Failed",data:agentRepoNames.map(function(n){return agentByRepo[n].failed||0;}),backgroundColor:cssColors.err,borderRadius:2},
+        {label:"Cancelled",data:agentRepoNames.map(function(n){return agentByRepo[n].cancelled||0;}),backgroundColor:cssColors.warn,borderRadius:2},
+        {label:"Timed Out",data:agentRepoNames.map(function(n){return agentByRepo[n].timedOut||0;}),backgroundColor:cssColors.muted,borderRadius:2},
+        {label:"Active",data:agentRepoNames.map(function(n){return agentByRepo[n].active||0;}),backgroundColor:cssColors.accent,borderRadius:2}]},
+      options:{indexAxis:"y",responsive:true,maintainAspectRatio:true,
+        scales:{x:{stacked:true,grid:{display:false},beginAtZero:true},y:{stacked:true,grid:{display:false}}},
+        plugins:{legend:{position:"top",align:"end"}},
+        onClick:function(e,elements){
+          var repoName=null;
+          if(elements.length>0){
+            repoName=agentRepoNames[elements[0].index];
+          } else if(e.native){
+            var yAxis=e.chart.scales.y;
+            var rect=e.chart.canvas.getBoundingClientRect();
+            var cx=e.native.clientX-rect.left;
+            var cy=e.native.clientY-rect.top;
+            if(cx<yAxis.right){
+              for(var i=0;i<agentRepoNames.length;i++){
+                if(Math.abs(cy-yAxis.getPixelForTick(i))<15){repoName=agentRepoNames[i];break;}
+              }
+            }
+          }
+          if(repoName){window.open("https://github.com/"+(CHART_DATA.owner||"")+"/"+repoName+"/agents","_blank","noopener,noreferrer");}
+        },
+        onHover:function(e,elements){
+          var cursor="default";
+          if(elements.length>0){cursor="pointer";}
+          else if(e.native){
+            var yAxis=e.chart.scales.y;
+            var rect=e.chart.canvas.getBoundingClientRect();
+            var cx=e.native.clientX-rect.left;
+            var cy=e.native.clientY-rect.top;
+            if(cx<yAxis.right){
+              for(var i=0;i<agentRepoNames.length;i++){
+                if(Math.abs(cy-yAxis.getPixelForTick(i))<15){cursor="pointer";break;}
+              }
+            }
+          }
+          e.chart.canvas.style.cursor=cursor;}}});
   }
 }
 function setupFilter(){
@@ -970,6 +1218,26 @@ function computeTrendsFromPRDetails(prs){
     weekData[wm].prsMerged++;
     weekData[wm].linesAdded+=(p.linesAdded||0);
     weekData[wm].linesDeleted+=(p.linesDeleted||0);
+  });
+  return Object.keys(weekData).map(function(k){return weekData[k];}).sort(function(a,b){return a.week<b.week?-1:1;});
+}
+// Aggregate PR trends from per-repo data for the selected repos.
+// Uses org-level week labels as a baseline for a consistent x-axis.
+// prsOpened reflects opened+closed/merged PRs within the window (open-only PRs may be undercounted).
+function computePRTrendsForRepos(repoNames){
+  var rwt=CHART_DATA.repoWeeklyTrends||{};
+  var weekData={};
+  (CHART_DATA.weeklyTrends||[]).forEach(function(t){
+    weekData[t.week]={week:t.week,prsOpened:0,prsMerged:0,issuesOpened:0,issuesClosed:0,linesAdded:0,linesDeleted:0};
+  });
+  repoNames.forEach(function(name){
+    (rwt[name]||[]).forEach(function(t){
+      if(!weekData[t.week])weekData[t.week]={week:t.week,prsOpened:0,prsMerged:0,issuesOpened:0,issuesClosed:0,linesAdded:0,linesDeleted:0};
+      weekData[t.week].prsOpened+=(t.prsOpened||0);
+      weekData[t.week].prsMerged+=(t.prsMerged||0);
+      weekData[t.week].linesAdded+=(t.linesAdded||0);
+      weekData[t.week].linesDeleted+=(t.linesDeleted||0);
+    });
   });
   return Object.keys(weekData).map(function(k){return weekData[k];}).sort(function(a,b){return a.week<b.week?-1:1;});
 }
@@ -1094,32 +1362,37 @@ function applyFilter(period){
   var rwt=CHART_DATA.repoWeeklyTrends||{};
   var selRepoArr=repoFiltered?Array.from(selectedRepos):[];
   var allSelectedHaveRepoTrends=repoFiltered&&selRepoArr.length>0&&selRepoArr.every(function(n){return!!rwt[n];});
-  var prTrends=repoFiltered?computeTrendsFromPRDetails(allPRBase):orgTrends;
+  var prTrends=allSelectedHaveRepoTrends?computePRTrendsForRepos(selRepoArr):(repoFiltered?computeTrendsFromPRDetails(allPRBase):orgTrends);
   var prTrendsPeriod=cutoff?prTrends.filter(function(t){return weekToDate(t.week)>=cutoff;}):prTrends;
   var issueTrends=allSelectedHaveRepoTrends?computeIssueTrendsForRepos(selRepoArr):orgTrends;
   var issueTrendsPeriod=cutoff?issueTrends.filter(function(t){return weekToDate(t.week)>=cutoff;}):issueTrends;
 
-  // Show/hide org-wide note: only when repo-filtered AND per-repo data is unavailable
-  document.querySelectorAll(".trends-org-note").forEach(function(n){n.style.display=(repoFiltered&&!allSelectedHaveRepoTrends)?"":"none";});
 
-  // PR trends: when repo-filtered, hide "Opened" since allPRDetails is merged-PRs-only
+
+  // PR trends: hide "Opened" only when repo-filtered without per-repo trend data
   if(charts.prTrends){
-    charts.prTrends.data.labels=prTrendsPeriod.map(function(t){return t.week;});
+    var prTrendLabels=prTrendsPeriod.map(function(t){return t.week;});
+    charts.prTrends.data.labels=prTrendLabels;
     charts.prTrends.data.datasets[0].data=prTrendsPeriod.map(function(t){return t.prsOpened;});
     charts.prTrends.data.datasets[1].data=prTrendsPeriod.map(function(t){return t.prsMerged;});
-    charts.prTrends.setDatasetVisibility(0,!repoFiltered);
+    charts.prTrends.setDatasetVisibility(0,!repoFiltered||allSelectedHaveRepoTrends);
+    charts.prTrends.options.plugins.annotation=(yearBoundaryAnnotations(prTrendLabels).annotation||{annotations:{}});
     charts.prTrends.update();
   }
   if(charts.issueTrends){
-    charts.issueTrends.data.labels=issueTrendsPeriod.map(function(t){return t.week;});
+    var issueTrendLabels=issueTrendsPeriod.map(function(t){return t.week;});
+    charts.issueTrends.data.labels=issueTrendLabels;
     charts.issueTrends.data.datasets[0].data=issueTrendsPeriod.map(function(t){return t.issuesOpened;});
     charts.issueTrends.data.datasets[1].data=issueTrendsPeriod.map(function(t){return t.issuesClosed;});
+    charts.issueTrends.options.plugins.annotation=(yearBoundaryAnnotations(issueTrendLabels).annotation||{annotations:{}});
     charts.issueTrends.update();
   }
   if(charts.prSizeTrends){
-    charts.prSizeTrends.data.labels=prTrendsPeriod.map(function(t){return t.week;});
+    var prSizeLabels=prTrendsPeriod.map(function(t){return t.week;});
+    charts.prSizeTrends.data.labels=prSizeLabels;
     charts.prSizeTrends.data.datasets[0].data=prTrendsPeriod.map(function(t){return t.linesAdded;});
     charts.prSizeTrends.data.datasets[1].data=prTrendsPeriod.map(function(t){return t.linesDeleted;});
+    charts.prSizeTrends.options.plugins.annotation=(yearBoundaryAnnotations(prSizeLabels).annotation||{annotations:{}});
     charts.prSizeTrends.update();
   }
 
@@ -1228,8 +1501,8 @@ function applyFilter(period){
     if(issueSub)issueSub.textContent=issuesClosed+" closed";
     if(prVal)prVal.textContent=String(prsMerged);
     if(prLbl)prLbl.textContent="Merged PRs";
-    // prsOpened is unavailable per repo (allPRDetails = merged only)
-    if(prSub)prSub.textContent=repoFiltered?"":prsOpened+" opened";
+    // prsOpened is unavailable per repo only when no per-repo trend data exists
+    if(prSub)prSub.textContent=(repoFiltered&&!allSelectedHaveRepoTrends)?"":prsOpened+" opened";
   }
 
   // ── Copilot adoption ──
@@ -1238,7 +1511,10 @@ function applyFilter(period){
   var cop;
   if(repoFiltered){
     var copAuthored=allPRBase.filter(function(p){return p.isCopilotAuthored;}).length;
-    cop={authored:copAuthored,totalMerged:allPRBase.length,reviewed:null};
+    var btCopilot=allPRBase.filter(function(p){return p.aiAuthorType==='copilot';}).length;
+    var btClaude=allPRBase.filter(function(p){return p.aiAuthorType==='claude';}).length;
+    var btCodex=allPRBase.filter(function(p){return p.aiAuthorType==='codex';}).length;
+    cop={authored:copAuthored,totalMerged:allPRBase.length,reviewed:null,byType:{copilot:btCopilot,claude:btClaude,codex:btCodex}};
   }else{
     cop=CHART_DATA.copilot||{};
   }
@@ -1246,12 +1522,17 @@ function applyFilter(period){
   var copilotSub=document.getElementById("kpiCopilotSub");
   if(copilotVal){copilotVal.textContent=cop.totalMerged>0?(cop.authored/cop.totalMerged*100).toFixed(1)+"%":"\u2013";}
   if(copilotSub){
-    if(repoFiltered)copilotSub.textContent=(cop.authored||0)+" Copilot-authored";
-    else copilotSub.textContent=(cop.authored||0)+" authored \u00B7 "+(cop.reviewed||0)+" reviewed";
+    if(repoFiltered)copilotSub.textContent=(cop.authored||0)+" AI-authored";
+    else copilotSub.textContent=(cop.authored||0)+" AI-authored \u00B7 "+(cop.reviewed||0)+" reviewed";
   }
   if(charts.copilotAdoption&&cop.totalMerged>0){
     charts.copilotAdoption.data.datasets[0].data=[cop.authored,cop.totalMerged-cop.authored];
     charts.copilotAdoption.update();
+  }
+  if(charts.aiAuthorBreakdown){
+    var bt2=cop.byType||{};
+    charts.aiAuthorBreakdown.data.datasets[0].data=[bt2.copilot||0,bt2.claude||0,bt2.codex||0];
+    charts.aiAuthorBreakdown.update();
   }
 
   // ── Cycle time KPI ──
@@ -1267,6 +1548,7 @@ function applyFilter(period){
     var ctWeeks=Object.keys(weekCT).sort();
     charts.cycleTime.data.labels=ctWeeks;
     charts.cycleTime.data.datasets[0].data=ctWeeks.map(function(w){return Math.round(medianOf(weekCT[w])*10)/10;});
+    charts.cycleTime.options.plugins.annotation=(yearBoundaryAnnotations(ctWeeks).annotation||{annotations:{}});
     charts.cycleTime.update();
   }
   if(charts.actorBreakdown){
@@ -1285,7 +1567,37 @@ function applyFilter(period){
     charts.actorBreakdown.data.datasets[1].data=aW.map(function(w){return wA[w].copilot;});
     charts.actorBreakdown.data.datasets[2].data=aW.map(function(w){return wA[w].dependabot;});
     charts.actorBreakdown.data.datasets[3].data=aW.map(function(w){return wA[w].otherBot;});
+    charts.actorBreakdown.options.plugins.annotation=(yearBoundaryAnnotations(aW).annotation||{annotations:{}});
     charts.actorBreakdown.update();
+  }
+
+  // ── Copilot PR trend chart ──
+  if(charts.copilotPRTrend){
+    var wCopPR2={};
+    filteredPR.forEach(function(p){if(p.isCopilotAuthored){var w=getISOWeek(p.mergedAt);wCopPR2[w]=(wCopPR2[w]||0)+1;}});
+    var copWeeks2=Object.keys(wCopPR2).sort();
+    charts.copilotPRTrend.data.labels=copWeeks2;
+    charts.copilotPRTrend.data.datasets[0].data=copWeeks2.map(function(w){return wCopPR2[w];});
+    charts.copilotPRTrend.options.plugins.annotation=(yearBoundaryAnnotations(copWeeks2).annotation||{annotations:{}});
+    charts.copilotPRTrend.update();
+  }
+
+  // ── Agent tasks KPI (responds to repo filter; not period-filtered) ──
+  var agentVal=document.getElementById("kpiAgentVal");
+  var agentSub=document.getElementById("kpiAgentSub");
+  var agentCopilotData=CHART_DATA.copilotAgent||{};
+  if(repoFiltered){
+    var selAgentTasks=0,selAgentCompleted=0,selAgentPRs=0;
+    var aByRepo=agentCopilotData.byRepo||{};
+    Array.from(selectedRepos).forEach(function(name){
+      var rd=aByRepo[name];
+      if(rd){selAgentTasks+=rd.totalTasks;selAgentCompleted+=rd.completed;selAgentPRs+=rd.agentPRs;}
+    });
+    if(agentVal)agentVal.textContent=selAgentTasks>0?String(selAgentTasks):"\u2013";
+    if(agentSub)agentSub.textContent=selAgentTasks>0?selAgentCompleted+" completed \u00B7 "+selAgentPRs+" PRs":"no agent data";
+  }else{
+    if(agentVal)agentVal.textContent=agentCopilotData.totalTasks>0?String(agentCopilotData.totalTasks):"\u2013";
+    if(agentSub)agentSub.textContent=agentCopilotData.totalTasks>0?agentCopilotData.completed+" completed \u00B7 "+agentCopilotData.agentPRs+" PRs":"no agent data";
   }
 
   // ── Issue lead times chart ──
@@ -1448,7 +1760,7 @@ function setupGroups(){
     var hdrTr=document.createElement("tr");
     hdrTr.className="grp-hdr-row";
     hdrTr.dataset.grpId=g.id;
-    hdrTr.innerHTML='<td colspan="8" class="grp-hdr-cell"><span class="grp-chevron">&#9654;</span><span class="grp-label">'+g.label+'</span><span class="grp-count"> ('+grpRows.length+')</span></td>';
+    hdrTr.innerHTML='<td colspan="9" class="grp-hdr-cell"><span class="grp-chevron">&#9654;</span><span class="grp-label">'+g.label+'</span><span class="grp-count"> ('+grpRows.length+')</span></td>';
     hdrTr.addEventListener("click",function(){toggleGroup(g.id);});
     tbody.appendChild(hdrTr);
     grpRows.forEach(function(row){

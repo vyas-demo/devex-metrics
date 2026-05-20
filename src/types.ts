@@ -19,7 +19,7 @@ export interface OrgMetrics {
   repoCount: number;
   /** Per-repo metrics. */
   repos: RepoMetrics[];
-  /** Weekly activity trends aggregated across all repos (last ~12 weeks). */
+  /** Weekly activity trends aggregated across all repos (last ~2 years). */
   weeklyTrends?: WeeklyTrendPoint[];
 }
 
@@ -33,7 +33,7 @@ export interface RepoMetrics {
   collectedAt?: string;
   /** Issue counts by state. */
   issues: IssueCounts;
-  /** Weekly activity trends for this repository (last ~12 weeks). */
+  /** Weekly activity trends for this repository (last ~2 years). */
   weeklyTrends?: WeeklyTrendPoint[];
   /** Pull request counts by state. */
   pullRequests: PullRequestCounts;
@@ -57,6 +57,8 @@ export interface RepoMetrics {
   contributorCount: number;
   /** Number of repositories that depend on this repo (from dependency graph). */
   dependentCount: number;
+  /** Copilot agent (coding agent) task metrics for this repository. */
+  copilotAgentMetrics?: CopilotAgentMetrics;
 }
 
 export interface IssueCounts {
@@ -79,8 +81,10 @@ export interface PullRequestDetail {
   createdAt: string;
   /** GitHub login of the PR author. */
   author: string;
-  /** True when the PR was authored by copilot[bot] (Copilot Cloud Agent). */
+  /** True when the PR was authored by any AI tool (Copilot, Claude, or Codex). */
   isCopilotAuthored: boolean;
+  /** Which AI tool authored this PR ('copilot', 'claude', or 'codex'); undefined for human/other-bot authors. */
+  aiAuthorType?: "copilot" | "claude" | "codex";
   /** True when the PR received a review from copilot[bot] (Copilot Review). */
   hasCopilotReview: boolean;
   linesAdded: number;
@@ -107,8 +111,10 @@ export interface MergedPRSummary {
   author: string;
   /** True when PR author is a bot (dependabot[bot], copilot[bot], etc.). */
   isBotAuthor: boolean;
-  /** True when PR was authored by copilot[bot] (Copilot Cloud Agent). */
+  /** True when PR was authored by any AI tool (Copilot, Claude, or Codex). */
   isCopilotAuthored: boolean;
+  /** Which AI tool authored this PR ('copilot', 'claude', or 'codex'); undefined for human/other-bot authors. */
+  aiAuthorType?: "copilot" | "claude" | "codex";
   /** Hours from PR created to PR merged. */
   timeToMergeHours: number;
   /** Issue numbers referenced via "Fixes #N" / "Closes #N" in the PR body. */
@@ -126,7 +132,7 @@ export interface MergedPRSummary {
 
 /** Per-repo Copilot adoption summary. */
 export interface CopilotAdoption {
-  /** Number of merged PRs authored by copilot[bot]. */
+  /** Number of merged PRs authored by any AI tool (Copilot, Claude, or Codex). */
   copilotAuthoredPRs: number;
   /** Number of detailed PRs that received a Copilot review. */
   copilotReviewedPRs: number;
@@ -169,4 +175,115 @@ export interface CacheEnvelope {
   /** ISO-8601 date (YYYY-MM-DD) the data was collected. */
   date: string;
   data: OrgMetrics;
+}
+
+// ── Copilot Agent (coding agent / cloud agent) types ──────────────────────────
+
+/** An individual session within a Copilot agent task. */
+export interface CopilotAgentSession {
+  /** Session UUID. */
+  id: string;
+  /** Session state (e.g. "completed", "failed", "in_progress"). */
+  state: string;
+  /**
+   * Detected session source.
+   * `cloud-agent` when the session has a non-empty model string or a `usage`
+   * field (Copilot coding agent / cloud agent).
+   * `cli-remote` otherwise (Copilot CLI / remote session).
+   */
+  source: "cloud-agent" | "cli-remote";
+  /** Branch the session worked on. */
+  headRef?: string;
+  /** Base branch the session branched from. */
+  baseRef?: string;
+  /** Model identifier with the "sweagent-capi:" prefix stripped. */
+  model?: string;
+  /** ISO-8601 timestamp when the session was created. */
+  createdAt: string;
+  /** ISO-8601 timestamp when the session completed (terminal states only). */
+  completedAt?: string;
+  /** Credits consumed (cloud-agent sessions only, if reported by the API). */
+  usageCredits?: number;
+  /** Credit type (e.g. "premium"). */
+  usageType?: string;
+  /** Error message if the session failed. */
+  errorMessage?: string;
+  /** Hours from `createdAt` to `completedAt` (undefined when not completed). */
+  durationHours?: number;
+}
+
+/** A Copilot agent task. One task can spawn multiple sessions. */
+export interface CopilotAgentTask {
+  /** Task UUID. */
+  id: string;
+  /** Human-readable task name (typically the user prompt summary). */
+  name: string;
+  /** Task state (e.g. "completed", "failed", "in_progress"). */
+  state: string;
+  /** ISO-8601 timestamp when the task was created. */
+  createdAt: string;
+  /** ISO-8601 timestamp when the task was last updated. */
+  updatedAt: string;
+  /** URL to the task in the GitHub UI. */
+  htmlUrl: string;
+  /** Sessions that ran as part of this task. */
+  sessions: CopilotAgentSession[];
+  /** PR numbers produced by this task (resolved from task artifacts). */
+  prNumbers: number[];
+}
+
+/** Aggregated Copilot agent metrics for a single repository. */
+export interface CopilotAgentMetrics {
+  /** Total agent tasks in the collection window. */
+  totalTasks: number;
+  /** Tasks in the `completed` terminal state. */
+  completedTasks: number;
+  /** Tasks in the `failed` terminal state. */
+  failedTasks: number;
+  /** Tasks in the `cancelled` terminal state. */
+  cancelledTasks: number;
+  /** Tasks in the `timed_out` terminal state. */
+  timedOutTasks: number;
+  /** Tasks currently in an active state (in_progress / queued / idle / waiting_for_user). */
+  activeTasksCount: number;
+  /** Total sessions across all tasks. */
+  totalSessions: number;
+  /** Sessions identified as Copilot cloud agent sessions. */
+  cloudAgentSessions: number;
+  /** Sessions identified as Copilot CLI / remote sessions. */
+  cliRemoteSessions: number;
+  /** Sum of credits consumed across all cloud-agent sessions. */
+  totalCreditsUsed: number;
+  /** Average duration in hours for sessions that have completed. */
+  avgCompletedSessionHours?: number;
+  /** ISO-8601 timestamp of the most recently created task in this window. */
+  lastTaskAt?: string;
+  /** Number of distinct PRs produced by agent tasks. */
+  agentCreatedPRs: number;
+  /** Total GitHub Actions check-run minutes consumed on PRs created by agent tasks. */
+  agentActionsMinutes: number;
+}
+
+/** Shape of the per-repo agent cache file (`data/agents-{owner}-{repo}.json`). */
+export interface CopilotAgentRepoCache {
+  /** Cache schema version. Bump in agent-cache.ts when the stored shape changes. */
+  schemaVersion: number;
+  /** Repository owner. */
+  owner: string;
+  /** Repository name. */
+  repo: string;
+  /** ISO-8601 timestamp of last active-tasks refresh. */
+  activeRefreshedAt: string;
+  /**
+   * Tasks in terminal states (completed / failed / cancelled / timed_out).
+   * These are cached permanently — terminal task data is immutable.
+   */
+  terminalTasks: CopilotAgentTask[];
+  /** Tasks in active states — replaced on each fresh collection. */
+  activeTasks: CopilotAgentTask[];
+  /**
+   * Cached GitHub Actions check-run minutes per PR number (string key).
+   * Only closed/merged PRs are cached here; open PRs are refetched each run.
+   */
+  perPRActionsMinutes?: Record<string, number>;
 }

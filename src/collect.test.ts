@@ -24,6 +24,7 @@ vi.mock("./collectors/index.js", () => ({
   buildMergedPRTimeline: vi.fn(),
   collectPullRequestDetailsFromNodes: vi.fn(),
   extractReviewerLogins: vi.fn(),
+  collectCopilotAgentMetrics: vi.fn(),
 }));
 
 import { collect } from "./collect.js";
@@ -44,6 +45,7 @@ import {
   buildMergedPRTimeline,
   collectPullRequestDetailsFromNodes,
   extractReviewerLogins,
+  collectCopilotAgentMetrics,
 } from "./collectors/index.js";
 import type { OrgMetrics } from "./types.js";
 
@@ -70,6 +72,7 @@ function setupDefaultMocks() {
   vi.mocked(buildMergedPRTimeline).mockReturnValue([]);
   vi.mocked(collectPullRequestDetailsFromNodes).mockResolvedValue([]);
   vi.mocked(extractReviewerLogins).mockReturnValue(new Set());
+  vi.mocked(collectCopilotAgentMetrics).mockResolvedValue(null);
 }
 
 describe("collect", () => {
@@ -177,6 +180,20 @@ describe("collect", () => {
     // Repo should now have weeklyTrends populated
     expect(result.repos[0].weeklyTrends).toBeDefined();
     expect(result.repos[0].weeklyTrends).toHaveLength(1);
+  });
+
+  it("calls collectWeeklyTrends with 104 weeks to support multi-year trend history", async () => {
+    setupDefaultMocks();
+    vi.mocked(collectRepos).mockResolvedValue([{ name: "r", fullName: "owner/r", pushedAt: "" }]);
+
+    await collect("owner", "org");
+
+    expect(collectWeeklyTrends).toHaveBeenCalledWith(
+      expect.any(Array),
+      104,
+      expect.any(Number),
+      expect.any(Map)
+    );
   });
 
   it("skips trend recollection when all repos already have per-repo weeklyTrends", async () => {

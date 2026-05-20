@@ -18,8 +18,17 @@ const DATA_DIR = path.resolve(process.cwd(), "data");
  *   5 — add linesAdded/linesDeleted to MergedPRSummary so the dashboard's
  *       per-repo Lines +/- column can sum across the full ~13-month merged-PR
  *       timeline instead of just the 10 most recent detailed PRs
+ *   6 — add copilotAgentMetrics to RepoMetrics (Copilot agent task/session
+ *       counts, credit usage, and PR correlation)
+ *   7 — add aiAuthorType to MergedPRSummary and PullRequestDetail; extend
+ *       isCopilotAuthored to cover all AI tools (copilot, claude, codex) via
+ *       PR author login AND merge-commit Co-authored-by trailers
+ *   8 — extend weekly-trends collection window from 12 weeks to 104 weeks
+ *       (~2 years) so the dashboard "This Year" and "All Time" filters show
+ *       real historical data; also extends GraphQL PR node cutoff from
+ *       ~13 months to ~2 years so PR trends match the wider window
  */
-export const CURRENT_SCHEMA_VERSION = 5;
+export const CURRENT_SCHEMA_VERSION = 8;
 
 function cacheFilePath(owner: string): string {
   return path.join(DATA_DIR, `${owner}.json`);

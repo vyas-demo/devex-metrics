@@ -1,4 +1,4 @@
-import type { OrgMetrics, RepoMetrics, CopilotAdoption } from "./types.js";
+import type { OrgMetrics, RepoMetrics, CopilotAdoption, CopilotAgentMetrics } from "./types.js";
 
 /**
  * Produce a human-readable Markdown report from collected metrics.
@@ -41,6 +41,24 @@ export function generateReport(metrics: OrgMetrics): string {
     lines.push(`| Copilot-reviewed PRs | ${copilotTotals.copilotReviewedPRs} (${reviewedPct}%) |`);
   }
 
+  // Copilot agent tasks summary
+  const agentTotals = aggregateAgentMetrics(metrics.repos);
+  if (agentTotals.totalTasks > 0) {
+    lines.push(`| Copilot agent tasks | ${agentTotals.totalTasks} |`);
+    lines.push(`| Agent tasks completed | ${agentTotals.completedTasks} |`);
+    lines.push(`| Agent tasks failed | ${agentTotals.failedTasks} |`);
+    lines.push(`| Agent sessions | ${agentTotals.totalSessions} (${agentTotals.cloudAgentSessions} cloud / ${agentTotals.cliRemoteSessions} CLI) |`);
+    if (agentTotals.totalCreditsUsed > 0) {
+      lines.push(`| Agent credits used | ${agentTotals.totalCreditsUsed.toFixed(1)} |`);
+    }
+    if (agentTotals.agentCreatedPRs > 0) {
+      lines.push(`| PRs created by agent | ${agentTotals.agentCreatedPRs} |`);
+    }
+    if (agentTotals.agentActionsMinutes > 0) {
+      lines.push(`| Agent PR Actions minutes | ${agentTotals.agentActionsMinutes.toFixed(1)} |`);
+    }
+  }
+
   // Median cycle time
   const allCycleTimes = metrics.repos.flatMap(
     (r) => (r.mergedPRTimeline ?? []).map((p) => p.timeToMergeHours),
@@ -72,6 +90,32 @@ export function generateReport(metrics: OrgMetrics): string {
     );
     lines.push(`Dependents: ${repo.dependentCount}`);
     lines.push("");
+
+    // Copilot agent metrics for this repo
+    if (repo.copilotAgentMetrics && repo.copilotAgentMetrics.totalTasks > 0) {
+      const am = repo.copilotAgentMetrics;
+      lines.push("**Copilot Agent (30-day window)**");
+      lines.push("");
+      lines.push(`| Metric | Value |`);
+      lines.push(`| ------ | ----- |`);
+      lines.push(`| Total tasks | ${am.totalTasks} |`);
+      lines.push(`| Completed | ${am.completedTasks} |`);
+      if (am.failedTasks > 0) lines.push(`| Failed | ${am.failedTasks} |`);
+      if (am.cancelledTasks > 0) lines.push(`| Cancelled | ${am.cancelledTasks} |`);
+      if (am.activeTasksCount > 0) lines.push(`| Active | ${am.activeTasksCount} |`);
+      lines.push(`| Sessions | ${am.totalSessions} |`);
+      if (am.cloudAgentSessions > 0)
+        lines.push(`| Cloud agent sessions | ${am.cloudAgentSessions} |`);
+      if (am.totalCreditsUsed > 0)
+        lines.push(`| Credits used | ${am.totalCreditsUsed.toFixed(1)} |`);
+      if (am.avgCompletedSessionHours !== undefined)
+        lines.push(`| Avg session duration | ${formatDuration(am.avgCompletedSessionHours)} |`);
+      if (am.agentCreatedPRs > 0)
+        lines.push(`| PRs created | ${am.agentCreatedPRs} |`);
+      if (am.agentActionsMinutes > 0)
+        lines.push(`| Actions minutes (agent PRs) | ${am.agentActionsMinutes.toFixed(1)} |`);
+      lines.push("");
+    }
 
     if (repo.pullRequestDetails.length > 0) {
       const sortedPRs = [...repo.pullRequestDetails].sort((a, b) => {
@@ -147,8 +191,45 @@ function aggregateCopilot(repos: RepoMetrics[]): CopilotAdoption {
   return { copilotAuthoredPRs, copilotReviewedPRs, totalMergedPRs, totalDetailedPRs };
 }
 
-function median(values: number[]): number {
-  if (values.length === 0) return 0;
+function aggregateAgentMetrics(repos: RepoMetrics[]): CopilotAgentMetrics {
+  let totalTasks = 0, completedTasks = 0, failedTasks = 0, cancelledTasks = 0,
+    timedOutTasks = 0, activeTasksCount = 0, totalSessions = 0,
+    cloudAgentSessions = 0, cliRemoteSessions = 0, totalCreditsUsed = 0,
+    agentCreatedPRs = 0, agentActionsMinutes = 0;
+
+  for (const r of repos) {
+    if (!r.copilotAgentMetrics) continue;
+    const a = r.copilotAgentMetrics;
+    totalTasks += a.totalTasks;
+    completedTasks += a.completedTasks;
+    failedTasks += a.failedTasks;
+    cancelledTasks += a.cancelledTasks;
+    timedOutTasks += a.timedOutTasks;
+    activeTasksCount += a.activeTasksCount;
+    totalSessions += a.totalSessions;
+    cloudAgentSessions += a.cloudAgentSessions;
+    cliRemoteSessions += a.cliRemoteSessions;
+    totalCreditsUsed += a.totalCreditsUsed;
+    agentCreatedPRs += a.agentCreatedPRs;
+    agentActionsMinutes += a.agentActionsMinutes ?? 0;
+  }
+  return {
+    totalTasks,
+    completedTasks,
+    failedTasks,
+    cancelledTasks,
+    timedOutTasks,
+    activeTasksCount,
+    totalSessions,
+    cloudAgentSessions,
+    cliRemoteSessions,
+    totalCreditsUsed: Math.round(totalCreditsUsed * 100) / 100,
+    agentCreatedPRs,
+    agentActionsMinutes: Math.round(agentActionsMinutes * 100) / 100,
+  };
+}
+
+function median(values: number[]): number {  if (values.length === 0) return 0;
   const sorted = [...values].sort((a, b) => a - b);
   const mid = Math.floor(sorted.length / 2);
   return sorted.length % 2 !== 0 ? sorted[mid] : (sorted[mid - 1] + sorted[mid]) / 2;
