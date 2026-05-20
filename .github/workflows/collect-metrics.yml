@@ -7,9 +7,9 @@ on:
   workflow_dispatch:
     inputs:
       owner:
-        description: "GitHub org or user to collect metrics for"
+        description: "GitHub org or user to collect metrics for (blank uses METRICS_OWNER or repository owner)"
         required: false
-        default: "vyas-demo"
+        default: ""
       owner_type:
         description: "org or user"
         required: false
@@ -55,9 +55,9 @@ jobs:
       - name: Resolve metrics target
         id: target
         env:
-          OWNER_INPUT: ${{ github.event.inputs.owner || 'vyas-demo' }}
-          OWNER_TYPE_INPUT: ${{ github.event.inputs.owner_type || 'org' }}
-          REPO_INPUT: ${{ github.event.inputs.repo || '' }}
+          OWNER_INPUT: ${{ github.event.inputs.owner || vars.METRICS_OWNER || github.repository_owner }}
+          OWNER_TYPE_INPUT: ${{ github.event.inputs.owner_type || vars.METRICS_OWNER_TYPE || 'org' }}
+          REPO_INPUT: ${{ github.event.inputs.repo || vars.METRICS_REPO || '' }}
         run: |
           OWNER="$OWNER_INPUT"
           TYPE="$OWNER_TYPE_INPUT"

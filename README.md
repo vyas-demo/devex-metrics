@@ -1,6 +1,6 @@
 # devex-metrics
 
-**Website:** GitHub Pages deployment for this dashboard. If the repository is hosted under `vyas-demo`, the site URL is `https://vyas-demo.github.io/devex-metrics/`.
+**Website:** GitHub Pages deployment for this dashboard. For an organization-owned repo, the site URL is `https://<org>.github.io/devex-metrics/`.
 
 DevEx reporting and dashboarding for GitHub repositories, organizations, and users.
 
@@ -20,7 +20,7 @@ Collects developer-experience metrics for a GitHub **organization**, **user**, o
 | Unique reviewers (last 90 days) | per repo |
 | Dependent repository count | per repo |
 
-Data is cached as JSON in `data/<target>.json` and only refreshed once per day. This fork is configured to publish the `vyas-demo` organization dashboard by default.
+Data is cached as JSON in `data/<target>.json` and only refreshed once per day. In GitHub Actions, the default collection target is `METRICS_OWNER` when set, otherwise the repository owner.
 
 ## Quick start
 
@@ -60,7 +60,15 @@ The report is written to `data/<target>-report.md`, where `<target>` is the owne
 
 ## Running in GitHub Actions
 
-A workflow is included at `.github/workflows/collect-metrics.yml`. It is configured to collect the `vyas-demo` organization by default; manual runs can still override the owner, owner type, or repository.
+A workflow is included at `.github/workflows/collect-metrics.yml`. By default it collects the repository owner as an organization; manual runs or repository variables can override the owner, owner type, or repository.
+
+Optional repository variables:
+
+| Variable | Default | Purpose |
+| -------- | ------- | ------- |
+| `METRICS_OWNER` | Repository owner | GitHub org or user to collect |
+| `METRICS_OWNER_TYPE` | `org` | Either `org` or `user` |
+| `METRICS_REPO` | empty | Optional repo name or `owner/repo` scope |
 
 ### Option A – Personal Access Token
 
