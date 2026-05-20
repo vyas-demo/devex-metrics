@@ -1,7 +1,7 @@
 import { describe, it, expect, afterEach } from "vitest";
 import * as fs from "node:fs";
 import * as path from "node:path";
-import { loadCache, saveCache, loadFixture, saveFixture, loadRawCache, isWithinHours, CURRENT_SCHEMA_VERSION } from "./cache.js";
+import { buildTargetKey, loadCache, saveCache, loadFixture, saveFixture, loadRawCache, isWithinHours, CURRENT_SCHEMA_VERSION } from "./cache.js";
 import type { OrgMetrics } from "./types.js";
 
 function makeSampleMetrics(): OrgMetrics {
@@ -187,5 +187,17 @@ describe("loadRawCache", () => {
     const loaded = loadRawCache("test-raw");
     expect(loaded).not.toBeNull();
     expect(loaded!.owner).toBe("test-raw");
+  });
+});
+
+describe("buildTargetKey", () => {
+  it("keeps owner-wide keys unchanged for backward compatibility", () => {
+    expect(buildTargetKey("test-owner", "user")).toBe("test-owner");
+  });
+
+  it("builds stable repo-specific keys", () => {
+    expect(buildTargetKey("test-owner", "user", "big-org/platform-repo")).toBe(
+      "user-test-owner--big-org_platform-repo"
+    );
   });
 });

@@ -1,4 +1,4 @@
-import { loadCache, loadRawCache, isWithinHours, saveCache, CURRENT_SCHEMA_VERSION } from "./cache.js";
+import { loadCache, loadRawCache, isWithinHours, saveCache, CURRENT_SCHEMA_VERSION, buildTargetKey } from "./cache.js";
 import {
   collectRepos,
   collectIssueCounts,
@@ -23,6 +23,8 @@ import type { OrgMetrics, RepoMetrics } from "./types.js";
 export interface CollectOptions {
   /** Skip all cached/fixture data and force a fresh API fetch. */
   skipCache?: boolean;
+  /** Optional repository name or fullName filter. */
+  repo?: string;
   /**
    * Maximum age in hours before a per-repo cache entry is considered stale
    * and re-fetched. Defaults to 8 hours. Only applies when skipCache is false.
@@ -41,22 +43,23 @@ export async function collect(
   options: CollectOptions = {}
 ): Promise<OrgMetrics> {
   const maxAgeHours = options.maxRepoAgeHours ?? DEFAULT_MAX_REPO_AGE_HOURS;
+  const cacheKey = buildTargetKey(owner, ownerType, options.repo);
 
   if (!options.skipCache) {
-    const cached = loadCache(owner);
+    const cached = loadCache(cacheKey);
     if (cached) {
-      console.log(`Using cached data for ${owner} (collected ${cached.collectedAt})`);
+      console.log(`Using cached data for ${cacheKey} (collected ${cached.collectedAt})`);
       return cached;
     }
   }
 
-  console.log(`Collecting fresh metrics for ${owner} (${ownerType})…`);
+  console.log(`Collecting fresh metrics for ${owner} (${ownerType})${options.repo ? ` repo=${options.repo}` : ""}…`);
 
   // Build a lookup map from any existing (potentially stale) cache so we can
   // reuse per-repo data that is still within maxAgeHours.
   const cachedRepoMap = new Map<string, RepoMetrics>();
   if (!options.skipCache) {
-    const raw = loadRawCache(owner);
+    const raw = loadRawCache(cacheKey);
     if (raw) {
       for (const repo of raw.repos) {
         cachedRepoMap.set(repo.fullName, repo);
@@ -64,7 +67,7 @@ export async function collect(
     }
   }
 
-  const repoList = await collectRepos(owner, ownerType);
+  const repoList = await collectRepos(owner, ownerType, { repo: options.repo });
   console.log(`Found ${repoList.length} repositories`);
 
   const repos: RepoMetrics[] = [];
@@ -185,7 +188,7 @@ export async function collect(
 
   // Reuse cached weekly trends if every repo came from cache and all repos
   // already have per-repo weeklyTrends (i.e. cache was built with this version).
-  let weeklyTrends = loadRawCache(owner)?.weeklyTrends;
+  let weeklyTrends = loadRawCache(cacheKey)?.weeklyTrends;
   const missingRepoTrends = repos.some((r) => !Array.isArray(r.weeklyTrends));
   if (freshCount > 0 || !weeklyTrends || missingRepoTrends) {
     console.log(`Collecting weekly trends… (${freshCount} repos refreshed)`);
@@ -206,12 +209,13 @@ export async function collect(
     schemaVersion: CURRENT_SCHEMA_VERSION,
     owner,
     ownerType,
+    targetRepo: options.repo,
     collectedAt: new Date().toISOString(),
     repoCount: repos.length,
     repos,
     weeklyTrends,
   };
 
-  saveCache(owner, metrics);
+  saveCache(cacheKey, metrics);
   return metrics;
 }

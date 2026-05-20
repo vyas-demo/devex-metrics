@@ -1,15 +1,122 @@
 import { getOctokit } from "../github-client.js";
 
+export interface CollectReposOptions {
+  /** Optional repo name or fullName filter. */
+  repo?: string;
+}
+
+interface RepoSummary {
+  name: string;
+  fullName: string;
+  pushedAt: string;
+}
+
+interface ContributedRepoResponse {
+  user: {
+    repositoriesContributedTo: {
+      pageInfo: { hasNextPage: boolean; endCursor: string | null };
+      nodes: Array<{
+        name: string;
+        nameWithOwner: string;
+        pushedAt: string | null;
+        owner: { __typename: string };
+      }>;
+    };
+  } | null;
+}
+
+const CONTRIBUTED_REPOS_QUERY = `
+  query UserContributedRepos($login: String!, $cursor: String) {
+    user(login: $login) {
+      repositoriesContributedTo(
+        first: 100
+        after: $cursor
+        includeUserRepositories: false
+        contributionTypes: [COMMIT, ISSUE, PULL_REQUEST, REPOSITORY]
+      ) {
+        pageInfo { hasNextPage endCursor }
+        nodes {
+          name
+          nameWithOwner
+          pushedAt
+          owner { __typename }
+        }
+      }
+    }
+  }
+`;
+
+function toRepoSummary(repo: { name: string; full_name: string; pushed_at?: string | null }): RepoSummary {
+  return {
+    name: repo.name,
+    fullName: repo.full_name,
+    pushedAt: repo.pushed_at ?? "",
+  };
+}
+
+function matchesRepoFilter(repo: RepoSummary, repoFilter?: string): boolean {
+  if (!repoFilter) return true;
+  return repo.fullName.toLowerCase() === repoFilter.toLowerCase() || repo.name.toLowerCase() === repoFilter.toLowerCase();
+}
+
+async function collectContributedOrgRepos(owner: string): Promise<RepoSummary[]> {
+  const octokit = await getOctokit();
+  const repos: RepoSummary[] = [];
+  let cursor: string | null = null;
+
+  while (true) {
+    let response: ContributedRepoResponse;
+    try {
+      response = await octokit.graphql<ContributedRepoResponse>(CONTRIBUTED_REPOS_QUERY, {
+        login: owner,
+        cursor,
+      });
+    } catch (err: unknown) {
+      const status = (err as { status?: number }).status;
+      if (status === 403 || status === 404) {
+        return repos;
+      }
+      console.warn(`  ⚠ repos: could not load contributed org repos for ${owner}: ${String(err)}`);
+      return repos;
+    }
+
+    const contributed = response?.user?.repositoriesContributedTo;
+    if (!contributed) {
+      return repos;
+    }
+
+    for (const repo of contributed.nodes) {
+      if (repo.owner.__typename !== "Organization") continue;
+      repos.push({
+        name: repo.name,
+        fullName: repo.nameWithOwner,
+        pushedAt: repo.pushedAt ?? "",
+      });
+    }
+
+    if (!contributed.pageInfo.hasNextPage || contributed.pageInfo.endCursor === null) {
+      return repos;
+    }
+    cursor = contributed.pageInfo.endCursor;
+  }
+}
+
 /**
  * Fetch all repos for an org or user.
  * Returns basic repo info used by downstream collectors.
  */
 export async function collectRepos(
   owner: string,
-  ownerType: "org" | "user"
-): Promise<{ name: string; fullName: string; pushedAt: string }[]> {
+  ownerType: "org" | "user",
+  options: CollectReposOptions = {}
+): Promise<RepoSummary[]> {
   const octokit = await getOctokit();
-  const repos: { name: string; fullName: string; pushedAt: string }[] = [];
+  const repoMap = new Map<string, RepoSummary>();
+
+  const pushRepo = (repo: RepoSummary) => {
+    if (!matchesRepoFilter(repo, options.repo)) return;
+    repoMap.set(repo.fullName.toLowerCase(), repo);
+  };
 
   if (ownerType === "org") {
     for await (const response of octokit.paginate.iterator(
@@ -17,11 +124,7 @@ export async function collectRepos(
       { org: owner, per_page: 100, type: "all" }
     )) {
       for (const repo of response.data) {
-        repos.push({
-          name: repo.name,
-          fullName: repo.full_name,
-          pushedAt: repo.pushed_at ?? "",
-        });
+        pushRepo(toRepoSummary(repo));
       }
     }
   } else {
@@ -46,14 +149,10 @@ export async function collectRepos(
     if (useAuthEndpoint) {
       for await (const response of octokit.paginate.iterator(
         octokit.rest.repos.listForAuthenticatedUser,
-        { per_page: 100, type: "all" }
+        { per_page: 100, type: "all", affiliation: "owner,collaborator,organization_member" }
       )) {
         for (const repo of response.data) {
-          repos.push({
-            name: repo.name,
-            fullName: repo.full_name,
-            pushedAt: repo.pushed_at ?? "",
-          });
+          pushRepo(toRepoSummary(repo));
         }
       }
     } else {
@@ -62,14 +161,14 @@ export async function collectRepos(
         { username: owner, per_page: 100, type: "all" }
       )) {
         for (const repo of response.data) {
-          repos.push({
-            name: repo.name,
-            fullName: repo.full_name,
-            pushedAt: repo.pushed_at ?? "",
-          });
+          pushRepo(toRepoSummary(repo));
         }
       }
     }
+
+    for (const repo of await collectContributedOrgRepos(owner)) {
+      pushRepo(repo);
+    }
   }
-  return repos;
+  return [...repoMap.values()];
 }

@@ -13,7 +13,14 @@ on:
       owner:
         description: "GitHub org or user to build pages for"
         required: false
-        default: "rajbos"
+        default: "vyas-demo"
+      owner_type:
+        description: "org or user"
+        required: false
+        default: "org"
+      repo:
+        description: "Optional repo name or full owner/repo to scope the report"
+        required: false
 
 permissions:
   contents: read
@@ -46,25 +53,62 @@ jobs:
         id: date
         run: echo "date=$(date -u +'%Y-%m-%d')" >> $GITHUB_OUTPUT
 
+      - name: Resolve metrics target
+        id: target
+        env:
+          OWNER_INPUT: ${{ github.event.inputs.owner || 'vyas-demo' }}
+          OWNER_TYPE_INPUT: ${{ github.event.inputs.owner_type || 'org' }}
+          REPO_INPUT: ${{ github.event.inputs.repo || '' }}
+        run: |
+          OWNER="$OWNER_INPUT"
+          TYPE="$OWNER_TYPE_INPUT"
+          REPO="$REPO_INPUT"
+
+          if [ "$TYPE" != "org" ] && [ "$TYPE" != "user" ]; then
+            echo "owner_type must be org or user" >&2
+            exit 1
+          fi
+
+          if [ -n "$REPO" ]; then
+            SAFE_REPO="$(printf '%s' "$REPO" | sed -E 's/[^A-Za-z0-9._-]+/_/g')"
+            TARGET_KEY="${TYPE}-${OWNER}--${SAFE_REPO}"
+          else
+            TARGET_KEY="$OWNER"
+          fi
+
+          {
+            echo "owner=$OWNER"
+            echo "owner_type=$TYPE"
+            echo "repo=$REPO"
+            echo "target_key=$TARGET_KEY"
+          } >> "$GITHUB_OUTPUT"
+
       - name: Restore data cache
         uses: actions/cache@v5
         with:
           path: data
-          key: metrics-data-${{ github.repository_owner }}-${{ steps.date.outputs.date }}
+          key: metrics-data-${{ steps.target.outputs.target_key }}-${{ steps.date.outputs.date }}
 
       - name: Restore agent data cache
         uses: actions/cache@v5
         with:
           path: data/agents-*.json
-          key: agent-data-${{ github.repository_owner }}-${{ steps.date.outputs.date }}
+          key: agent-data-${{ steps.target.outputs.target_key }}-${{ steps.date.outputs.date }}
           restore-keys: |
-            agent-data-${{ github.repository_owner }}-
+            agent-data-${{ steps.target.outputs.target_key }}-
 
       - name: Build pages site
+        env:
+          OWNER: ${{ steps.target.outputs.owner }}
+          TYPE: ${{ steps.target.outputs.owner_type }}
+          REPO: ${{ steps.target.outputs.repo }}
         run: |
-          OWNER="${{ github.event.inputs.owner || 'rajbos' }}"
           mkdir -p _site
-          node dist/build-pages.js "$OWNER"
+          if [ -n "$REPO" ]; then
+            node dist/build-pages.js "$OWNER" "$TYPE" "$REPO"
+          else
+            node dist/build-pages.js "$OWNER" "$TYPE"
+          fi
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v5.0.0

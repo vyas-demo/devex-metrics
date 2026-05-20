@@ -1,14 +1,14 @@
 import * as fs from "node:fs";
 import * as path from "node:path";
 import { generateReport } from "./report.js";
-import { CURRENT_SCHEMA_VERSION } from "./cache.js";
+import { buildTargetKey, CURRENT_SCHEMA_VERSION } from "./cache.js";
 import type { CacheEnvelope, OrgMetrics, RepoMetrics } from "./types.js";
 
 /**
  * Build a static GitHub Pages site from cached metrics data.
  *
  * Usage:
- *   node dist/build-pages.js <owner>
+ *   node dist/build-pages.js <owner> [org|user] [repo]
  *
  * Reads data/<owner>.json and writes:
  *   _site/index.html  – interactive dashboard
@@ -17,14 +17,17 @@ import type { CacheEnvelope, OrgMetrics, RepoMetrics } from "./types.js";
  */
 function main(): void {
   const owner = process.argv[2];
+  const ownerType = (process.argv[3] ?? "org") as "org" | "user";
+  const repo = process.argv[4];
   if (!owner) {
-    console.error("Usage: build-pages <owner>");
+    console.error("Usage: build-pages <owner> [org|user] [repo]");
     process.exit(1);
   }
+  const targetKey = buildTargetKey(owner, ownerType, repo);
 
   const dataDir = path.resolve(process.cwd(), "data");
-  const cacheFile = path.join(dataDir, `${owner}.json`);
-  const fixtureFile = path.join(dataDir, `${owner}.fixture.json`);
+  const cacheFile = path.join(dataDir, `${targetKey}.json`);
+  const fixtureFile = path.join(dataDir, `${targetKey}.fixture.json`);
   const siteDir = path.resolve(process.cwd(), "_site");
 
   let envelope: CacheEnvelope;

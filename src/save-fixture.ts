@@ -1,5 +1,5 @@
 import { collect } from "./collect.js";
-import { loadFixture, saveFixture } from "./cache.js";
+import { buildTargetKey, loadFixture, saveFixture } from "./cache.js";
 
 /**
  * Collect metrics and save as a fixture file for local development.
@@ -8,7 +8,7 @@ import { loadFixture, saveFixture } from "./cache.js";
  * Set FORCE_REFRESH=true or pass --force to always fetch fresh data.
  *
  * Usage:
- *   GITHUB_TOKEN=ghp_xxx node dist/save-fixture.js <owner> [org|user] [--force]
+ *   GITHUB_TOKEN=ghp_xxx node dist/save-fixture.js <owner> [org|user] [repo] [--force]
  *
  * After running:
  *   git add data/<owner>.fixture.json
@@ -17,9 +17,10 @@ import { loadFixture, saveFixture } from "./cache.js";
 async function main(): Promise<void> {
   const owner = process.argv[2];
   const ownerType = process.argv[3] ?? "org";
+  const repoArg = process.argv[4] === "--force" ? undefined : process.argv[4];
 
   if (!owner) {
-    console.error("Usage: save-fixture <owner> [org|user] [--force]");
+    console.error("Usage: save-fixture <owner> [org|user] [repo] [--force]");
     process.exit(1);
   }
 
@@ -28,12 +29,15 @@ async function main(): Promise<void> {
     process.exit(1);
   }
 
+  const typedOwnerType = ownerType as "org" | "user";
+  const targetKey = buildTargetKey(owner, typedOwnerType, repoArg);
+
   const forceRefresh =
     process.env.FORCE_REFRESH === "true" ||
     process.argv.includes("--force");
 
   if (!forceRefresh) {
-    const existing = loadFixture(owner);
+    const existing = loadFixture(targetKey);
     const todayStr = new Date().toISOString().slice(0, 10);
     if (existing?.collectedAt?.slice(0, 10) === todayStr) {
       console.log(
@@ -46,16 +50,16 @@ async function main(): Promise<void> {
 
   console.log(
     forceRefresh
-      ? `Fetching fresh metrics for ${owner} (forced)…`
-      : `Fetching fresh metrics for ${owner} (no fixture for today yet)…`
+      ? `Fetching fresh metrics for ${targetKey} (forced)…`
+      : `Fetching fresh metrics for ${targetKey} (no fixture for today yet)…`
   );
-  const metrics = await collect(owner, ownerType as "org" | "user", { skipCache: true });
+  const metrics = await collect(owner, typedOwnerType, { skipCache: true, repo: repoArg });
 
-  saveFixture(owner, metrics);
+  saveFixture(targetKey, metrics);
 
   console.log(`\n  Commit this file to share data across all worktrees:\n`);
-  console.log(`  git add data/${owner}.fixture.json`);
-  console.log(`  git commit -m "chore: update ${owner} fixture data"`);
+  console.log(`  git add data/${targetKey}.fixture.json`);
+  console.log(`  git commit -m "chore: update ${targetKey} fixture data"`);
 }
 
 main().catch((err) => {

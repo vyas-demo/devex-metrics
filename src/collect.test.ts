@@ -1,6 +1,9 @@
 import { describe, it, expect, vi, afterEach } from "vitest";
 
 vi.mock("./cache.js", () => ({
+  buildTargetKey: vi.fn((owner: string, ownerType: "org" | "user", repo?: string) =>
+    repo ? `${ownerType}-${owner}--${repo.replace(/[^a-zA-Z0-9._-]+/g, "_")}` : owner
+  ),
   loadCache: vi.fn(),
   loadRawCache: vi.fn(),
   isWithinHours: vi.fn(),
@@ -28,7 +31,7 @@ vi.mock("./collectors/index.js", () => ({
 }));
 
 import { collect } from "./collect.js";
-import { loadCache, loadRawCache, isWithinHours, saveCache } from "./cache.js";
+import { buildTargetKey, loadCache, loadRawCache, isWithinHours, saveCache } from "./cache.js";
 import {
   collectRepos,
   collectIssueCounts,
@@ -135,6 +138,21 @@ describe("collect", () => {
     expect(saveCache).toHaveBeenCalledWith(
       "fresh-org",
       expect.objectContaining({ owner: "fresh-org", schemaVersion: 2 })
+    );
+  });
+
+  it("passes repo selection to collectRepos and saves under a repo-specific cache key", async () => {
+    setupDefaultMocks();
+    vi.mocked(collectRepos).mockResolvedValue([
+      { name: "repo-a", fullName: "myorg/repo-a", pushedAt: "" },
+    ]);
+
+    await collect("myorg", "org", { repo: "repo-a" });
+
+    expect(collectRepos).toHaveBeenCalledWith("myorg", "org", { repo: "repo-a" });
+    expect(saveCache).toHaveBeenCalledWith(
+      buildTargetKey("myorg", "org", "repo-a"),
+      expect.objectContaining({ owner: "myorg", ownerType: "org", targetRepo: "repo-a" })
     );
   });
 

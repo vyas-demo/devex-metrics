@@ -4,12 +4,30 @@ import { Octokit } from "@octokit/rest";
 import { collectRepos } from "./repos.js";
 
 type RepoPage = Array<{ name: string; full_name: string; pushed_at: string | null }>;
+type ContributedRepoResponse = {
+  user: {
+    repositoriesContributedTo: {
+      pageInfo: { hasNextPage: boolean; endCursor: string | null };
+      nodes: Array<{
+        name: string;
+        nameWithOwner: string;
+        pushedAt: string | null;
+        owner: { __typename: string };
+      }>;
+    };
+  } | null;
+};
 
-function buildMockOctokit(pages: RepoPage[], authenticatedLogin?: string | null) {
+function buildMockOctokit(
+  pages: RepoPage[],
+  authenticatedLogin?: string | null,
+  graphQlResponses: ContributedRepoResponse[] = []
+) {
   const listForOrg = Symbol("listForOrg");
   const listForUser = Symbol("listForUser");
   const listForAuthenticatedUser = Symbol("listForAuthenticatedUser");
   const captured: { method?: unknown; params?: unknown } = {};
+  let graphqlCallCount = 0;
 
   async function* fakeIterator(method: unknown, params: unknown) {
     captured.method = method;
@@ -31,6 +49,13 @@ function buildMockOctokit(pages: RepoPage[], authenticatedLogin?: string | null)
       repos: { listForOrg, listForUser, listForAuthenticatedUser },
       users: { getAuthenticated },
     },
+    graphql: vi.fn().mockImplementation(() => {
+      const response = graphQlResponses.length === 0
+        ? { user: null }
+        : graphQlResponses[Math.min(graphqlCallCount, graphQlResponses.length - 1)];
+      graphqlCallCount++;
+      return Promise.resolve(response);
+    }),
     paginate: Object.assign(vi.fn(), { iterator: fakeIterator }),
   } as unknown as Octokit;
 
@@ -80,7 +105,7 @@ describe("collectRepos", () => {
     expect(repos).toHaveLength(1);
     expect(repos[0]).toMatchObject({ name: "repo-b", fullName: "myuser/repo-b" });
     expect(captured.method).toBe(listForAuthenticatedUser);
-    expect(captured.params).toMatchObject({ type: "all" });
+    expect(captured.params).toMatchObject({ type: "all", affiliation: "owner,collaborator,organization_member" });
   });
 
   it("uses listForAuthenticatedUser with case-insensitive owner match", async () => {
@@ -153,5 +178,74 @@ describe("collectRepos", () => {
     const repos = await collectRepos("org", "org");
 
     expect(repos).toHaveLength(0);
+  });
+
+  it("adds public org-owned repos a user has contributed to", async () => {
+    const { mock } = buildMockOctokit(
+      [[{ name: "owned", full_name: "myuser/owned", pushed_at: "2026-01-01T00:00:00Z" }]],
+      "someoneelse",
+      [{
+        user: {
+          repositoriesContributedTo: {
+            pageInfo: { hasNextPage: false, endCursor: null },
+            nodes: [
+              {
+                name: "platform-repo",
+                nameWithOwner: "big-org/platform-repo",
+                pushedAt: "2026-02-01T00:00:00Z",
+                owner: { __typename: "Organization" },
+              },
+              {
+                name: "personal-repo",
+                nameWithOwner: "myuser/personal-repo",
+                pushedAt: "2026-02-02T00:00:00Z",
+                owner: { __typename: "User" },
+              },
+            ],
+          },
+        },
+      }]
+    );
+    setOctokit(mock);
+
+    const repos = await collectRepos("myuser", "user");
+
+    expect(repos.map((repo) => repo.fullName)).toEqual([
+      "myuser/owned",
+      "big-org/platform-repo",
+    ]);
+  });
+
+  it("filters by full repo name after combining owned and contributed repos", async () => {
+    const { mock } = buildMockOctokit(
+      [[{ name: "owned", full_name: "myuser/owned", pushed_at: "2026-01-01T00:00:00Z" }]],
+      "someoneelse",
+      [{
+        user: {
+          repositoriesContributedTo: {
+            pageInfo: { hasNextPage: false, endCursor: null },
+            nodes: [
+              {
+                name: "platform-repo",
+                nameWithOwner: "big-org/platform-repo",
+                pushedAt: "2026-02-01T00:00:00Z",
+                owner: { __typename: "Organization" },
+              },
+            ],
+          },
+        },
+      }]
+    );
+    setOctokit(mock);
+
+    const repos = await collectRepos("myuser", "user", { repo: "big-org/platform-repo" });
+
+    expect(repos).toEqual([
+      {
+        name: "platform-repo",
+        fullName: "big-org/platform-repo",
+        pushedAt: "2026-02-01T00:00:00Z",
+      },
+    ]);
   });
 });

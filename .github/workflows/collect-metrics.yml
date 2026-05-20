@@ -9,11 +9,14 @@ on:
       owner:
         description: "GitHub org or user to collect metrics for"
         required: false
-        default: "rajbos"
+        default: "vyas-demo"
       owner_type:
         description: "org or user"
         required: false
-        default: "user"
+        default: "org"
+      repo:
+        description: "Optional repo name or full owner/repo to scope the report"
+        required: false
       force_refresh:
         description: "Force fresh data collection even if today's fixture already exists"
         required: false
@@ -49,6 +52,36 @@ jobs:
         id: date
         run: echo "date=$(date -u +'%Y-%m-%d')" >> $GITHUB_OUTPUT
 
+      - name: Resolve metrics target
+        id: target
+        env:
+          OWNER_INPUT: ${{ github.event.inputs.owner || 'vyas-demo' }}
+          OWNER_TYPE_INPUT: ${{ github.event.inputs.owner_type || 'org' }}
+          REPO_INPUT: ${{ github.event.inputs.repo || '' }}
+        run: |
+          OWNER="$OWNER_INPUT"
+          TYPE="$OWNER_TYPE_INPUT"
+          REPO="$REPO_INPUT"
+
+          if [ "$TYPE" != "org" ] && [ "$TYPE" != "user" ]; then
+            echo "owner_type must be org or user" >&2
+            exit 1
+          fi
+
+          if [ -n "$REPO" ]; then
+            SAFE_REPO="$(printf '%s' "$REPO" | sed -E 's/[^A-Za-z0-9._-]+/_/g')"
+            TARGET_KEY="${TYPE}-${OWNER}--${SAFE_REPO}"
+          else
+            TARGET_KEY="$OWNER"
+          fi
+
+          {
+            echo "owner=$OWNER"
+            echo "owner_type=$TYPE"
+            echo "repo=$REPO"
+            echo "target_key=$TARGET_KEY"
+          } >> "$GITHUB_OUTPUT"
+
       # Restore cached data from today's run (if any).
       # Key includes the date so stale data from previous days is never restored.
       - name: Restore data cache
@@ -56,7 +89,7 @@ jobs:
         uses: actions/cache@v5
         with:
           path: data
-          key: metrics-data-${{ github.repository_owner }}-${{ steps.date.outputs.date }}
+          key: metrics-data-${{ steps.target.outputs.target_key }}-${{ steps.date.outputs.date }}
 
       # Agent data is cached separately with a stable restore-key so terminal
       # tasks (completed/failed/cancelled) persist across days without being
@@ -67,12 +100,13 @@ jobs:
         uses: actions/cache@v5
         with:
           path: data/agents-*.json
-          key: agent-data-${{ github.repository_owner }}-${{ steps.date.outputs.date }}
+          key: agent-data-${{ steps.target.outputs.target_key }}-${{ steps.date.outputs.date }}
           restore-keys: |
-            agent-data-${{ github.repository_owner }}-
+            agent-data-${{ steps.target.outputs.target_key }}-
 
       - name: Generate GitHub App token
         id: app-token
+        if: ${{ vars.APP_ID != '' }}
         uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1 # v3.2.0
         with:
           client-id: ${{ vars.APP_ID }}
@@ -82,41 +116,54 @@ jobs:
         env:
           APP_ID: ${{ vars.APP_ID }}
           APP_PRIVATE_KEY: ${{ secrets.APP_PRIVATE_KEY }}
+          GITHUB_TOKEN: ${{ secrets.METRICS_GITHUB_TOKEN }}
           # Fine-grained PAT with "Agent tasks" repo permission.
           # GitHub App installation tokens are not supported for this API.
           COPILOT_AGENT_TOKEN: ${{ secrets.COPILOT_AGENT_TOKEN }}
           FORCE_REFRESH: ${{ github.event.inputs.force_refresh || 'false' }}
+          OWNER: ${{ steps.target.outputs.owner }}
+          TYPE: ${{ steps.target.outputs.owner_type }}
+          REPO: ${{ steps.target.outputs.repo }}
         run: |
-          OWNER="${{ github.event.inputs.owner || 'rajbos' }}"
-          TYPE="${{ github.event.inputs.owner_type || 'user' }}"
-          node dist/save-fixture.js "$OWNER" "$TYPE"
+          if [ -n "$REPO" ]; then
+            node dist/save-fixture.js "$OWNER" "$TYPE" "$REPO"
+          else
+            node dist/save-fixture.js "$OWNER" "$TYPE"
+          fi
 
       - name: Create PR for updated fixture data
         id: create-pr
         uses: peter-evans/create-pull-request@v8
         with:
-          token: ${{ steps.app-token.outputs.token }}
-          commit-message: "chore: update ${{ github.event.inputs.owner || 'rajbos' }} fixture data"
-          branch: "chore/update-fixture-${{ github.event.inputs.owner || 'rajbos' }}"
-          title: "chore: update ${{ github.event.inputs.owner || 'rajbos' }} fixture data"
+          token: ${{ steps.app-token.outputs.token || github.token }}
+          commit-message: "chore: update ${{ steps.target.outputs.target_key }} fixture data"
+          branch: "chore/update-fixture-${{ steps.target.outputs.target_key }}"
+          title: "chore: update ${{ steps.target.outputs.target_key }} fixture data"
           body: "Automated fixture data update from the collect-metrics workflow."
-          add-paths: "data/*.fixture.json"
+          add-paths: "data/${{ steps.target.outputs.target_key }}.fixture.json"
           delete-branch: true
 
       - name: Enable auto-merge on fixture data PR
         if: steps.create-pr.outputs.pull-request-operation == 'created' || steps.create-pr.outputs.pull-request-operation == 'updated'
         env:
-          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+          GH_TOKEN: ${{ steps.app-token.outputs.token || github.token }}
         run: gh pr merge --auto --squash "${{ steps.create-pr.outputs.pull-request-url }}"
 
       # actions/cache@v5 automatically saves the data/ folder at job end.
 
       # Build the GitHub Pages site from the collected data and deploy.
       - name: Build pages site
+        env:
+          OWNER: ${{ steps.target.outputs.owner }}
+          TYPE: ${{ steps.target.outputs.owner_type }}
+          REPO: ${{ steps.target.outputs.repo }}
         run: |
-          OWNER="${{ github.event.inputs.owner || 'rajbos' }}"
           mkdir -p _site
-          node dist/build-pages.js "$OWNER"
+          if [ -n "$REPO" ]; then
+            node dist/build-pages.js "$OWNER" "$TYPE" "$REPO"
+          else
+            node dist/build-pages.js "$OWNER" "$TYPE"
+          fi
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v5.0.0

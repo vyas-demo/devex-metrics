@@ -5,13 +5,17 @@ import type { OrgMetrics, RepoMetrics, CopilotAdoption, CopilotAgentMetrics } fr
  */
 export function generateReport(metrics: OrgMetrics): string {
   const lines: string[] = [];
+  const titleTarget = metrics.targetRepo ?? metrics.owner;
 
-  lines.push(`# DevEx Metrics – ${metrics.owner}`);
+  lines.push(`# DevEx Metrics – ${titleTarget}`);
   lines.push("");
   lines.push(
     `> Collected at ${metrics.collectedAt} · ` +
       `Owner type: **${metrics.ownerType}**`
   );
+  if (metrics.targetRepo) {
+    lines.push(`> Selected repository: **${metrics.targetRepo}**`);
+  }
   lines.push("");
 
   // -- Summary --

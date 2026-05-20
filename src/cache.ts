@@ -30,6 +30,15 @@ const DATA_DIR = path.resolve(process.cwd(), "data");
  */
 export const CURRENT_SCHEMA_VERSION = 8;
 
+export function buildTargetKey(
+  owner: string,
+  ownerType: "org" | "user",
+  repo?: string
+): string {
+  if (!repo) return owner;
+  return `${ownerType}-${owner}--${repo.replace(/[^a-zA-Z0-9._-]+/g, "_")}`;
+}
+
 function cacheFilePath(owner: string): string {
   return path.join(DATA_DIR, `${owner}.json`);
 }

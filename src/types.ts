@@ -13,6 +13,8 @@ export interface OrgMetrics {
   owner: string;
   /** Whether target is an organization or user. */
   ownerType: "org" | "user";
+  /** Optional repository selection within the owner/user scope. */
+  targetRepo?: string;
   /** ISO-8601 timestamp when data was collected. */
   collectedAt: string;
   /** Total number of repositories. */

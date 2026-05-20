@@ -1,16 +1,16 @@
 # devex-metrics
 
-**Website: https://devex-metrics.github.io/devex-metrics/**
+**Website:** GitHub Pages deployment for this dashboard. If the repository is hosted under `vyas-demo`, the site URL is `https://vyas-demo.github.io/devex-metrics/`.
 
-DevEx reporting and dashboarding for GitHub repos and organizations.
+DevEx reporting and dashboarding for GitHub repositories, organizations, and users.
 
 ## What it does
 
-Collects developer-experience metrics for a GitHub **organization** or **user** and produces a Markdown report plus a JSON cache file. Metrics include:
+Collects developer-experience metrics for a GitHub **organization**, **user**, or a selected **repository** and produces a Markdown report plus a JSON cache file. Metrics include:
 
 | Metric | Scope |
 | ------ | ----- |
-| Number of repositories | org / user |
+| Number of repositories | org / user / selected repo |
 | Open / closed issues | per repo |
 | Open / merged / closed pull requests | per repo |
 | Lines added / deleted per PR | per PR |
@@ -20,7 +20,7 @@ Collects developer-experience metrics for a GitHub **organization** or **user** 
 | Unique reviewers (last 90 days) | per repo |
 | Dependent repository count | per repo |
 
-Data is cached as JSON in `data/<owner>.json` and only refreshed once per day.
+Data is cached as JSON in `data/<target>.json` and only refreshed once per day. This fork is configured to publish the `vyas-demo` organization dashboard by default.
 
 ## Quick start
 
@@ -32,22 +32,41 @@ npm install
 npm run build
 
 # Run with a personal access token (replace <owner> with a GitHub org or username)
-GITHUB_TOKEN=ghp_xxx node dist/index.js <owner> [org|user]
+GITHUB_TOKEN=ghp_xxx node dist/index.js <owner> [org|user] [repo]
 
 # Or run with a GitHub App
-APP_ID=12345 APP_PRIVATE_KEY="$(cat private-key.pem)" node dist/index.js <owner> [org|user]
+APP_ID=12345 APP_PRIVATE_KEY="$(cat private-key.pem)" node dist/index.js <owner> [org|user] [repo]
 ```
 
-The report is written to `data/<owner>-report.md`.
+Examples:
+
+```bash
+# Whole org
+node dist/index.js microsoft org
+
+# Whole user, including public org-owned repos they contribute to
+node dist/index.js torvalds user
+
+# One repo within an org or owner scope
+node dist/index.js microsoft org typescript
+
+# One contributed org-owned repo while targeting a user
+node dist/index.js some-user user big-org/platform-repo
+```
+
+For `user` mode, the collector includes the user's own repositories plus public org-owned repositories they have contributed to.
+
+The report is written to `data/<target>-report.md`, where `<target>` is the owner for owner-wide runs and a repo-specific cache key for repo-targeted runs.
 
 ## Running in GitHub Actions
 
-A workflow is included at `.github/workflows/collect-metrics.yml`.
+A workflow is included at `.github/workflows/collect-metrics.yml`. It is configured to collect the `vyas-demo` organization by default; manual runs can still override the owner, owner type, or repository.
 
 ### Option A – Personal Access Token
 
 1. Create a **GitHub OAuth App** or **Personal Access Token** with `repo` and `read:org` scopes.
 2. Add it as a repository secret named `METRICS_GITHUB_TOKEN`.
+3. Optionally add `COPILOT_AGENT_TOKEN` as a fine-grained PAT with the "Agent tasks" repository permission to include Copilot agent metrics.
 
 ### Option B – GitHub App (recommended)
 
@@ -57,18 +76,19 @@ Using a GitHub App provides fine-grained permissions and higher rate limits.
 2. Install the app on the target organisation or repositories.
 3. Add the **App ID** as a repository variable named `APP_ID`.
 4. Add the **App private key** (PEM) as a repository secret named `APP_PRIVATE_KEY`.
+5. Optionally add `COPILOT_AGENT_TOKEN` as a fine-grained PAT with the "Agent tasks" repository permission to include Copilot agent metrics.
 
 The installation ID is retrieved automatically at runtime.
 
 ### Deploying
 
-3. Enable **GitHub Pages** in your repo settings (set source to *GitHub Actions*).
-4. The workflow runs daily at 06:00 UTC. It:
+1. Enable **GitHub Pages** in your repo settings (set source to *GitHub Actions*).
+2. The workflow runs daily at 06:00 UTC. It:
    - Restores the previous day's cached data from `actions/cache`
    - Collects only new / changed metrics (skips if cached data is still fresh)
    - Saves the updated cache for the next run
    - Builds an HTML dashboard and deploys it to GitHub Pages
-5. You can also trigger it manually via *Actions → Collect DevEx Metrics → Run workflow*.
+3. You can also trigger it manually via *Actions → Collect DevEx Metrics → Run workflow*.
 
 No data is committed to the main branch — the cache lives in GitHub Actions and the report is published via GitHub Pages.
 
