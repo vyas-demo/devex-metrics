@@ -2,14 +2,14 @@
   "schemaVersion": 8,
   "owner": "vyas-demo",
   "ownerType": "org",
-  "collectedAt": "2026-07-20T07:17:53.406Z",
-  "repoCount": 70,
+  "collectedAt": "2026-07-23T07:00:52.444Z",
+  "repoCount": 75,
   "repos": [
     {
       "name": "github-actions-goat",
       "fullName": "vyas-demo/github-actions-goat",
       "pushedAt": "2025-04-15T19:44:07Z",
-      "collectedAt": "2026-07-20T07:14:58.481Z",
+      "collectedAt": "2026-07-23T06:58:13.173Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -989,7 +989,7 @@
       "name": "llmtool",
       "fullName": "vyas-demo/llmtool",
       "pushedAt": "2024-08-09T08:58:41Z",
-      "collectedAt": "2026-07-20T07:14:59.934Z",
+      "collectedAt": "2026-07-23T06:58:14.371Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -1969,7 +1969,7 @@
       "name": "promptflow-docs",
       "fullName": "vyas-demo/promptflow-docs",
       "pushedAt": "2024-08-10T01:37:36Z",
-      "collectedAt": "2026-07-20T07:15:01.526Z",
+      "collectedAt": "2026-07-23T06:58:15.625Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -2949,7 +2949,7 @@
       "name": "assistant",
       "fullName": "vyas-demo/assistant",
       "pushedAt": "2024-08-15T04:18:39Z",
-      "collectedAt": "2026-07-20T07:15:02.933Z",
+      "collectedAt": "2026-07-23T06:58:16.765Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -3929,7 +3929,7 @@
       "name": "assistant2",
       "fullName": "vyas-demo/assistant2",
       "pushedAt": "2024-08-15T10:44:12Z",
-      "collectedAt": "2026-07-20T07:15:04.571Z",
+      "collectedAt": "2026-07-23T06:58:17.934Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -4909,7 +4909,7 @@
       "name": "assistant3",
       "fullName": "vyas-demo/assistant3",
       "pushedAt": "2024-08-18T23:51:55Z",
-      "collectedAt": "2026-07-20T07:15:06.226Z",
+      "collectedAt": "2026-07-23T06:58:19.100Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -5889,7 +5889,7 @@
       "name": "a4",
       "fullName": "vyas-demo/a4",
       "pushedAt": "2024-11-06T04:13:18Z",
-      "collectedAt": "2026-07-20T07:15:07.564Z",
+      "collectedAt": "2026-07-23T06:58:20.291Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -6869,7 +6869,7 @@
       "name": "ghas-bootcamp",
       "fullName": "vyas-demo/ghas-bootcamp",
       "pushedAt": "2024-09-20T20:17:52Z",
-      "collectedAt": "2026-07-20T07:15:09.498Z",
+      "collectedAt": "2026-07-23T06:58:21.761Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -7879,7 +7879,7 @@
       "name": "demo-webgoat",
       "fullName": "vyas-demo/demo-webgoat",
       "pushedAt": "2025-08-17T06:06:30Z",
-      "collectedAt": "2026-07-20T07:15:12.576Z",
+      "collectedAt": "2026-07-23T06:58:23.750Z",
       "issues": {
         "open": 1,
         "closed": 0
@@ -8917,7 +8917,7 @@
       "name": "demo-webgoat2",
       "fullName": "vyas-demo/demo-webgoat2",
       "pushedAt": "2024-11-06T01:41:47Z",
-      "collectedAt": "2026-07-20T07:15:14.684Z",
+      "collectedAt": "2026-07-23T06:58:25.545Z",
       "issues": {
         "open": 2,
         "closed": 0
@@ -9927,7 +9927,7 @@
       "name": "a4-f",
       "fullName": "vyas-demo/a4-f",
       "pushedAt": "2024-08-18T23:57:33Z",
-      "collectedAt": "2026-07-20T07:15:16.266Z",
+      "collectedAt": "2026-07-23T06:58:26.571Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -10907,7 +10907,7 @@
       "name": "next-saas-starter",
       "fullName": "vyas-demo/next-saas-starter",
       "pushedAt": "2024-11-01T21:30:15Z",
-      "collectedAt": "2026-07-20T07:15:17.592Z",
+      "collectedAt": "2026-07-23T06:58:27.588Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -11887,7 +11887,7 @@
       "name": "demo-webgoat3",
       "fullName": "vyas-demo/demo-webgoat3",
       "pushedAt": "2024-12-09T18:22:21Z",
-      "collectedAt": "2026-07-20T07:15:19.275Z",
+      "collectedAt": "2026-07-23T06:58:28.976Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -12867,7 +12867,7 @@
       "name": "demo-webgoat4",
       "fullName": "vyas-demo/demo-webgoat4",
       "pushedAt": "2024-12-09T18:22:58Z",
-      "collectedAt": "2026-07-20T07:15:20.854Z",
+      "collectedAt": "2026-07-23T06:58:30.344Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -13847,7 +13847,7 @@
       "name": "demo-webgoat5",
       "fullName": "vyas-demo/demo-webgoat5",
       "pushedAt": "2025-02-27T03:51:18Z",
-      "collectedAt": "2026-07-20T07:15:22.375Z",
+      "collectedAt": "2026-07-23T06:58:31.538Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -14827,7 +14827,7 @@
       "name": "mona-demo",
       "fullName": "vyas-demo/mona-demo",
       "pushedAt": "2025-04-15T19:50:26Z",
-      "collectedAt": "2026-07-20T07:15:24.003Z",
+      "collectedAt": "2026-07-23T06:58:32.867Z",
       "issues": {
         "open": 1,
         "closed": 0
@@ -15807,7 +15807,7 @@
       "name": "clark-actions",
       "fullName": "vyas-demo/clark-actions",
       "pushedAt": "2025-04-10T14:39:15Z",
-      "collectedAt": "2026-07-20T07:15:25.587Z",
+      "collectedAt": "2026-07-23T06:58:34.101Z",
       "issues": {
         "open": 5,
         "closed": 0
@@ -16787,7 +16787,7 @@
       "name": "gravity-game",
       "fullName": "vyas-demo/gravity-game",
       "pushedAt": "2026-01-08T23:08:47Z",
-      "collectedAt": "2026-07-20T07:15:34.844Z",
+      "collectedAt": "2026-07-23T06:58:41.998Z",
       "issues": {
         "open": 0,
         "closed": 2
@@ -18308,7 +18308,7 @@
       "name": "sturdy-doodle",
       "fullName": "vyas-demo/sturdy-doodle",
       "pushedAt": "2025-02-20T17:13:33Z",
-      "collectedAt": "2026-07-20T07:15:36.172Z",
+      "collectedAt": "2026-07-23T06:58:43.098Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -19288,7 +19288,7 @@
       "name": "juice-jf",
       "fullName": "vyas-demo/juice-jf",
       "pushedAt": "2025-02-26T00:57:17Z",
-      "collectedAt": "2026-07-20T07:15:37.569Z",
+      "collectedAt": "2026-07-23T06:58:44.339Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -20268,7 +20268,7 @@
       "name": "jfrog-github-example",
       "fullName": "vyas-demo/jfrog-github-example",
       "pushedAt": "2024-08-01T10:11:48Z",
-      "collectedAt": "2026-07-20T07:15:38.768Z",
+      "collectedAt": "2026-07-23T06:58:45.425Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -21248,7 +21248,7 @@
       "name": "jf-example",
       "fullName": "vyas-demo/jf-example",
       "pushedAt": "2025-02-27T10:18:32Z",
-      "collectedAt": "2026-07-20T07:15:40.280Z",
+      "collectedAt": "2026-07-23T06:58:46.647Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -22228,7 +22228,7 @@
       "name": "mvn-jf",
       "fullName": "vyas-demo/mvn-jf",
       "pushedAt": "2025-03-11T02:43:45Z",
-      "collectedAt": "2026-07-20T07:15:41.878Z",
+      "collectedAt": "2026-07-23T06:58:47.759Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -23208,7 +23208,7 @@
       "name": "real-deal",
       "fullName": "vyas-demo/real-deal",
       "pushedAt": "2025-05-02T17:44:57Z",
-      "collectedAt": "2026-07-20T07:15:43.535Z",
+      "collectedAt": "2026-07-23T06:58:48.933Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -24188,7 +24188,7 @@
       "name": "ghas-boot",
       "fullName": "vyas-demo/ghas-boot",
       "pushedAt": "2025-05-02T19:37:54Z",
-      "collectedAt": "2026-07-20T07:15:45.617Z",
+      "collectedAt": "2026-07-23T06:58:50.545Z",
       "issues": {
         "open": 1,
         "closed": 0
@@ -25169,7 +25169,7 @@
       "name": "mona-demo1",
       "fullName": "vyas-demo/mona-demo1",
       "pushedAt": "2025-01-22T04:36:04Z",
-      "collectedAt": "2026-07-20T07:15:46.747Z",
+      "collectedAt": "2026-07-23T06:58:51.532Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -26149,7 +26149,7 @@
       "name": "ghas-demo1",
       "fullName": "vyas-demo/ghas-demo1",
       "pushedAt": "2025-05-30T16:04:46Z",
-      "collectedAt": "2026-07-20T07:15:48.100Z",
+      "collectedAt": "2026-07-23T06:58:52.712Z",
       "issues": {
         "open": 1,
         "closed": 0
@@ -27129,7 +27129,7 @@
       "name": "gl-migrate",
       "fullName": "vyas-demo/gl-migrate",
       "pushedAt": "2025-06-10T20:51:12Z",
-      "collectedAt": "2026-07-20T07:15:49.557Z",
+      "collectedAt": "2026-07-23T06:58:54.010Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -28109,7 +28109,7 @@
       "name": "ensight",
       "fullName": "vyas-demo/ensight",
       "pushedAt": "2025-06-13T05:10:44Z",
-      "collectedAt": "2026-07-20T07:15:51.119Z",
+      "collectedAt": "2026-07-23T06:58:55.418Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -29089,7 +29089,7 @@
       "name": "copilot-metrics-viewer",
       "fullName": "vyas-demo/copilot-metrics-viewer",
       "pushedAt": "2025-06-14T08:32:49Z",
-      "collectedAt": "2026-07-20T07:15:52.394Z",
+      "collectedAt": "2026-07-23T06:58:56.506Z",
       "issues": {
         "open": 1,
         "closed": 0
@@ -30069,7 +30069,7 @@
       "name": "copilot-insights-pilot-view",
       "fullName": "vyas-demo/copilot-insights-pilot-view",
       "pushedAt": "2025-06-22T08:11:04Z",
-      "collectedAt": "2026-07-20T07:15:53.833Z",
+      "collectedAt": "2026-07-23T06:58:57.697Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -31049,7 +31049,7 @@
       "name": "vnet-runner",
       "fullName": "vyas-demo/vnet-runner",
       "pushedAt": "2025-07-23T08:19:13Z",
-      "collectedAt": "2026-07-20T07:15:55.396Z",
+      "collectedAt": "2026-07-23T06:58:58.868Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -32029,7 +32029,7 @@
       "name": "gh-secrets-migrator",
       "fullName": "vyas-demo/gh-secrets-migrator",
       "pushedAt": "2025-07-17T02:23:41Z",
-      "collectedAt": "2026-07-20T07:15:56.631Z",
+      "collectedAt": "2026-07-23T06:58:59.836Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -33009,7 +33009,7 @@
       "name": "hello-world-js",
       "fullName": "vyas-demo/hello-world-js",
       "pushedAt": "2025-08-27T13:56:34Z",
-      "collectedAt": "2026-07-20T07:15:57.774Z",
+      "collectedAt": "2026-07-23T06:59:00.844Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -33989,7 +33989,7 @@
       "name": "losslesscut-web",
       "fullName": "vyas-demo/losslesscut-web",
       "pushedAt": "2025-09-04T15:26:53Z",
-      "collectedAt": "2026-07-20T07:15:59.246Z",
+      "collectedAt": "2026-07-23T06:59:02.019Z",
       "issues": {
         "open": 1,
         "closed": 0
@@ -34969,7 +34969,7 @@
       "name": "ado-test",
       "fullName": "vyas-demo/ado-test",
       "pushedAt": "2025-09-25T19:56:54Z",
-      "collectedAt": "2026-07-20T07:16:00.643Z",
+      "collectedAt": "2026-07-23T06:59:03.155Z",
       "issues": {
         "open": 1,
         "closed": 0
@@ -35949,7 +35949,7 @@
       "name": "ado-test2",
       "fullName": "vyas-demo/ado-test2",
       "pushedAt": "2025-09-25T20:22:32Z",
-      "collectedAt": "2026-07-20T07:16:02.181Z",
+      "collectedAt": "2026-07-23T06:59:04.284Z",
       "issues": {
         "open": 1,
         "closed": 0
@@ -36929,7 +36929,7 @@
       "name": "Project2-test",
       "fullName": "vyas-demo/Project2-test",
       "pushedAt": "2025-09-26T14:28:20Z",
-      "collectedAt": "2026-07-20T07:16:03.614Z",
+      "collectedAt": "2026-07-23T06:59:05.455Z",
       "issues": {
         "open": 1,
         "closed": 0
@@ -37909,7 +37909,7 @@
       "name": "fiesta-max",
       "fullName": "vyas-demo/fiesta-max",
       "pushedAt": "2025-12-08T18:40:31Z",
-      "collectedAt": "2026-07-20T07:16:05.236Z",
+      "collectedAt": "2026-07-23T06:59:06.674Z",
       "issues": {
         "open": 4,
         "closed": 0
@@ -38889,7 +38889,7 @@
       "name": "probable-octo-chainsaw",
       "fullName": "vyas-demo/probable-octo-chainsaw",
       "pushedAt": "2025-12-09T06:01:11Z",
-      "collectedAt": "2026-07-20T07:16:06.754Z",
+      "collectedAt": "2026-07-23T06:59:07.960Z",
       "issues": {
         "open": 2,
         "closed": 0
@@ -39869,7 +39869,7 @@
       "name": "github-app-workflow",
       "fullName": "vyas-demo/github-app-workflow",
       "pushedAt": "2025-12-09T15:16:21Z",
-      "collectedAt": "2026-07-20T07:16:08.162Z",
+      "collectedAt": "2026-07-23T06:59:09.076Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -40849,7 +40849,7 @@
       "name": "github-app-action",
       "fullName": "vyas-demo/github-app-action",
       "pushedAt": "2025-12-09T15:25:29Z",
-      "collectedAt": "2026-07-20T07:16:09.583Z",
+      "collectedAt": "2026-07-23T06:59:10.500Z",
       "issues": {
         "open": 3,
         "closed": 0
@@ -41829,7 +41829,7 @@
       "name": "special-sniffle",
       "fullName": "vyas-demo/special-sniffle",
       "pushedAt": "2025-12-10T16:59:26Z",
-      "collectedAt": "2026-07-20T07:16:11.040Z",
+      "collectedAt": "2026-07-23T06:59:11.729Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -42809,7 +42809,7 @@
       "name": "TBS-TimeWarp",
       "fullName": "vyas-demo/TBS-TimeWarp",
       "pushedAt": "2026-02-21T09:01:09Z",
-      "collectedAt": "2026-07-20T07:16:12.294Z",
+      "collectedAt": "2026-07-23T06:59:12.763Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -43789,7 +43789,7 @@
       "name": "real-deal-ercot",
       "fullName": "vyas-demo/real-deal-ercot",
       "pushedAt": "2026-04-21T20:23:07Z",
-      "collectedAt": "2026-07-20T07:16:14.698Z",
+      "collectedAt": "2026-07-23T06:59:14.787Z",
       "issues": {
         "open": 0,
         "closed": 1
@@ -44809,7 +44809,7 @@
       "name": "ubiquitous-octo-guacamole",
       "fullName": "vyas-demo/ubiquitous-octo-guacamole",
       "pushedAt": "2026-04-22T19:17:49Z",
-      "collectedAt": "2026-07-20T07:16:16.173Z",
+      "collectedAt": "2026-07-23T06:59:15.956Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -44828,9 +44828,9 @@
         "totalDetailedPRs": 0
       },
       "issueLeadTimes": [],
-      "committerCount": 1,
+      "committerCount": 0,
       "reviewerCount": 0,
-      "contributorCount": 1,
+      "contributorCount": 0,
       "dependentCount": 0,
       "copilotAgentMetrics": {
         "totalTasks": 0,
@@ -45789,7 +45789,7 @@
       "name": "refactored-spork",
       "fullName": "vyas-demo/refactored-spork",
       "pushedAt": "2026-04-28T18:56:26Z",
-      "collectedAt": "2026-07-20T07:16:17.753Z",
+      "collectedAt": "2026-07-23T06:59:17.259Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -46769,7 +46769,7 @@
       "name": "ghas-boot1",
       "fullName": "vyas-demo/ghas-boot1",
       "pushedAt": "2026-04-28T20:05:40Z",
-      "collectedAt": "2026-07-20T07:16:19.900Z",
+      "collectedAt": "2026-07-23T06:59:19.308Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -47778,15 +47778,15 @@
     {
       "name": "coop",
       "fullName": "vyas-demo/coop",
-      "pushedAt": "2026-07-14T22:48:26Z",
-      "collectedAt": "2026-07-20T07:16:38.293Z",
+      "pushedAt": "2026-07-21T22:49:34Z",
+      "collectedAt": "2026-07-23T06:59:35.163Z",
       "issues": {
         "open": 0,
         "closed": 0
       },
       "pullRequests": {
         "open": 6,
-        "closed": 13,
+        "closed": 15,
         "merged": 80
       },
       "pullRequestDetails": [
@@ -49860,7 +49860,7 @@
         },
         {
           "week": "2026-W29",
-          "prsOpened": 0,
+          "prsOpened": 2,
           "prsMerged": 0,
           "issuesOpened": 0,
           "issuesClosed": 0,
@@ -49882,7 +49882,7 @@
       "name": "webgoat9",
       "fullName": "vyas-demo/webgoat9",
       "pushedAt": "2026-07-08T14:16:03Z",
-      "collectedAt": "2026-07-20T07:16:41.408Z",
+      "collectedAt": "2026-07-23T06:59:37.798Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -50892,18 +50892,34 @@
     {
       "name": "devex-metrics",
       "fullName": "vyas-demo/devex-metrics",
-      "pushedAt": "2026-07-19T07:01:13Z",
-      "collectedAt": "2026-07-20T07:16:50.527Z",
+      "pushedAt": "2026-07-22T07:03:15Z",
+      "collectedAt": "2026-07-23T06:59:45.672Z",
       "issues": {
         "open": 0,
         "closed": 0
       },
       "pullRequests": {
-        "open": 6,
+        "open": 7,
         "closed": 9,
-        "merged": 26
+        "merged": 27
       },
       "pullRequestDetails": [
+        {
+          "number": 42,
+          "title": "chore: update vyas-demo fixture data",
+          "state": "merged",
+          "createdAt": "2026-07-20T07:17:56Z",
+          "author": "github-actions",
+          "isCopilotAuthored": false,
+          "hasCopilotReview": false,
+          "linesAdded": 788,
+          "linesDeleted": 748,
+          "commentCount": 0,
+          "commitCount": 1,
+          "actionsMinutes": 0.83,
+          "timeToMergeHours": 0,
+          "mergedAt": "2026-07-20T07:17:59Z"
+        },
         {
           "number": 41,
           "title": "chore: update vyas-demo fixture data",
@@ -51047,25 +51063,21 @@
           "actionsMinutes": 0,
           "timeToMergeHours": 0,
           "mergedAt": "2026-06-20T07:32:23Z"
-        },
-        {
-          "number": 24,
-          "title": "chore: update vyas-demo fixture data",
-          "state": "merged",
-          "createdAt": "2026-06-19T08:06:45Z",
-          "author": "github-actions",
-          "isCopilotAuthored": false,
-          "hasCopilotReview": false,
-          "linesAdded": 98,
-          "linesDeleted": 86,
-          "commentCount": 0,
-          "commitCount": 1,
-          "actionsMinutes": 0,
-          "timeToMergeHours": 0,
-          "mergedAt": "2026-06-19T08:06:48Z"
         }
       ],
       "mergedPRTimeline": [
+        {
+          "number": 42,
+          "createdAt": "2026-07-20T07:17:56Z",
+          "mergedAt": "2026-07-20T07:17:59Z",
+          "author": "github-actions",
+          "isBotAuthor": true,
+          "isCopilotAuthored": false,
+          "timeToMergeHours": 0,
+          "closesIssues": [],
+          "linesAdded": 788,
+          "linesDeleted": 748
+        },
         {
           "number": 41,
           "createdAt": "2026-07-16T06:59:14Z",
@@ -51382,7 +51394,7 @@
       "copilotAdoption": {
         "copilotAuthoredPRs": 0,
         "copilotReviewedPRs": 0,
-        "totalMergedPRs": 26,
+        "totalMergedPRs": 27,
         "totalDetailedPRs": 10
       },
       "issueLeadTimes": [],
@@ -52334,12 +52346,12 @@
         },
         {
           "week": "2026-W30",
-          "prsOpened": 0,
-          "prsMerged": 0,
+          "prsOpened": 1,
+          "prsMerged": 1,
           "issuesOpened": 0,
           "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
+          "linesAdded": 788,
+          "linesDeleted": 748
         }
       ]
     },
@@ -52347,7 +52359,7 @@
       "name": "ghas-boot2",
       "fullName": "vyas-demo/ghas-boot2",
       "pushedAt": "2026-06-17T17:59:09Z",
-      "collectedAt": "2026-07-20T07:16:52.587Z",
+      "collectedAt": "2026-07-23T06:59:47.307Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -53357,7 +53369,7 @@
       "name": "arc-scale-set-demo",
       "fullName": "vyas-demo/arc-scale-set-demo",
       "pushedAt": "2026-06-26T13:43:00Z",
-      "collectedAt": "2026-07-20T07:16:58.133Z",
+      "collectedAt": "2026-07-23T06:59:51.895Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -54337,180 +54349,372 @@
     {
       "name": "devcloud_gha_aks_infra",
       "fullName": "vyas-demo/devcloud_gha_aks_infra",
-      "pushedAt": "2026-07-18T23:10:36Z",
-      "collectedAt": "2026-07-20T07:17:04.865Z",
+      "pushedAt": "2026-07-23T06:39:15Z",
+      "collectedAt": "2026-07-23T06:59:59.296Z",
       "issues": {
-        "open": 4,
-        "closed": 6
+        "open": 8,
+        "closed": 9
       },
       "pullRequests": {
         "open": 0,
         "closed": 0,
-        "merged": 19
+        "merged": 35
       },
       "pullRequestDetails": [
         {
-          "number": 29,
-          "title": "fix(ci): repo-root fmt compliance and az run-command id extraction",
+          "number": 52,
+          "title": "fix(deprovision): idempotent destroy-stack + robust CIDR claim release",
           "state": "merged",
-          "createdAt": "2026-07-18T12:03:19Z",
+          "createdAt": "2026-07-23T06:37:30Z",
           "author": "vvaths",
           "isCopilotAuthored": false,
           "hasCopilotReview": false,
-          "linesAdded": 7,
-          "linesDeleted": 7,
-          "commentCount": 0,
-          "commitCount": 1,
-          "actionsMinutes": 1.35,
-          "timeToMergeHours": 11.12,
-          "mergedAt": "2026-07-18T23:10:37Z"
-        },
-        {
-          "number": 28,
-          "title": "harden/platform robustness",
-          "state": "merged",
-          "createdAt": "2026-07-18T10:52:07Z",
-          "author": "vvaths",
-          "isCopilotAuthored": false,
-          "hasCopilotReview": false,
-          "linesAdded": 1061,
-          "linesDeleted": 64,
-          "commentCount": 0,
-          "commitCount": 7,
-          "actionsMinutes": 1.1,
-          "timeToMergeHours": 0,
-          "mergedAt": "2026-07-18T10:52:11Z"
-        },
-        {
-          "number": 27,
-          "title": "Document rollout prerequisites validated in smoke testing",
-          "state": "merged",
-          "createdAt": "2026-07-16T06:49:04Z",
-          "author": "vvaths",
-          "isCopilotAuthored": false,
-          "hasCopilotReview": false,
-          "linesAdded": 31,
-          "linesDeleted": 1,
-          "commentCount": 0,
-          "commitCount": 1,
-          "actionsMinutes": 0,
-          "timeToMergeHours": 0,
-          "mergedAt": "2026-07-16T06:49:07Z"
-        },
-        {
-          "number": 26,
-          "title": "Adopt bootstrap ARC releases into Terraform state",
-          "state": "merged",
-          "createdAt": "2026-07-16T06:23:38Z",
-          "author": "vvaths",
-          "isCopilotAuthored": false,
-          "hasCopilotReview": false,
-          "linesAdded": 20,
-          "linesDeleted": 0,
-          "commentCount": 0,
-          "commitCount": 1,
-          "actionsMinutes": 0,
-          "timeToMergeHours": 0,
-          "mergedAt": "2026-07-16T06:23:41Z"
-        },
-        {
-          "number": 25,
-          "title": "Pin kubelogin for self-hosted workflows",
-          "state": "merged",
-          "createdAt": "2026-07-16T06:19:30Z",
-          "author": "vvaths",
-          "isCopilotAuthored": false,
-          "hasCopilotReview": false,
-          "linesAdded": 4,
-          "linesDeleted": 0,
-          "commentCount": 0,
-          "commitCount": 1,
-          "actionsMinutes": 0,
-          "timeToMergeHours": 0,
-          "mergedAt": "2026-07-16T06:19:34Z"
-        },
-        {
-          "number": 24,
-          "title": "Disable Terraform Node wrapper on ARC jobs",
-          "state": "merged",
-          "createdAt": "2026-07-16T06:16:32Z",
-          "author": "vvaths",
-          "isCopilotAuthored": false,
-          "hasCopilotReview": false,
-          "linesAdded": 5,
-          "linesDeleted": 0,
-          "commentCount": 0,
-          "commitCount": 1,
-          "actionsMinutes": 0,
-          "timeToMergeHours": 0,
-          "mergedAt": "2026-07-16T06:16:36Z"
-        },
-        {
-          "number": 23,
-          "title": "Fail runner-group setup on GitHub API errors",
-          "state": "merged",
-          "createdAt": "2026-07-16T06:13:48Z",
-          "author": "vvaths",
-          "isCopilotAuthored": false,
-          "hasCopilotReview": false,
-          "linesAdded": 15,
-          "linesDeleted": 6,
-          "commentCount": 0,
-          "commitCount": 1,
-          "actionsMinutes": 0,
-          "timeToMergeHours": 0,
-          "mergedAt": "2026-07-16T06:13:51Z"
-        },
-        {
-          "number": 22,
-          "title": "Bootstrap Azure CLI on ARC infrastructure jobs",
-          "state": "merged",
-          "createdAt": "2026-07-16T06:09:52Z",
-          "author": "vvaths",
-          "isCopilotAuthored": false,
-          "hasCopilotReview": false,
-          "linesAdded": 28,
-          "linesDeleted": 0,
-          "commentCount": 0,
-          "commitCount": 1,
-          "actionsMinutes": 0,
-          "timeToMergeHours": 0,
-          "mergedAt": "2026-07-16T06:09:56Z"
-        },
-        {
-          "number": 21,
-          "title": "Upgrade GitHub Actions runners to 2.335.1",
-          "state": "merged",
-          "createdAt": "2026-07-14T05:11:43Z",
-          "author": "vvaths",
-          "isCopilotAuthored": false,
-          "hasCopilotReview": false,
-          "linesAdded": 13,
+          "linesAdded": 141,
           "linesDeleted": 8,
           "commentCount": 0,
           "commitCount": 1,
-          "actionsMinutes": 0,
-          "timeToMergeHours": 0,
-          "mergedAt": "2026-07-14T05:11:47Z"
+          "actionsMinutes": 1.37,
+          "timeToMergeHours": 0.03,
+          "mergedAt": "2026-07-23T06:39:15Z"
         },
         {
-          "number": 20,
-          "title": "Allow AKS runner pool VM rotations",
+          "number": 51,
+          "title": "fix(deprovision): --yes on federated-credential delete",
           "state": "merged",
-          "createdAt": "2026-07-12T15:58:57Z",
+          "createdAt": "2026-07-23T01:51:55Z",
           "author": "vvaths",
           "isCopilotAuthored": false,
           "hasCopilotReview": false,
-          "linesAdded": 38,
-          "linesDeleted": 35,
+          "linesAdded": 1,
+          "linesDeleted": 1,
           "commentCount": 0,
           "commitCount": 1,
-          "actionsMinutes": 0,
-          "timeToMergeHours": 0,
-          "mergedAt": "2026-07-12T15:59:00Z"
+          "actionsMinutes": 1.43,
+          "timeToMergeHours": 0.1,
+          "mergedAt": "2026-07-23T01:57:45Z"
+        },
+        {
+          "number": 50,
+          "title": "feat(broker): configurable app-spoke region via BROKER_LOCATION",
+          "state": "merged",
+          "createdAt": "2026-07-22T17:58:01Z",
+          "author": "vvaths",
+          "isCopilotAuthored": false,
+          "hasCopilotReview": false,
+          "linesAdded": 6,
+          "linesDeleted": 0,
+          "commentCount": 0,
+          "commitCount": 1,
+          "actionsMinutes": 1.35,
+          "timeToMergeHours": 1.85,
+          "mergedAt": "2026-07-22T19:49:01Z"
+        },
+        {
+          "number": 49,
+          "title": "fix(broker): dual federated credentials for ID-stamped OIDC subjects",
+          "state": "merged",
+          "createdAt": "2026-07-22T17:33:52Z",
+          "author": "vvaths",
+          "isCopilotAuthored": false,
+          "hasCopilotReview": false,
+          "linesAdded": 41,
+          "linesDeleted": 5,
+          "commentCount": 0,
+          "commitCount": 1,
+          "actionsMinutes": 1.48,
+          "timeToMergeHours": 0.35,
+          "mergedAt": "2026-07-22T17:54:38Z"
+        },
+        {
+          "number": 48,
+          "title": "feat: rulesets-as-code — provisioned repos governed by repository rulesets",
+          "state": "merged",
+          "createdAt": "2026-07-22T17:27:38Z",
+          "author": "vvaths",
+          "isCopilotAuthored": false,
+          "hasCopilotReview": false,
+          "linesAdded": 814,
+          "linesDeleted": 0,
+          "commentCount": 0,
+          "commitCount": 1,
+          "actionsMinutes": 1.53,
+          "timeToMergeHours": 0.45,
+          "mergedAt": "2026-07-22T17:54:27Z"
+        },
+        {
+          "number": 47,
+          "title": "feat: per-org infra runner automation for tenant orgs",
+          "state": "merged",
+          "createdAt": "2026-07-22T14:42:16Z",
+          "author": "vvaths",
+          "isCopilotAuthored": false,
+          "hasCopilotReview": false,
+          "linesAdded": 533,
+          "linesDeleted": 4,
+          "commentCount": 0,
+          "commitCount": 1,
+          "actionsMinutes": 1.53,
+          "timeToMergeHours": 2.52,
+          "mergedAt": "2026-07-22T17:13:31Z"
+        },
+        {
+          "number": 44,
+          "title": "fix(deprovision): org/RG cross-check guard",
+          "state": "merged",
+          "createdAt": "2026-07-22T14:14:57Z",
+          "author": "vvaths",
+          "isCopilotAuthored": false,
+          "hasCopilotReview": false,
+          "linesAdded": 39,
+          "linesDeleted": 0,
+          "commentCount": 0,
+          "commitCount": 1,
+          "actionsMinutes": 1.43,
+          "timeToMergeHours": 2.97,
+          "mergedAt": "2026-07-22T17:13:23Z"
+        },
+        {
+          "number": 41,
+          "title": "docs: single enterprise GitHub App model",
+          "state": "merged",
+          "createdAt": "2026-07-22T03:13:48Z",
+          "author": "vvaths",
+          "isCopilotAuthored": false,
+          "hasCopilotReview": false,
+          "linesAdded": 70,
+          "linesDeleted": 28,
+          "commentCount": 0,
+          "commitCount": 1,
+          "actionsMinutes": 1.52,
+          "timeToMergeHours": 0.78,
+          "mergedAt": "2026-07-22T04:00:26Z"
+        },
+        {
+          "number": 40,
+          "title": "fix(addons): adopt bootstrap namespaces before apply",
+          "state": "merged",
+          "createdAt": "2026-07-21T19:11:50Z",
+          "author": "vvaths",
+          "isCopilotAuthored": false,
+          "hasCopilotReview": false,
+          "linesAdded": 21,
+          "linesDeleted": 0,
+          "commentCount": 0,
+          "commitCount": 1,
+          "actionsMinutes": 1.43,
+          "timeToMergeHours": 0.03,
+          "mergedAt": "2026-07-21T19:13:22Z"
+        },
+        {
+          "number": 39,
+          "title": "Promote WS3, WS6, and WS8 to main",
+          "state": "merged",
+          "createdAt": "2026-07-21T18:58:43Z",
+          "author": "vvaths",
+          "isCopilotAuthored": false,
+          "hasCopilotReview": false,
+          "linesAdded": 3062,
+          "linesDeleted": 29,
+          "commentCount": 0,
+          "commitCount": 2,
+          "actionsMinutes": 1.5,
+          "timeToMergeHours": 0.04,
+          "mergedAt": "2026-07-21T19:01:11Z"
         }
       ],
       "mergedPRTimeline": [
+        {
+          "number": 52,
+          "createdAt": "2026-07-23T06:37:30Z",
+          "mergedAt": "2026-07-23T06:39:15Z",
+          "author": "vvaths",
+          "isBotAuthor": false,
+          "isCopilotAuthored": false,
+          "timeToMergeHours": 0.03,
+          "closesIssues": [],
+          "linesAdded": 141,
+          "linesDeleted": 8
+        },
+        {
+          "number": 51,
+          "createdAt": "2026-07-23T01:51:55Z",
+          "mergedAt": "2026-07-23T01:57:45Z",
+          "author": "vvaths",
+          "isBotAuthor": false,
+          "isCopilotAuthored": false,
+          "timeToMergeHours": 0.1,
+          "closesIssues": [],
+          "linesAdded": 1,
+          "linesDeleted": 1
+        },
+        {
+          "number": 50,
+          "createdAt": "2026-07-22T17:58:01Z",
+          "mergedAt": "2026-07-22T19:49:01Z",
+          "author": "vvaths",
+          "isBotAuthor": false,
+          "isCopilotAuthored": false,
+          "timeToMergeHours": 1.85,
+          "closesIssues": [],
+          "linesAdded": 6,
+          "linesDeleted": 0
+        },
+        {
+          "number": 49,
+          "createdAt": "2026-07-22T17:33:52Z",
+          "mergedAt": "2026-07-22T17:54:38Z",
+          "author": "vvaths",
+          "isBotAuthor": false,
+          "isCopilotAuthored": false,
+          "timeToMergeHours": 0.35,
+          "closesIssues": [],
+          "linesAdded": 41,
+          "linesDeleted": 5
+        },
+        {
+          "number": 48,
+          "createdAt": "2026-07-22T17:27:38Z",
+          "mergedAt": "2026-07-22T17:54:27Z",
+          "author": "vvaths",
+          "isBotAuthor": false,
+          "isCopilotAuthored": false,
+          "timeToMergeHours": 0.45,
+          "closesIssues": [],
+          "linesAdded": 814,
+          "linesDeleted": 0
+        },
+        {
+          "number": 47,
+          "createdAt": "2026-07-22T14:42:16Z",
+          "mergedAt": "2026-07-22T17:13:31Z",
+          "author": "vvaths",
+          "isBotAuthor": false,
+          "isCopilotAuthored": false,
+          "timeToMergeHours": 2.52,
+          "closesIssues": [],
+          "linesAdded": 533,
+          "linesDeleted": 4
+        },
+        {
+          "number": 44,
+          "createdAt": "2026-07-22T14:14:57Z",
+          "mergedAt": "2026-07-22T17:13:23Z",
+          "author": "vvaths",
+          "isBotAuthor": false,
+          "isCopilotAuthored": false,
+          "timeToMergeHours": 2.97,
+          "closesIssues": [],
+          "linesAdded": 39,
+          "linesDeleted": 0
+        },
+        {
+          "number": 41,
+          "createdAt": "2026-07-22T03:13:48Z",
+          "mergedAt": "2026-07-22T04:00:26Z",
+          "author": "vvaths",
+          "isBotAuthor": false,
+          "isCopilotAuthored": false,
+          "timeToMergeHours": 0.78,
+          "closesIssues": [],
+          "linesAdded": 70,
+          "linesDeleted": 28
+        },
+        {
+          "number": 40,
+          "createdAt": "2026-07-21T19:11:50Z",
+          "mergedAt": "2026-07-21T19:13:22Z",
+          "author": "vvaths",
+          "isBotAuthor": false,
+          "isCopilotAuthored": false,
+          "timeToMergeHours": 0.03,
+          "closesIssues": [],
+          "linesAdded": 21,
+          "linesDeleted": 0
+        },
+        {
+          "number": 39,
+          "createdAt": "2026-07-21T18:58:43Z",
+          "mergedAt": "2026-07-21T19:01:11Z",
+          "author": "vvaths",
+          "isBotAuthor": false,
+          "isCopilotAuthored": false,
+          "timeToMergeHours": 0.04,
+          "closesIssues": [],
+          "linesAdded": 3062,
+          "linesDeleted": 29
+        },
+        {
+          "number": 38,
+          "createdAt": "2026-07-21T17:44:17Z",
+          "mergedAt": "2026-07-21T18:17:36Z",
+          "author": "vvaths",
+          "isBotAuthor": false,
+          "isCopilotAuthored": false,
+          "timeToMergeHours": 0.56,
+          "closesIssues": [],
+          "linesAdded": 1192,
+          "linesDeleted": 83
+        },
+        {
+          "number": 37,
+          "createdAt": "2026-07-21T14:57:29Z",
+          "mergedAt": "2026-07-21T18:17:24Z",
+          "author": "vvaths",
+          "isBotAuthor": false,
+          "isCopilotAuthored": false,
+          "timeToMergeHours": 3.33,
+          "closesIssues": [],
+          "linesAdded": 1935,
+          "linesDeleted": 11
+        },
+        {
+          "number": 36,
+          "createdAt": "2026-07-21T14:16:58Z",
+          "mergedAt": "2026-07-21T18:17:12Z",
+          "author": "vvaths",
+          "isBotAuthor": false,
+          "isCopilotAuthored": false,
+          "timeToMergeHours": 4,
+          "closesIssues": [],
+          "linesAdded": 853,
+          "linesDeleted": 43
+        },
+        {
+          "number": 34,
+          "createdAt": "2026-07-21T13:47:18Z",
+          "mergedAt": "2026-07-21T18:17:01Z",
+          "author": "vvaths",
+          "isBotAuthor": false,
+          "isCopilotAuthored": false,
+          "timeToMergeHours": 4.5,
+          "closesIssues": [],
+          "linesAdded": 13,
+          "linesDeleted": 4
+        },
+        {
+          "number": 32,
+          "createdAt": "2026-07-21T13:31:40Z",
+          "mergedAt": "2026-07-21T13:38:08Z",
+          "author": "vvaths",
+          "isBotAuthor": false,
+          "isCopilotAuthored": false,
+          "timeToMergeHours": 0.11,
+          "closesIssues": [],
+          "linesAdded": 1808,
+          "linesDeleted": 0
+        },
+        {
+          "number": 31,
+          "createdAt": "2026-07-21T12:36:12Z",
+          "mergedAt": "2026-07-21T12:47:31Z",
+          "author": "vvaths",
+          "isBotAuthor": false,
+          "isCopilotAuthored": false,
+          "timeToMergeHours": 0.19,
+          "closesIssues": [],
+          "linesAdded": 963,
+          "linesDeleted": 119
+        },
         {
           "number": 29,
           "createdAt": "2026-07-18T12:03:19Z",
@@ -54743,7 +54947,7 @@
       "copilotAdoption": {
         "copilotAuthoredPRs": 0,
         "copilotReviewedPRs": 0,
-        "totalMergedPRs": 19,
+        "totalMergedPRs": 35,
         "totalDetailedPRs": 10
       },
       "issueLeadTimes": [],
@@ -55695,12 +55899,12 @@
         },
         {
           "week": "2026-W30",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
+          "prsOpened": 16,
+          "prsMerged": 16,
+          "issuesOpened": 7,
+          "issuesClosed": 3,
+          "linesAdded": 11492,
+          "linesDeleted": 335
         }
       ]
     },
@@ -55708,7 +55912,7 @@
       "name": "toy-orders",
       "fullName": "vyas-demo/toy-orders",
       "pushedAt": "2026-07-07T20:33:00Z",
-      "collectedAt": "2026-07-20T07:17:07.377Z",
+      "collectedAt": "2026-07-23T07:00:01.326Z",
       "issues": {
         "open": 1,
         "closed": 0
@@ -56687,10 +56891,10 @@
       ]
     },
     {
-      "name": "aesthete",
-      "fullName": "vyas-demo/aesthete",
+      "name": "game",
+      "fullName": "vyas-demo/game",
       "pushedAt": "2026-07-19T02:46:06Z",
-      "collectedAt": "2026-07-20T07:17:08.697Z",
+      "collectedAt": "2026-07-23T07:00:02.589Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -57670,7 +57874,7 @@
       "name": "portal-smoke",
       "fullName": "vyas-demo/portal-smoke",
       "pushedAt": "2026-07-09T13:45:35Z",
-      "collectedAt": "2026-07-20T07:17:10.130Z",
+      "collectedAt": "2026-07-23T07:00:03.843Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -58650,7 +58854,7 @@
       "name": "portal-smoke-infra",
       "fullName": "vyas-demo/portal-smoke-infra",
       "pushedAt": "2026-07-09T13:45:42Z",
-      "collectedAt": "2026-07-20T07:17:11.613Z",
+      "collectedAt": "2026-07-23T07:00:05.249Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -59630,7 +59834,7 @@
       "name": "portal-smoke2",
       "fullName": "vyas-demo/portal-smoke2",
       "pushedAt": "2026-07-09T13:54:27Z",
-      "collectedAt": "2026-07-20T07:17:13.165Z",
+      "collectedAt": "2026-07-23T07:00:06.702Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -60610,7 +60814,7 @@
       "name": "portal-smoke2-infra",
       "fullName": "vyas-demo/portal-smoke2-infra",
       "pushedAt": "2026-07-09T13:54:34Z",
-      "collectedAt": "2026-07-20T07:17:14.578Z",
+      "collectedAt": "2026-07-23T07:00:07.867Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -61590,7 +61794,7 @@
       "name": "portal-smoke3",
       "fullName": "vyas-demo/portal-smoke3",
       "pushedAt": "2026-07-09T13:58:52Z",
-      "collectedAt": "2026-07-20T07:17:16.035Z",
+      "collectedAt": "2026-07-23T07:00:09.340Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -62570,7 +62774,7 @@
       "name": "portal-smoke3-infra",
       "fullName": "vyas-demo/portal-smoke3-infra",
       "pushedAt": "2026-07-09T13:58:59Z",
-      "collectedAt": "2026-07-20T07:17:17.440Z",
+      "collectedAt": "2026-07-23T07:00:10.510Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -63550,7 +63754,7 @@
       "name": "portal-smoke4",
       "fullName": "vyas-demo/portal-smoke4",
       "pushedAt": "2026-07-09T14:01:03Z",
-      "collectedAt": "2026-07-20T07:17:19.038Z",
+      "collectedAt": "2026-07-23T07:00:11.702Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -64530,7 +64734,7 @@
       "name": "portal-smoke4-infra",
       "fullName": "vyas-demo/portal-smoke4-infra",
       "pushedAt": "2026-07-09T14:01:09Z",
-      "collectedAt": "2026-07-20T07:17:20.515Z",
+      "collectedAt": "2026-07-23T07:00:12.873Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -65510,7 +65714,7 @@
       "name": "orders-api-infra",
       "fullName": "vyas-demo/orders-api-infra",
       "pushedAt": "2026-07-09T15:32:58Z",
-      "collectedAt": "2026-07-20T07:17:21.887Z",
+      "collectedAt": "2026-07-23T07:00:14.101Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -66490,7 +66694,7 @@
       "name": "spoke-demo-infra",
       "fullName": "vyas-demo/spoke-demo-infra",
       "pushedAt": "2026-07-09T15:35:58Z",
-      "collectedAt": "2026-07-20T07:17:23.302Z",
+      "collectedAt": "2026-07-23T07:00:15.330Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -67469,8 +67673,8 @@
     {
       "name": "devcloud-backstage",
       "fullName": "vyas-demo/devcloud-backstage",
-      "pushedAt": "2026-07-19T14:31:51Z",
-      "collectedAt": "2026-07-20T07:17:26.158Z",
+      "pushedAt": "2026-07-22T20:08:28Z",
+      "collectedAt": "2026-07-23T07:00:22.254Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -67478,59 +67682,363 @@
       "pullRequests": {
         "open": 0,
         "closed": 0,
-        "merged": 3
+        "merged": 19
       },
       "pullRequestDetails": [
         {
-          "number": 3,
-          "title": "docs: correct ARC App gate — repo Administration permission required",
+          "number": 19,
+          "title": "fix(skeleton): disable KV purge/recover in provider features",
           "state": "merged",
-          "createdAt": "2026-07-18T23:29:13Z",
+          "createdAt": "2026-07-22T19:52:37Z",
           "author": "vvaths",
           "isCopilotAuthored": false,
           "hasCopilotReview": false,
-          "linesAdded": 31,
-          "linesDeleted": 16,
+          "linesAdded": 20,
+          "linesDeleted": 2,
           "commentCount": 0,
           "commitCount": 1,
-          "actionsMinutes": 3.23,
-          "timeToMergeHours": 15.04,
-          "mergedAt": "2026-07-19T14:31:51Z"
+          "actionsMinutes": 5.02,
+          "timeToMergeHours": 0.26,
+          "mergedAt": "2026-07-22T20:08:28Z"
         },
         {
-          "number": 2,
-          "title": "docs: prettier-format solution handoff",
+          "number": 18,
+          "title": "fix(skeleton): disable PG public network access under VNet injection",
           "state": "merged",
-          "createdAt": "2026-07-18T12:03:31Z",
+          "createdAt": "2026-07-22T17:42:19Z",
           "author": "vvaths",
           "isCopilotAuthored": false,
           "hasCopilotReview": false,
-          "linesAdded": 14,
-          "linesDeleted": 14,
+          "linesAdded": 36,
+          "linesDeleted": 28,
           "commentCount": 0,
           "commitCount": 1,
-          "actionsMinutes": 3.45,
-          "timeToMergeHours": 11.19,
-          "mergedAt": "2026-07-18T23:15:03Z"
+          "actionsMinutes": 5.23,
+          "timeToMergeHours": 0.19,
+          "mergedAt": "2026-07-22T17:53:56Z"
         },
         {
-          "number": 1,
-          "title": "harden/production readiness",
+          "number": 17,
+          "title": "fix(templates): rulesets-only governance — disable legacy branch protection",
           "state": "merged",
-          "createdAt": "2026-07-18T11:01:45Z",
+          "createdAt": "2026-07-22T17:16:10Z",
           "author": "vvaths",
           "isCopilotAuthored": false,
           "hasCopilotReview": false,
-          "linesAdded": 278,
+          "linesAdded": 15,
+          "linesDeleted": 0,
+          "commentCount": 0,
+          "commitCount": 1,
+          "actionsMinutes": 4.82,
+          "timeToMergeHours": 0.63,
+          "mergedAt": "2026-07-22T17:53:44Z"
+        },
+        {
+          "number": 15,
+          "title": "docs(runbook): PG connection-slot deadlock during revision rollover",
+          "state": "merged",
+          "createdAt": "2026-07-22T13:31:30Z",
+          "author": "vvaths",
+          "isCopilotAuthored": false,
+          "hasCopilotReview": false,
+          "linesAdded": 26,
+          "linesDeleted": 0,
+          "commentCount": 2,
+          "commitCount": 1,
+          "actionsMinutes": 5.7,
+          "timeToMergeHours": 4.37,
+          "mergedAt": "2026-07-22T17:53:25Z"
+        },
+        {
+          "number": 16,
+          "title": "fix(skeleton): route apt over TLS in setup-azure-cli for policied runners",
+          "state": "merged",
+          "createdAt": "2026-07-22T14:24:01Z",
+          "author": "vvaths",
+          "isCopilotAuthored": false,
+          "hasCopilotReview": false,
+          "linesAdded": 43,
+          "linesDeleted": 0,
+          "commentCount": 1,
+          "commitCount": 1,
+          "actionsMinutes": 5.63,
+          "timeToMergeHours": 2.82,
+          "mergedAt": "2026-07-22T17:13:13Z"
+        },
+        {
+          "number": 14,
+          "title": "docs: single enterprise GitHub App model + migration runbook",
+          "state": "merged",
+          "createdAt": "2026-07-22T03:23:54Z",
+          "author": "vvaths",
+          "isCopilotAuthored": false,
+          "hasCopilotReview": false,
+          "linesAdded": 428,
+          "linesDeleted": 110,
+          "commentCount": 5,
+          "commitCount": 1,
+          "actionsMinutes": 6.77,
+          "timeToMergeHours": 0.61,
+          "mergedAt": "2026-07-22T04:00:44Z"
+        },
+        {
+          "number": 13,
+          "title": "feat(portal-app): activate App integration and GitHub OAuth",
+          "state": "merged",
+          "createdAt": "2026-07-21T21:56:43Z",
+          "author": "vvaths",
+          "isCopilotAuthored": false,
+          "hasCopilotReview": false,
+          "linesAdded": 54,
           "linesDeleted": 20,
+          "commentCount": 2,
+          "commitCount": 1,
+          "actionsMinutes": 5.97,
+          "timeToMergeHours": 1.25,
+          "mergedAt": "2026-07-21T23:11:34Z"
+        },
+        {
+          "number": 12,
+          "title": "fix(portal-app): current Actions variables permission",
+          "state": "merged",
+          "createdAt": "2026-07-21T19:52:00Z",
+          "author": "vvaths",
+          "isCopilotAuthored": false,
+          "hasCopilotReview": false,
+          "linesAdded": 38,
+          "linesDeleted": 1,
+          "commentCount": 1,
+          "commitCount": 1,
+          "actionsMinutes": 6.23,
+          "timeToMergeHours": 0.05,
+          "mergedAt": "2026-07-21T19:54:54Z"
+        },
+        {
+          "number": 11,
+          "title": "fix(portal-app): safe Container App credential aliases",
+          "state": "merged",
+          "createdAt": "2026-07-21T19:40:53Z",
+          "author": "vvaths",
+          "isCopilotAuthored": false,
+          "hasCopilotReview": false,
+          "linesAdded": 18,
+          "linesDeleted": 9,
           "commentCount": 0,
-          "commitCount": 6,
-          "actionsMinutes": 2.87,
-          "timeToMergeHours": 0,
-          "mergedAt": "2026-07-18T11:01:48Z"
+          "commitCount": 1,
+          "actionsMinutes": 4.98,
+          "timeToMergeHours": 0.06,
+          "mergedAt": "2026-07-21T19:44:11Z"
+        },
+        {
+          "number": 10,
+          "title": "feat(portal-app): add Key Vault-backed credential plumbing",
+          "state": "merged",
+          "createdAt": "2026-07-21T19:22:27Z",
+          "author": "vvaths",
+          "isCopilotAuthored": false,
+          "hasCopilotReview": false,
+          "linesAdded": 83,
+          "linesDeleted": 0,
+          "commentCount": 1,
+          "commitCount": 1,
+          "actionsMinutes": 6.98,
+          "timeToMergeHours": 0.06,
+          "mergedAt": "2026-07-21T19:26:12Z"
         }
       ],
       "mergedPRTimeline": [
+        {
+          "number": 19,
+          "createdAt": "2026-07-22T19:52:37Z",
+          "mergedAt": "2026-07-22T20:08:28Z",
+          "author": "vvaths",
+          "isBotAuthor": false,
+          "isCopilotAuthored": false,
+          "timeToMergeHours": 0.26,
+          "closesIssues": [],
+          "linesAdded": 20,
+          "linesDeleted": 2
+        },
+        {
+          "number": 18,
+          "createdAt": "2026-07-22T17:42:19Z",
+          "mergedAt": "2026-07-22T17:53:56Z",
+          "author": "vvaths",
+          "isBotAuthor": false,
+          "isCopilotAuthored": false,
+          "timeToMergeHours": 0.19,
+          "closesIssues": [],
+          "linesAdded": 36,
+          "linesDeleted": 28
+        },
+        {
+          "number": 17,
+          "createdAt": "2026-07-22T17:16:10Z",
+          "mergedAt": "2026-07-22T17:53:44Z",
+          "author": "vvaths",
+          "isBotAuthor": false,
+          "isCopilotAuthored": false,
+          "timeToMergeHours": 0.63,
+          "closesIssues": [],
+          "linesAdded": 15,
+          "linesDeleted": 0
+        },
+        {
+          "number": 15,
+          "createdAt": "2026-07-22T13:31:30Z",
+          "mergedAt": "2026-07-22T17:53:25Z",
+          "author": "vvaths",
+          "isBotAuthor": false,
+          "isCopilotAuthored": false,
+          "timeToMergeHours": 4.37,
+          "closesIssues": [],
+          "linesAdded": 26,
+          "linesDeleted": 0
+        },
+        {
+          "number": 16,
+          "createdAt": "2026-07-22T14:24:01Z",
+          "mergedAt": "2026-07-22T17:13:13Z",
+          "author": "vvaths",
+          "isBotAuthor": false,
+          "isCopilotAuthored": false,
+          "timeToMergeHours": 2.82,
+          "closesIssues": [],
+          "linesAdded": 43,
+          "linesDeleted": 0
+        },
+        {
+          "number": 14,
+          "createdAt": "2026-07-22T03:23:54Z",
+          "mergedAt": "2026-07-22T04:00:44Z",
+          "author": "vvaths",
+          "isBotAuthor": false,
+          "isCopilotAuthored": false,
+          "timeToMergeHours": 0.61,
+          "closesIssues": [],
+          "linesAdded": 428,
+          "linesDeleted": 110
+        },
+        {
+          "number": 13,
+          "createdAt": "2026-07-21T21:56:43Z",
+          "mergedAt": "2026-07-21T23:11:34Z",
+          "author": "vvaths",
+          "isBotAuthor": false,
+          "isCopilotAuthored": false,
+          "timeToMergeHours": 1.25,
+          "closesIssues": [],
+          "linesAdded": 54,
+          "linesDeleted": 20
+        },
+        {
+          "number": 12,
+          "createdAt": "2026-07-21T19:52:00Z",
+          "mergedAt": "2026-07-21T19:54:54Z",
+          "author": "vvaths",
+          "isBotAuthor": false,
+          "isCopilotAuthored": false,
+          "timeToMergeHours": 0.05,
+          "closesIssues": [],
+          "linesAdded": 38,
+          "linesDeleted": 1
+        },
+        {
+          "number": 11,
+          "createdAt": "2026-07-21T19:40:53Z",
+          "mergedAt": "2026-07-21T19:44:11Z",
+          "author": "vvaths",
+          "isBotAuthor": false,
+          "isCopilotAuthored": false,
+          "timeToMergeHours": 0.06,
+          "closesIssues": [],
+          "linesAdded": 18,
+          "linesDeleted": 9
+        },
+        {
+          "number": 10,
+          "createdAt": "2026-07-21T19:22:27Z",
+          "mergedAt": "2026-07-21T19:26:12Z",
+          "author": "vvaths",
+          "isBotAuthor": false,
+          "isCopilotAuthored": false,
+          "timeToMergeHours": 0.06,
+          "closesIssues": [],
+          "linesAdded": 83,
+          "linesDeleted": 0
+        },
+        {
+          "number": 9,
+          "createdAt": "2026-07-21T18:58:50Z",
+          "mergedAt": "2026-07-21T19:01:53Z",
+          "author": "vvaths",
+          "isBotAuthor": false,
+          "isCopilotAuthored": false,
+          "timeToMergeHours": 0.05,
+          "closesIssues": [],
+          "linesAdded": 1157,
+          "linesDeleted": 38
+        },
+        {
+          "number": 7,
+          "createdAt": "2026-07-21T17:43:00Z",
+          "mergedAt": "2026-07-21T18:18:32Z",
+          "author": "vvaths",
+          "isBotAuthor": false,
+          "isCopilotAuthored": false,
+          "timeToMergeHours": 0.59,
+          "closesIssues": [],
+          "linesAdded": 403,
+          "linesDeleted": 19
+        },
+        {
+          "number": 8,
+          "createdAt": "2026-07-21T17:54:11Z",
+          "mergedAt": "2026-07-21T18:18:20Z",
+          "author": "vvaths",
+          "isBotAuthor": false,
+          "isCopilotAuthored": false,
+          "timeToMergeHours": 0.4,
+          "closesIssues": [],
+          "linesAdded": 1157,
+          "linesDeleted": 38
+        },
+        {
+          "number": 6,
+          "createdAt": "2026-07-21T14:57:38Z",
+          "mergedAt": "2026-07-21T18:18:06Z",
+          "author": "vvaths",
+          "isBotAuthor": false,
+          "isCopilotAuthored": false,
+          "timeToMergeHours": 3.34,
+          "closesIssues": [],
+          "linesAdded": 258,
+          "linesDeleted": 2
+        },
+        {
+          "number": 5,
+          "createdAt": "2026-07-21T13:31:20Z",
+          "mergedAt": "2026-07-21T13:37:49Z",
+          "author": "vvaths",
+          "isBotAuthor": false,
+          "isCopilotAuthored": false,
+          "timeToMergeHours": 0.11,
+          "closesIssues": [],
+          "linesAdded": 2739,
+          "linesDeleted": 66
+        },
+        {
+          "number": 4,
+          "createdAt": "2026-07-21T12:00:14Z",
+          "mergedAt": "2026-07-21T12:47:13Z",
+          "author": "vvaths",
+          "isBotAuthor": false,
+          "isCopilotAuthored": false,
+          "timeToMergeHours": 0.78,
+          "closesIssues": [],
+          "linesAdded": 833,
+          "linesDeleted": 71
+        },
         {
           "number": 3,
           "createdAt": "2026-07-18T23:29:13Z",
@@ -67571,13 +68079,13 @@
       "copilotAdoption": {
         "copilotAuthoredPRs": 0,
         "copilotReviewedPRs": 0,
-        "totalMergedPRs": 3,
-        "totalDetailedPRs": 3
+        "totalMergedPRs": 19,
+        "totalDetailedPRs": 10
       },
       "issueLeadTimes": [],
       "committerCount": 1,
-      "reviewerCount": 0,
-      "contributorCount": 1,
+      "reviewerCount": 1,
+      "contributorCount": 2,
       "dependentCount": 0,
       "copilotAgentMetrics": {
         "totalTasks": 0,
@@ -68523,12 +69031,12 @@
         },
         {
           "week": "2026-W30",
-          "prsOpened": 0,
-          "prsMerged": 0,
+          "prsOpened": 16,
+          "prsMerged": 16,
           "issuesOpened": 0,
           "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
+          "linesAdded": 7308,
+          "linesDeleted": 404
         }
       ]
     },
@@ -68536,7 +69044,7 @@
       "name": "secret-test",
       "fullName": "vyas-demo/secret-test",
       "pushedAt": "2026-07-09T19:27:00Z",
-      "collectedAt": "2026-07-20T07:17:27.668Z",
+      "collectedAt": "2026-07-23T07:00:23.478Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -69516,7 +70024,7 @@
       "name": "dc-smoke-0712",
       "fullName": "vyas-demo/dc-smoke-0712",
       "pushedAt": "2026-07-12T15:57:35Z",
-      "collectedAt": "2026-07-20T07:17:29.130Z",
+      "collectedAt": "2026-07-23T07:00:24.512Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -70495,8 +71003,8 @@
     {
       "name": "dc-smoke-0712-infra",
       "fullName": "vyas-demo/dc-smoke-0712-infra",
-      "pushedAt": "2026-07-16T06:17:22Z",
-      "collectedAt": "2026-07-20T07:17:31.574Z",
+      "pushedAt": "2026-07-22T20:09:18Z",
+      "collectedAt": "2026-07-23T07:00:27.022Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -70504,9 +71012,25 @@
       "pullRequests": {
         "open": 0,
         "closed": 0,
-        "merged": 2
+        "merged": 3
       },
       "pullRequestDetails": [
+        {
+          "number": 3,
+          "title": "feat: adopt current platform workflow (destroy support + TLS installs)",
+          "state": "merged",
+          "createdAt": "2026-07-22T19:53:19Z",
+          "author": "vvaths",
+          "isCopilotAuthored": false,
+          "hasCopilotReview": false,
+          "linesAdded": 75,
+          "linesDeleted": 2,
+          "commentCount": 5,
+          "commitCount": 2,
+          "actionsMinutes": 3.82,
+          "timeToMergeHours": 0.27,
+          "mergedAt": "2026-07-22T20:09:18Z"
+        },
         {
           "number": 2,
           "title": "Disable Terraform Node wrapper on ARC",
@@ -70542,6 +71066,18 @@
       ],
       "mergedPRTimeline": [
         {
+          "number": 3,
+          "createdAt": "2026-07-22T19:53:19Z",
+          "mergedAt": "2026-07-22T20:09:18Z",
+          "author": "vvaths",
+          "isBotAuthor": false,
+          "isCopilotAuthored": false,
+          "timeToMergeHours": 0.27,
+          "closesIssues": [],
+          "linesAdded": 75,
+          "linesDeleted": 2
+        },
+        {
           "number": 2,
           "createdAt": "2026-07-16T06:17:16Z",
           "mergedAt": "2026-07-16T06:17:21Z",
@@ -70569,13 +71105,13 @@
       "copilotAdoption": {
         "copilotAuthoredPRs": 0,
         "copilotReviewedPRs": 0,
-        "totalMergedPRs": 2,
-        "totalDetailedPRs": 2
+        "totalMergedPRs": 3,
+        "totalDetailedPRs": 3
       },
       "issueLeadTimes": [],
       "committerCount": 2,
-      "reviewerCount": 0,
-      "contributorCount": 2,
+      "reviewerCount": 1,
+      "contributorCount": 3,
       "dependentCount": 0,
       "copilotAgentMetrics": {
         "totalTasks": 0,
@@ -71521,7 +72057,4907 @@
         },
         {
           "week": "2026-W30",
+          "prsOpened": 1,
+          "prsMerged": 1,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 75,
+          "linesDeleted": 2
+        }
+      ]
+    },
+    {
+      "name": "repo1",
+      "fullName": "vyas-demo/repo1",
+      "pushedAt": "2026-07-21T11:47:28Z",
+      "collectedAt": "2026-07-23T07:00:28.258Z",
+      "issues": {
+        "open": 0,
+        "closed": 0
+      },
+      "pullRequests": {
+        "open": 0,
+        "closed": 0,
+        "merged": 0
+      },
+      "pullRequestDetails": [],
+      "mergedPRTimeline": [],
+      "copilotAdoption": {
+        "copilotAuthoredPRs": 0,
+        "copilotReviewedPRs": 0,
+        "totalMergedPRs": 0,
+        "totalDetailedPRs": 0
+      },
+      "issueLeadTimes": [],
+      "committerCount": 1,
+      "reviewerCount": 0,
+      "contributorCount": 1,
+      "dependentCount": 0,
+      "copilotAgentMetrics": {
+        "totalTasks": 0,
+        "completedTasks": 0,
+        "failedTasks": 0,
+        "cancelledTasks": 0,
+        "timedOutTasks": 0,
+        "activeTasksCount": 0,
+        "totalSessions": 0,
+        "cloudAgentSessions": 0,
+        "cliRemoteSessions": 0,
+        "totalCreditsUsed": 0,
+        "agentCreatedPRs": 0,
+        "agentActionsMinutes": 0
+      },
+      "weeklyTrends": [
+        {
+          "week": "2024-W31",
           "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W32",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W33",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W34",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W35",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W36",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W37",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W38",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W39",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W40",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W41",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W43",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W44",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W45",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W46",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W47",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W48",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W49",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W50",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W51",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W52",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W01",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W02",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W03",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W04",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W05",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W06",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W07",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W08",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W09",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W10",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W11",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W12",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W13",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W14",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W15",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W16",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W17",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W18",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W19",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W20",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W21",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W22",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W23",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W24",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W25",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W26",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W27",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W28",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W29",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W30",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W31",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W32",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W33",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W34",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W35",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W36",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W37",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W38",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W39",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W40",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W41",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W43",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W44",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W45",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W46",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W47",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W48",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W49",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W50",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W51",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W52",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W01",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W02",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W03",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W04",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W05",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W06",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W07",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W08",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W09",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W10",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W11",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W12",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W13",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W14",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W15",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W16",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W17",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W18",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W19",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W20",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W21",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W22",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W23",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W24",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W25",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W26",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W27",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W28",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W29",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W30",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        }
+      ]
+    },
+    {
+      "name": "repo1-infra",
+      "fullName": "vyas-demo/repo1-infra",
+      "pushedAt": "2026-07-21T11:47:35Z",
+      "collectedAt": "2026-07-23T07:00:29.553Z",
+      "issues": {
+        "open": 0,
+        "closed": 0
+      },
+      "pullRequests": {
+        "open": 0,
+        "closed": 0,
+        "merged": 0
+      },
+      "pullRequestDetails": [],
+      "mergedPRTimeline": [],
+      "copilotAdoption": {
+        "copilotAuthoredPRs": 0,
+        "copilotReviewedPRs": 0,
+        "totalMergedPRs": 0,
+        "totalDetailedPRs": 0
+      },
+      "issueLeadTimes": [],
+      "committerCount": 1,
+      "reviewerCount": 0,
+      "contributorCount": 1,
+      "dependentCount": 0,
+      "copilotAgentMetrics": {
+        "totalTasks": 0,
+        "completedTasks": 0,
+        "failedTasks": 0,
+        "cancelledTasks": 0,
+        "timedOutTasks": 0,
+        "activeTasksCount": 0,
+        "totalSessions": 0,
+        "cloudAgentSessions": 0,
+        "cliRemoteSessions": 0,
+        "totalCreditsUsed": 0,
+        "agentCreatedPRs": 0,
+        "agentActionsMinutes": 0
+      },
+      "weeklyTrends": [
+        {
+          "week": "2024-W31",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W32",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W33",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W34",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W35",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W36",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W37",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W38",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W39",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W40",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W41",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W43",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W44",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W45",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W46",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W47",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W48",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W49",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W50",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W51",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W52",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W01",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W02",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W03",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W04",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W05",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W06",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W07",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W08",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W09",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W10",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W11",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W12",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W13",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W14",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W15",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W16",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W17",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W18",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W19",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W20",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W21",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W22",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W23",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W24",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W25",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W26",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W27",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W28",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W29",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W30",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W31",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W32",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W33",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W34",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W35",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W36",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W37",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W38",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W39",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W40",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W41",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W43",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W44",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W45",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W46",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W47",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W48",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W49",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W50",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W51",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W52",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W01",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W02",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W03",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W04",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W05",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W06",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W07",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W08",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W09",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W10",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W11",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W12",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W13",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W14",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W15",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W16",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W17",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W18",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W19",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W20",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W21",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W22",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W23",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W24",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W25",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W26",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W27",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W28",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W29",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W30",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        }
+      ]
+    },
+    {
+      "name": "repo2",
+      "fullName": "vyas-demo/repo2",
+      "pushedAt": "2026-07-21T12:53:18Z",
+      "collectedAt": "2026-07-23T07:00:30.906Z",
+      "issues": {
+        "open": 0,
+        "closed": 0
+      },
+      "pullRequests": {
+        "open": 0,
+        "closed": 0,
+        "merged": 0
+      },
+      "pullRequestDetails": [],
+      "mergedPRTimeline": [],
+      "copilotAdoption": {
+        "copilotAuthoredPRs": 0,
+        "copilotReviewedPRs": 0,
+        "totalMergedPRs": 0,
+        "totalDetailedPRs": 0
+      },
+      "issueLeadTimes": [],
+      "committerCount": 1,
+      "reviewerCount": 0,
+      "contributorCount": 1,
+      "dependentCount": 0,
+      "copilotAgentMetrics": {
+        "totalTasks": 0,
+        "completedTasks": 0,
+        "failedTasks": 0,
+        "cancelledTasks": 0,
+        "timedOutTasks": 0,
+        "activeTasksCount": 0,
+        "totalSessions": 0,
+        "cloudAgentSessions": 0,
+        "cliRemoteSessions": 0,
+        "totalCreditsUsed": 0,
+        "agentCreatedPRs": 0,
+        "agentActionsMinutes": 0
+      },
+      "weeklyTrends": [
+        {
+          "week": "2024-W31",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W32",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W33",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W34",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W35",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W36",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W37",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W38",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W39",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W40",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W41",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W43",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W44",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W45",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W46",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W47",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W48",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W49",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W50",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W51",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W52",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W01",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W02",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W03",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W04",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W05",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W06",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W07",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W08",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W09",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W10",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W11",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W12",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W13",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W14",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W15",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W16",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W17",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W18",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W19",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W20",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W21",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W22",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W23",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W24",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W25",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W26",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W27",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W28",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W29",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W30",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W31",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W32",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W33",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W34",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W35",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W36",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W37",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W38",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W39",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W40",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W41",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W43",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W44",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W45",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W46",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W47",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W48",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W49",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W50",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W51",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W52",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W01",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W02",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W03",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W04",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W05",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W06",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W07",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W08",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W09",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W10",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W11",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W12",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W13",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W14",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W15",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W16",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W17",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W18",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W19",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W20",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W21",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W22",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W23",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W24",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W25",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W26",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W27",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W28",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W29",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W30",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        }
+      ]
+    },
+    {
+      "name": "repo2-infra",
+      "fullName": "vyas-demo/repo2-infra",
+      "pushedAt": "2026-07-21T12:53:25Z",
+      "collectedAt": "2026-07-23T07:00:32.190Z",
+      "issues": {
+        "open": 0,
+        "closed": 0
+      },
+      "pullRequests": {
+        "open": 0,
+        "closed": 0,
+        "merged": 0
+      },
+      "pullRequestDetails": [],
+      "mergedPRTimeline": [],
+      "copilotAdoption": {
+        "copilotAuthoredPRs": 0,
+        "copilotReviewedPRs": 0,
+        "totalMergedPRs": 0,
+        "totalDetailedPRs": 0
+      },
+      "issueLeadTimes": [],
+      "committerCount": 1,
+      "reviewerCount": 0,
+      "contributorCount": 1,
+      "dependentCount": 0,
+      "copilotAgentMetrics": {
+        "totalTasks": 0,
+        "completedTasks": 0,
+        "failedTasks": 0,
+        "cancelledTasks": 0,
+        "timedOutTasks": 0,
+        "activeTasksCount": 0,
+        "totalSessions": 0,
+        "cloudAgentSessions": 0,
+        "cliRemoteSessions": 0,
+        "totalCreditsUsed": 0,
+        "agentCreatedPRs": 0,
+        "agentActionsMinutes": 0
+      },
+      "weeklyTrends": [
+        {
+          "week": "2024-W31",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W32",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W33",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W34",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W35",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W36",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W37",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W38",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W39",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W40",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W41",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W43",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W44",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W45",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W46",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W47",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W48",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W49",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W50",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W51",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W52",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W01",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W02",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W03",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W04",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W05",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W06",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W07",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W08",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W09",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W10",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W11",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W12",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W13",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W14",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W15",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W16",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W17",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W18",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W19",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W20",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W21",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W22",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W23",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W24",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W25",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W26",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W27",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W28",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W29",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W30",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W31",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W32",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W33",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W34",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W35",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W36",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W37",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W38",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W39",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W40",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W41",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W43",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W44",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W45",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W46",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W47",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W48",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W49",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W50",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W51",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W52",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W01",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W02",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W03",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W04",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W05",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W06",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W07",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W08",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W09",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W10",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W11",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W12",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W13",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W14",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W15",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W16",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W17",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W18",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W19",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W20",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W21",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W22",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W23",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W24",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W25",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W26",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W27",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W28",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W29",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W30",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        }
+      ]
+    },
+    {
+      "name": "dev-metrics",
+      "fullName": "vyas-demo/dev-metrics",
+      "pushedAt": "2026-07-23T05:52:11Z",
+      "collectedAt": "2026-07-23T07:00:33.664Z",
+      "issues": {
+        "open": 0,
+        "closed": 0
+      },
+      "pullRequests": {
+        "open": 2,
+        "closed": 4,
+        "merged": 0
+      },
+      "pullRequestDetails": [],
+      "mergedPRTimeline": [],
+      "copilotAdoption": {
+        "copilotAuthoredPRs": 0,
+        "copilotReviewedPRs": 0,
+        "totalMergedPRs": 0,
+        "totalDetailedPRs": 0
+      },
+      "issueLeadTimes": [],
+      "committerCount": 1,
+      "reviewerCount": 0,
+      "contributorCount": 1,
+      "dependentCount": 0,
+      "copilotAgentMetrics": {
+        "totalTasks": 0,
+        "completedTasks": 0,
+        "failedTasks": 0,
+        "cancelledTasks": 0,
+        "timedOutTasks": 0,
+        "activeTasksCount": 0,
+        "totalSessions": 0,
+        "cloudAgentSessions": 0,
+        "cliRemoteSessions": 0,
+        "totalCreditsUsed": 0,
+        "agentCreatedPRs": 0,
+        "agentActionsMinutes": 0
+      },
+      "weeklyTrends": [
+        {
+          "week": "2024-W31",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W32",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W33",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W34",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W35",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W36",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W37",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W38",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W39",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W40",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W41",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W43",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W44",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W45",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W46",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W47",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W48",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W49",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W50",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W51",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2024-W52",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W01",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W02",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W03",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W04",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W05",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W06",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W07",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W08",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W09",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W10",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W11",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W12",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W13",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W14",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W15",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W16",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W17",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W18",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W19",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W20",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W21",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W22",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W23",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W24",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W25",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W26",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W27",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W28",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W29",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W30",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W31",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W32",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W33",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W34",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W35",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W36",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W37",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W38",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W39",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W40",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W41",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W43",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W44",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W45",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W46",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W47",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W48",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W49",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W50",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W51",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2025-W52",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W01",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W02",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W03",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W04",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W05",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W06",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W07",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W08",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W09",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W10",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W11",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W12",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W13",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W14",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W15",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W16",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W17",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W18",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W19",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W20",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W21",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W22",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W23",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W24",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W25",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W26",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W27",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W28",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W29",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W30",
+          "prsOpened": 4,
           "prsMerged": 0,
           "issuesOpened": 0,
           "issuesClosed": 0,
@@ -72452,7 +77888,7 @@
     },
     {
       "week": "2026-W29",
-      "prsOpened": 18,
+      "prsOpened": 20,
       "prsMerged": 18,
       "issuesOpened": 0,
       "issuesClosed": 0,
@@ -72461,12 +77897,12 @@
     },
     {
       "week": "2026-W30",
-      "prsOpened": 0,
-      "prsMerged": 0,
-      "issuesOpened": 0,
-      "issuesClosed": 0,
-      "linesAdded": 0,
-      "linesDeleted": 0
+      "prsOpened": 38,
+      "prsMerged": 34,
+      "issuesOpened": 7,
+      "issuesClosed": 3,
+      "linesAdded": 19663,
+      "linesDeleted": 1489
     }
   ]
 }
