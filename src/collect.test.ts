@@ -11,6 +11,10 @@ vi.mock("./cache.js", () => ({
   CURRENT_SCHEMA_VERSION: 2,
 }));
 
+vi.mock("./history.js", () => ({
+  appendHistorySnapshot: vi.fn(),
+}));
+
 vi.mock("./collectors/index.js", () => ({
   collectRepos: vi.fn(),
   collectIssueCounts: vi.fn(),
@@ -28,10 +32,19 @@ vi.mock("./collectors/index.js", () => ({
   collectPullRequestDetailsFromNodes: vi.fn(),
   extractReviewerLogins: vi.fn(),
   collectCopilotAgentMetrics: vi.fn(),
+  collectCopilotUsageMetrics: vi.fn(),
+  buildRevertEvents: vi.fn(),
+  collectDeployments: vi.fn(),
+  collectIncidents: vi.fn(),
+}));
+
+vi.mock("./targets.js", () => ({
+  loadTargetsConfig: vi.fn(() => null),
 }));
 
 import { collect } from "./collect.js";
 import { buildTargetKey, loadCache, loadRawCache, isWithinHours, saveCache } from "./cache.js";
+import { appendHistorySnapshot } from "./history.js";
 import {
   collectRepos,
   collectIssueCounts,
@@ -49,7 +62,12 @@ import {
   collectPullRequestDetailsFromNodes,
   extractReviewerLogins,
   collectCopilotAgentMetrics,
+  collectCopilotUsageMetrics,
+  buildRevertEvents,
+  collectDeployments,
+  collectIncidents,
 } from "./collectors/index.js";
+import { loadTargetsConfig } from "./targets.js";
 import type { OrgMetrics } from "./types.js";
 
 function setupDefaultMocks() {
@@ -76,10 +94,18 @@ function setupDefaultMocks() {
   vi.mocked(collectPullRequestDetailsFromNodes).mockResolvedValue([]);
   vi.mocked(extractReviewerLogins).mockReturnValue(new Set());
   vi.mocked(collectCopilotAgentMetrics).mockResolvedValue(null);
+  vi.mocked(collectCopilotUsageMetrics).mockResolvedValue(null);
+  vi.mocked(buildRevertEvents).mockReturnValue([]);
+  vi.mocked(collectDeployments).mockResolvedValue(null);
+  vi.mocked(collectIncidents).mockResolvedValue([]);
+  vi.mocked(loadTargetsConfig).mockReturnValue(null);
 }
 
 describe("collect", () => {
-  afterEach(() => vi.resetAllMocks());
+  afterEach(() => {
+    vi.unstubAllEnvs();
+    vi.resetAllMocks();
+  });
 
   it("returns cached data immediately without calling collectRepos", async () => {
     const cached: OrgMetrics = {
@@ -95,6 +121,41 @@ describe("collect", () => {
 
     expect(result).toBe(cached);
     expect(collectRepos).not.toHaveBeenCalled();
+  });
+
+  it("rejects an organization cache when enterprise usage is requested", async () => {
+    setupDefaultMocks();
+    vi.stubEnv("COPILOT_USAGE_ENTERPRISE", "enterprise-a");
+    vi.mocked(loadCache).mockReturnValue({
+      owner: "cached-org",
+      ownerType: "org",
+      copilotUsageScope: "organization:cached-org",
+      collectedAt: "2026-07-23T00:00:00Z",
+      repoCount: 0,
+      repos: [],
+    });
+
+    const result = await collect("cached-org", "org");
+
+    expect(collectRepos).toHaveBeenCalled();
+    expect(result.copilotUsageScope).toBe("enterprise:enterprise-a");
+  });
+
+  it("rejects an enterprise cache when organization usage is requested", async () => {
+    setupDefaultMocks();
+    vi.mocked(loadCache).mockReturnValue({
+      owner: "cached-org",
+      ownerType: "org",
+      copilotUsageScope: "enterprise:enterprise-a",
+      collectedAt: "2026-07-23T00:00:00Z",
+      repoCount: 0,
+      repos: [],
+    });
+
+    const result = await collect("cached-org", "org");
+
+    expect(collectRepos).toHaveBeenCalled();
+    expect(result.copilotUsageScope).toBe("organization:cached-org");
   });
 
   it("skips repos with a malformed fullName and logs a warning", async () => {
@@ -141,6 +202,52 @@ describe("collect", () => {
     );
   });
 
+  it("attaches org-level Copilot usage metrics when available", async () => {
+    setupDefaultMocks();
+    vi.mocked(collectCopilotUsageMetrics).mockResolvedValue({
+      scope: "organization",
+      scopeName: "fresh-org",
+      reportStartDay: "2026-04-01",
+      reportEndDay: "2026-04-28",
+      collectedAt: "2026-04-29T00:00:00Z",
+      totals: {
+        totalUsers: 1,
+        activeUsers: 1,
+        chatUsers: 1,
+        agentUsers: 0,
+        cliUsers: 0,
+        codeReviewActiveUsers: 0,
+        codeReviewPassiveUsers: 0,
+        assignedSeats: 1,
+        seatsActiveThisCycle: 1,
+        userInitiatedInteractions: 10,
+        codeGenerations: 5,
+        codeAcceptances: 3,
+        locSuggestedToAdd: 12,
+        locSuggestedToDelete: 0,
+        locAdded: 9,
+        locDeleted: 0,
+        acceptanceRate: 60,
+      },
+      users: [],
+      dailyTotals: [],
+      byFeature: [],
+      byIde: [],
+      byLanguage: [],
+      byModel: [],
+      byTeam: [],
+    });
+
+    const result = await collect("fresh-org", "org");
+
+    expect(collectCopilotUsageMetrics).toHaveBeenCalledWith("fresh-org", "org");
+    expect(result.copilotUsage?.totals.activeUsers).toBe(1);
+    expect(saveCache).toHaveBeenCalledWith(
+      "fresh-org",
+      expect.objectContaining({ copilotUsage: expect.objectContaining({ scopeName: "fresh-org" }) }),
+    );
+  });
+
   it("passes repo selection to collectRepos and saves under a repo-specific cache key", async () => {
     setupDefaultMocks();
     vi.mocked(collectRepos).mockResolvedValue([
@@ -154,6 +261,104 @@ describe("collect", () => {
       buildTargetKey("myorg", "org", "repo-a"),
       expect.objectContaining({ owner: "myorg", ownerType: "org", targetRepo: "repo-a" })
     );
+  });
+
+  it("passes configured incidentLabels to collectIncidents and stores the result", async () => {
+    setupDefaultMocks();
+    vi.mocked(loadTargetsConfig).mockReturnValue({
+      targets: {},
+      incidentLabels: ["incident", "sev1"],
+    });
+    const incident = {
+      number: 7,
+      createdAt: "2026-06-01T00:00:00Z",
+      closedAt: "2026-06-01T12:00:00Z",
+      resolutionHours: 12,
+      labels: ["incident"],
+    };
+    vi.mocked(collectIncidents).mockResolvedValue([incident]);
+    vi.mocked(collectRepos).mockResolvedValue([
+      { name: "r", fullName: "owner/r", pushedAt: "" },
+    ]);
+
+    const result = await collect("owner", "org");
+
+    expect(collectIncidents).toHaveBeenCalledWith("owner", "r", ["incident", "sev1"]);
+    expect(result.repos[0].incidents).toEqual([incident]);
+  });
+
+  it("stores undefined incidents when collectIncidents returns null", async () => {
+    setupDefaultMocks();
+    vi.mocked(collectIncidents).mockResolvedValue(null);
+    vi.mocked(collectRepos).mockResolvedValue([
+      { name: "r", fullName: "owner/r", pushedAt: "" },
+    ]);
+
+    const result = await collect("owner", "org");
+
+    // No config → collector is called with undefined labels (its defaults).
+    expect(collectIncidents).toHaveBeenCalledWith("owner", "r", undefined);
+    expect(result.repos[0].incidents).toBeUndefined();
+  });
+
+  it("appends a history snapshot on the cache-hit path", async () => {
+    const cached: OrgMetrics = {
+      owner: "cached-org",
+      ownerType: "org",
+      collectedAt: "2026-01-01T00:00:00Z",
+      repoCount: 3,
+      repos: [],
+    };
+    vi.mocked(loadCache).mockReturnValue(cached);
+
+    await collect("cached-org", "org");
+
+    expect(appendHistorySnapshot).toHaveBeenCalledWith("cached-org", cached);
+  });
+
+  it("appends a history snapshot after a fresh collection", async () => {
+    setupDefaultMocks();
+
+    const result = await collect("fresh-org", "org");
+
+    expect(appendHistorySnapshot).toHaveBeenCalledWith("fresh-org", result);
+    expect(saveCache).toHaveBeenCalled();
+  });
+
+  it("still returns cached metrics when appendHistorySnapshot throws on the cache-hit path", async () => {
+    const cached: OrgMetrics = {
+      owner: "cached-org",
+      ownerType: "org",
+      collectedAt: "2026-01-01T00:00:00Z",
+      repoCount: 3,
+      repos: [],
+    };
+    vi.mocked(loadCache).mockReturnValue(cached);
+    vi.mocked(appendHistorySnapshot).mockImplementation(() => {
+      throw new Error("disk full");
+    });
+    const warnSpy = vi.spyOn(console, "warn").mockImplementation(() => {});
+
+    const result = await collect("cached-org", "org");
+
+    expect(result).toBe(cached);
+    expect(warnSpy).toHaveBeenCalledWith(expect.stringContaining("disk full"));
+    warnSpy.mockRestore();
+  });
+
+  it("still returns fresh metrics when appendHistorySnapshot throws after collection", async () => {
+    setupDefaultMocks();
+    vi.mocked(appendHistorySnapshot).mockImplementation(() => {
+      throw new Error("disk full");
+    });
+    const warnSpy = vi.spyOn(console, "warn").mockImplementation(() => {});
+
+    const result = await collect("fresh-org", "org");
+
+    expect(result.owner).toBe("fresh-org");
+    expect(saveCache).toHaveBeenCalled();
+    expect(warnSpy).toHaveBeenCalledWith(expect.stringContaining("disk full"));
+    warnSpy.mockRestore();
   });
 
   it("recollects trends when cached repos are missing per-repo weeklyTrends", async () => {

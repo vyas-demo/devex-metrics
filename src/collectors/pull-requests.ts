@@ -5,6 +5,7 @@ import type {
   PullRequestDetail,
   MergedPRSummary,
   CopilotAdoption,
+  RevertEvent,
 } from "../types.js";
 import type { GraphQLRepoData, GraphQLPRNode } from "./repo-graphql.js";
 
@@ -350,6 +351,35 @@ export function buildPullRequestCounts(data: GraphQLRepoData): PullRequestCounts
   };
 }
 
+/** GitHub's revert-PR title convention: `Revert "<original title>"`. */
+const REVERT_TITLE_RE = /^revert\s+["“]/i;
+
+/**
+ * Hours from PR creation to the first review submitted by someone other
+ * than the PR author. Returns undefined when no qualifying review exists.
+ */
+function firstReviewHours(node: GraphQLPRNode, authorLogin: string): number | undefined {
+  let first: string | undefined;
+  for (const review of node.reviews?.nodes ?? []) {
+    const login = review.author?.login;
+    if (!login || login === authorLogin || !review.submittedAt) continue;
+    if (!first || review.submittedAt < first) first = review.submittedAt;
+  }
+  if (!first) return undefined;
+  const hours = hoursBetween(node.createdAt, first);
+  return hours >= 0 ? Math.round(hours * 100) / 100 : undefined;
+}
+
+/** Distinct non-author reviewer logins for a PR node. */
+function reviewerLogins(node: GraphQLPRNode, authorLogin: string): string[] {
+  const logins = new Set<string>();
+  for (const review of node.reviews?.nodes ?? []) {
+    const login = review.author?.login;
+    if (login && login !== authorLogin) logins.add(login);
+  }
+  return [...logins];
+}
+
 /**
  * Build a MergedPRSummary timeline from pre-fetched GraphQL PR nodes.
  * Only includes MERGED nodes. No API calls.
@@ -361,6 +391,7 @@ export function buildMergedPRTimeline(nodes: GraphQLPRNode[]): MergedPRSummary[]
     const authorLogin = node.author?.login ?? "unknown";
     const isBot = node.author?.__typename === "Bot" || isBotLogin(authorLogin);
     const aiType = resolveAIType(authorLogin, node.author?.__typename, node.mergeCommit?.message);
+    const reviewers = reviewerLogins(node, authorLogin);
     timeline.push({
       number: node.number,
       createdAt: node.createdAt,
@@ -374,9 +405,46 @@ export function buildMergedPRTimeline(nodes: GraphQLPRNode[]): MergedPRSummary[]
       closesIssues: parseIssueRefs(node.body),
       linesAdded: node.additions,
       linesDeleted: node.deletions,
+      isRevert: REVERT_TITLE_RE.test(node.title) || undefined,
+      timeToFirstReviewHours: firstReviewHours(node, authorLogin),
+      reviewers: reviewers.length > 0 ? reviewers : undefined,
     });
   }
   return timeline.sort((a, b) => (b.mergedAt > a.mergedAt ? 1 : -1));
+}
+
+/**
+ * Derive revert events from GraphQL PR nodes: each merged revert PR, matched
+ * back to the merged PR it reverted (via GitHub's `Revert "<title>"` naming)
+ * when that PR is present in the same node window. No API calls.
+ */
+export function buildRevertEvents(nodes: GraphQLPRNode[]): RevertEvent[] {
+  const merged = nodes.filter((n) => n.state === "MERGED" && n.mergedAt);
+  const byTitle = new Map<string, GraphQLPRNode>();
+  for (const node of merged) {
+    // Newest merge wins for duplicate titles — a revert points at the latest.
+    const existing = byTitle.get(node.title);
+    if (!existing || node.mergedAt! > existing.mergedAt!) byTitle.set(node.title, node);
+  }
+
+  const events: RevertEvent[] = [];
+  for (const node of merged) {
+    const match = /^revert\s+["“](.+)["”]\s*$/i.exec(node.title);
+    if (!match) continue;
+    const event: RevertEvent = {
+      revertPRNumber: node.number,
+      revertMergedAt: node.mergedAt!,
+    };
+    const original = byTitle.get(match[1]);
+    if (original && original.number !== node.number && original.mergedAt! < node.mergedAt!) {
+      event.originalPRNumber = original.number;
+      event.originalMergedAt = original.mergedAt!;
+      event.restoreHours =
+        Math.round(hoursBetween(original.mergedAt!, node.mergedAt!) * 100) / 100;
+    }
+    events.push(event);
+  }
+  return events.sort((a, b) => (b.revertMergedAt > a.revertMergedAt ? 1 : -1));
 }
 
 /**

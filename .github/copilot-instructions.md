@@ -2,7 +2,7 @@
 
 ## Project overview
 
-**devex-metrics** collects Developer Experience metrics from the GitHub API for a GitHub organisation or user account and produces a Markdown report and an HTML dashboard deployed to GitHub Pages. No data is committed to the repository; collected data lives in `data/` (gitignored, persisted via `actions/cache` in CI).
+**devex-metrics** collects Developer Experience metrics from the GitHub API for a GitHub organisation or user account and produces a Markdown report and an HTML dashboard deployed to GitHub Pages, including Developer Insights velocity analytics (throughput, flow, cycle predictability, lead time, and PR size). No data is committed to the repository; collected data lives in `data/` (gitignored, persisted via `actions/cache` in CI).
 
 ## Tech stack
 

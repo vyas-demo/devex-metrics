@@ -13,11 +13,17 @@ import {
   collectRepoGraphQL,
   buildPullRequestCounts,
   buildMergedPRTimeline,
+  buildRevertEvents,
   collectPullRequestDetailsFromNodes,
   extractReviewerLogins,
   collectCopilotAgentMetrics,
+  collectCopilotUsageMetrics,
+  collectDeployments,
+  collectIncidents,
 } from "./collectors/index.js";
 import type { GraphQLPRNode } from "./collectors/index.js";
+import { appendHistorySnapshot } from "./history.js";
+import { loadTargetsConfig } from "./targets.js";
 import type { OrgMetrics, RepoMetrics } from "./types.js";
 
 export interface CollectOptions {
@@ -44,11 +50,17 @@ export async function collect(
 ): Promise<OrgMetrics> {
   const maxAgeHours = options.maxRepoAgeHours ?? DEFAULT_MAX_REPO_AGE_HOURS;
   const cacheKey = buildTargetKey(owner, ownerType, options.repo);
+  const copilotUsageScope = requestedCopilotUsageScope(owner, ownerType);
 
   if (!options.skipCache) {
     const cached = loadCache(cacheKey);
-    if (cached) {
+    if (cached && cacheMatchesCopilotUsageScope(cached, copilotUsageScope)) {
       console.log(`Using cached data for ${cacheKey} (collected ${cached.collectedAt})`);
+      try {
+        appendHistorySnapshot(cacheKey, cached);
+      } catch (error) {
+        console.warn(`Failed to append history snapshot for ${cacheKey}: ${String(error)}`);
+      }
       return cached;
     }
   }
@@ -69,6 +81,10 @@ export async function collect(
 
   const repoList = await collectRepos(owner, ownerType, { repo: options.repo });
   console.log(`Found ${repoList.length} repositories`);
+
+  // Incident labels are shared across all repos; resolve them once. The
+  // collector falls back to its defaults when this is undefined.
+  const incidentLabels = loadTargetsConfig()?.incidentLabels;
 
   const repos: RepoMetrics[] = [];
   let freshCount = 0;
@@ -101,6 +117,7 @@ export async function collect(
     const graphqlData = await collectRepoGraphQL(repoOwner, repoName);
 
     let issues, prCounts, prDetails, mergedPRTimeline, contributors, dependentCount;
+    let reverts;
 
     if (graphqlData !== null) {
       // Fast path: derive most data from the pre-fetched GraphQL result.
@@ -110,6 +127,7 @@ export async function collect(
       };
       prCounts = buildPullRequestCounts(graphqlData);
       mergedPRTimeline = buildMergedPRTimeline(graphqlData.prNodes);
+      reverts = buildRevertEvents(graphqlData.prNodes);
       prDetails = await collectPullRequestDetailsFromNodes(
         repoOwner,
         repoName,
@@ -167,6 +185,12 @@ export async function collect(
     const copilotAgentMetrics =
       (await collectCopilotAgentMetrics(repoOwner, repoName)) ?? undefined;
 
+    // Deployment/release events for DORA deploy frequency (1 GraphQL call).
+    const deployments = (await collectDeployments(repoOwner, repoName)) ?? undefined;
+
+    // Labeled incident issues for DORA CFR/MTTR (1 GraphQL call).
+    const incidents = (await collectIncidents(repoOwner, repoName, incidentLabels)) ?? undefined;
+
     repos.push({
       name: repoName,
       fullName,
@@ -183,6 +207,9 @@ export async function collect(
       contributorCount: contributors.contributorCount,
       dependentCount,
       copilotAgentMetrics,
+      deployments,
+      reverts,
+      incidents,
     });
   }
 
@@ -205,6 +232,11 @@ export async function collect(
     console.log(`Reusing cached weekly trends (all ${repos.length} repos were fresh)`);
   }
 
+  const copilotUsage =
+    ownerType === "org" || process.env.COPILOT_USAGE_ENTERPRISE
+      ? (await collectCopilotUsageMetrics(owner, ownerType)) ?? undefined
+      : undefined;
+
   const metrics: OrgMetrics = {
     schemaVersion: CURRENT_SCHEMA_VERSION,
     owner,
@@ -214,8 +246,36 @@ export async function collect(
     repoCount: repos.length,
     repos,
     weeklyTrends,
+    copilotUsageScope,
+    copilotUsage,
   };
 
   saveCache(cacheKey, metrics);
+  try {
+    appendHistorySnapshot(cacheKey, metrics);
+  } catch (error) {
+    console.warn(`Failed to append history snapshot for ${cacheKey}: ${String(error)}`);
+  }
   return metrics;
+}
+
+function requestedCopilotUsageScope(
+  owner: string,
+  ownerType: "org" | "user",
+): string | undefined {
+  const enterprise = process.env.COPILOT_USAGE_ENTERPRISE?.trim();
+  if (enterprise) return `enterprise:${enterprise}`;
+  return ownerType === "org" ? `organization:${owner}` : undefined;
+}
+
+function cacheMatchesCopilotUsageScope(
+  cached: OrgMetrics,
+  requestedScope: string | undefined,
+): boolean {
+  if (requestedScope?.startsWith("enterprise:")) {
+    return cached.copilotUsageScope === requestedScope;
+  }
+  if (cached.copilotUsageScope?.startsWith("enterprise:")) return false;
+  if (cached.copilotUsage?.scope === "enterprise") return false;
+  return cached.copilotUsageScope === undefined || cached.copilotUsageScope === requestedScope;
 }

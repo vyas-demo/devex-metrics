@@ -55,9 +55,9 @@ jobs:
       - name: Resolve metrics target
         id: target
         env:
-          OWNER_INPUT: ${{ github.event.inputs.owner || 'vyas-demo' }}
-          OWNER_TYPE_INPUT: ${{ github.event.inputs.owner_type || 'org' }}
-          REPO_INPUT: ${{ github.event.inputs.repo || '' }}
+          OWNER_INPUT: ${{ github.event.inputs.owner || vars.METRICS_OWNER || 'vyas-demo' }}
+          OWNER_TYPE_INPUT: ${{ github.event.inputs.owner_type || vars.METRICS_OWNER_TYPE || 'org' }}
+          REPO_INPUT: ${{ github.event.inputs.repo || vars.METRICS_REPO || '' }}
         run: |
           OWNER="$OWNER_INPUT"
           TYPE="$OWNER_TYPE_INPUT"
@@ -121,6 +121,7 @@ jobs:
           # GitHub App installation tokens are not supported for this API.
           COPILOT_AGENT_TOKEN: ${{ secrets.COPILOT_AGENT_TOKEN }}
           FORCE_REFRESH: ${{ github.event.inputs.force_refresh || 'false' }}
+          COPILOT_USAGE_ENTERPRISE: ${{ vars.COPILOT_USAGE_ENTERPRISE }}
           OWNER: ${{ steps.target.outputs.owner }}
           TYPE: ${{ steps.target.outputs.owner_type }}
           REPO: ${{ steps.target.outputs.repo }}
@@ -163,6 +164,21 @@ jobs:
             node dist/build-pages.js "$OWNER" "$TYPE" "$REPO"
           else
             node dist/build-pages.js "$OWNER" "$TYPE"
+          fi
+
+      # The script exits 0 when SLACK_WEBHOOK_URL is absent, so this is always safe to run.
+      - name: Post Slack digest (optional)
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          PAGES_URL: ${{ vars.PAGES_URL }}
+          OWNER: ${{ steps.target.outputs.owner }}
+          TYPE: ${{ steps.target.outputs.owner_type }}
+          REPO: ${{ steps.target.outputs.repo }}
+        run: |
+          if [ -n "$REPO" ]; then
+            node scripts/slack-digest.mjs "$OWNER" "$TYPE" "$REPO"
+          else
+            node scripts/slack-digest.mjs "$OWNER" "$TYPE"
           fi
 
       - name: Upload Pages artifact

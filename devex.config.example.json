@@ -1,0 +1,18 @@
+{
+  "incidentLabels": ["incident", "outage", "sev1"],
+  "rollup": {
+    "name": "acme-all",
+    "targets": [
+      { "owner": "acme", "ownerType": "org" },
+      { "owner": "acme-labs", "ownerType": "org" }
+    ]
+  },
+  "targets": {
+    "maxMedianCycleHours": 24,
+    "minReviewCoverage": 0.8,
+    "maxChangeFailureRate": 0.1,
+    "minDeploysPerWeek": 1,
+    "maxP90FirstReviewHours": 48,
+    "minAvgHealthScore": 70
+  }
+}
