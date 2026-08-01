@@ -20,6 +20,9 @@
   "author": "",
   "license": "ISC",
   "type": "module",
+  "engines": {
+    "node": ">=22.22.2"
+  },
   "bugs": {
     "url": "https://github.com/devex-metrics/devex-metrics/issues"
   },
