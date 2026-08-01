@@ -148,7 +148,10 @@ jobs:
         if: steps.create-pr.outputs.pull-request-operation == 'created' || steps.create-pr.outputs.pull-request-operation == 'updated'
         env:
           GH_TOKEN: ${{ steps.app-token.outputs.token || github.token }}
-        run: gh pr merge --auto --squash "${{ steps.create-pr.outputs.pull-request-url }}"
+          PR_URL: ${{ steps.create-pr.outputs.pull-request-url }}
+        # --auto errors when the PR is already mergeable, or when the repo has no
+        # branch protection to queue against; merge outright in those cases.
+        run: gh pr merge --auto --squash "$PR_URL" || gh pr merge --squash "$PR_URL"
 
       # actions/cache@v6 automatically saves the data/ folder at job end.
 
