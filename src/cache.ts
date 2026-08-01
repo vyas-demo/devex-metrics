@@ -27,8 +27,21 @@ const DATA_DIR = path.resolve(process.cwd(), "data");
  *       (~2 years) so the dashboard "This Year" and "All Time" filters show
  *       real historical data; also extends GraphQL PR node cutoff from
  *       ~13 months to ~2 years so PR trends match the wider window
+ *   9 — add org-level Copilot usage metrics from the 2026 report APIs,
+ *       including per-user usage, feature/IDE/language/model breakdowns, and
+ *       optional seat last-activity enrichment
+ *   10 — expand Copilot usage schema to include CLI token/session metrics,
+ *        official pull request activity, code review active/passive counts,
+ *        cross-dimensional breakdowns, IDE/plugin version coverage, and
+ *        Copilot billing/policy settings
+ *   11 — add deployments/releases and revert events to RepoMetrics plus
+ *        review timing (timeToFirstReviewHours, reviewers) to
+ *        MergedPRSummary for DORA metrics and code-review analytics
+ *   12 — add incidents (labeled incident issues) to RepoMetrics so DORA
+ *        change-failure rate and MTTR can use real incident signals instead
+ *        of revert-PR proxies when teams label incidents
  */
-export const CURRENT_SCHEMA_VERSION = 8;
+export const CURRENT_SCHEMA_VERSION = 12;
 
 export function buildTargetKey(
   owner: string,

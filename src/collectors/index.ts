@@ -7,9 +7,12 @@ export {
   computeCopilotAdoption,
   buildPullRequestCounts,
   buildMergedPRTimeline,
+  buildRevertEvents,
   collectPullRequestDetailsFromNodes,
   extractReviewerLogins,
 } from "./pull-requests.js";
+export { collectDeployments } from "./deployments.js";
+export { collectIncidents, DEFAULT_INCIDENT_LABELS } from "./incidents.js";
 export { collectContributors } from "./contributors.js";
 export { collectDependentCount } from "./dependents.js";
 export { collectWeeklyTrends } from "./trends.js";
@@ -20,3 +23,4 @@ export {
   collectCopilotAgentMetrics,
   computeAgentMetrics,
 } from "./copilot-agent.js";
+export { collectCopilotUsageMetrics } from "./copilot-usage.js";

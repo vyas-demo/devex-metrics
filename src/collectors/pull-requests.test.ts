@@ -748,6 +748,7 @@ describe("computeCopilotAdoption", () => {
 import {
   buildPullRequestCounts,
   buildMergedPRTimeline,
+  buildRevertEvents,
   collectPullRequestDetailsFromNodes,
   extractReviewerLogins,
 } from "./pull-requests.js";
@@ -943,6 +944,169 @@ describe("buildMergedPRTimeline", () => {
     const result = buildMergedPRTimeline([node]);
     expect(result[0].linesAdded).toBe(123);
     expect(result[0].linesDeleted).toBe(45);
+  });
+
+  it("computes timeToFirstReviewHours from the earliest non-author review and collects distinct reviewers", () => {
+    const node = makePRNode({
+      author: { login: "alice", __typename: "User" },
+      createdAt: "2026-01-01T00:00:00Z",
+      mergedAt: "2026-01-02T00:00:00Z",
+      reviews: {
+        nodes: [
+          // Author's own review — ignored
+          { author: { login: "alice" }, submittedAt: "2026-01-01T01:00:00Z", state: "COMMENTED" },
+          // Null-author review — ignored
+          { author: null, submittedAt: "2026-01-01T02:00:00Z", state: "COMMENTED" },
+          // bob reviews later than carol
+          { author: { login: "bob" }, submittedAt: "2026-01-01T05:00:00Z", state: "APPROVED" },
+          // carol's is the earliest qualifying review (3h after creation)
+          { author: { login: "carol" }, submittedAt: "2026-01-01T03:00:00Z", state: "COMMENTED" },
+          // bob reviews again — must not be double-counted in reviewers
+          { author: { login: "bob" }, submittedAt: "2026-01-01T06:00:00Z", state: "COMMENTED" },
+        ],
+      },
+    });
+
+    const result = buildMergedPRTimeline([node]);
+    expect(result[0].timeToFirstReviewHours).toBe(3);
+    expect(result[0].reviewers).toHaveLength(2);
+    expect(result[0].reviewers).toEqual(expect.arrayContaining(["bob", "carol"]));
+    expect(result[0].reviewers).not.toContain("alice");
+  });
+
+  it("ignores reviews without submittedAt when computing timeToFirstReviewHours", () => {
+    const node = makePRNode({
+      author: { login: "alice", __typename: "User" },
+      createdAt: "2026-01-01T00:00:00Z",
+      mergedAt: "2026-01-02T00:00:00Z",
+      reviews: {
+        nodes: [
+          // Pending review (no submittedAt) — ignored for timing, still a reviewer
+          { author: { login: "bob" }, submittedAt: null, state: "PENDING" },
+          { author: { login: "carol" }, submittedAt: "2026-01-01T04:00:00Z", state: "APPROVED" },
+        ],
+      },
+    });
+
+    const result = buildMergedPRTimeline([node]);
+    expect(result[0].timeToFirstReviewHours).toBe(4);
+    expect(result[0].reviewers).toEqual(expect.arrayContaining(["bob", "carol"]));
+  });
+
+  it("leaves timeToFirstReviewHours and reviewers undefined when there are no reviews", () => {
+    const node = makePRNode({ reviews: { nodes: [] } });
+    const result = buildMergedPRTimeline([node]);
+    expect(result[0].timeToFirstReviewHours).toBeUndefined();
+    expect(result[0].reviewers).toBeUndefined();
+  });
+
+  it("leaves both undefined when the only review is by the PR author", () => {
+    const node = makePRNode({
+      author: { login: "alice", __typename: "User" },
+      createdAt: "2026-01-01T00:00:00Z",
+      reviews: {
+        nodes: [{ author: { login: "alice" }, submittedAt: "2026-01-01T01:00:00Z", state: "COMMENTED" }],
+      },
+    });
+    const result = buildMergedPRTimeline([node]);
+    expect(result[0].timeToFirstReviewHours).toBeUndefined();
+    expect(result[0].reviewers).toBeUndefined();
+  });
+
+  it("marks revert-convention titles with isRevert: true", () => {
+    const node = makePRNode({ title: 'Revert "Fix thing"' });
+    const result = buildMergedPRTimeline([node]);
+    expect(result[0].isRevert).toBe(true);
+  });
+
+  it("leaves isRevert undefined for normal titles", () => {
+    const node = makePRNode({ title: "Fix thing" });
+    const result = buildMergedPRTimeline([node]);
+    expect(result[0].isRevert).toBeUndefined();
+  });
+});
+
+// ── buildRevertEvents ─────────────────────────────────────────────────────────
+
+describe("buildRevertEvents", () => {
+  it("links a revert PR to the earlier merged PR it reverted", () => {
+    const nodes = [
+      makePRNode({
+        number: 10,
+        title: "Fix thing",
+        mergedAt: "2026-01-01T00:00:00Z",
+        createdAt: "2025-12-31T00:00:00Z",
+      }),
+      makePRNode({
+        number: 12,
+        title: 'Revert "Fix thing"',
+        mergedAt: "2026-01-02T00:00:00Z",
+        createdAt: "2026-01-01T12:00:00Z",
+      }),
+    ];
+
+    const events = buildRevertEvents(nodes);
+    expect(events).toHaveLength(1);
+    expect(events[0]).toEqual({
+      revertPRNumber: 12,
+      revertMergedAt: "2026-01-02T00:00:00Z",
+      originalPRNumber: 10,
+      originalMergedAt: "2026-01-01T00:00:00Z",
+      restoreHours: 24,
+    });
+  });
+
+  it("emits an event without original fields when no matching PR exists", () => {
+    const nodes = [
+      makePRNode({
+        number: 5,
+        title: 'Revert "Something merged long ago"',
+        mergedAt: "2026-01-02T00:00:00Z",
+      }),
+    ];
+
+    const events = buildRevertEvents(nodes);
+    expect(events).toHaveLength(1);
+    expect(events[0].revertPRNumber).toBe(5);
+    expect(events[0].originalPRNumber).toBeUndefined();
+    expect(events[0].originalMergedAt).toBeUndefined();
+    expect(events[0].restoreHours).toBeUndefined();
+  });
+
+  it("returns no events for non-revert titles", () => {
+    const nodes = [
+      makePRNode({ number: 1, title: "Fix thing" }),
+      makePRNode({ number: 2, title: "Add feature" }),
+    ];
+    expect(buildRevertEvents(nodes)).toEqual([]);
+  });
+
+  it("matches smart-quoted revert titles", () => {
+    const nodes = [
+      makePRNode({
+        number: 20,
+        title: "Fix thing",
+        mergedAt: "2026-01-01T00:00:00Z",
+      }),
+      makePRNode({
+        number: 21,
+        title: "Revert “Fix thing”",
+        mergedAt: "2026-01-01T12:00:00Z",
+      }),
+    ];
+
+    const events = buildRevertEvents(nodes);
+    expect(events).toHaveLength(1);
+    expect(events[0].revertPRNumber).toBe(21);
+    expect(events[0].originalPRNumber).toBe(20);
+    expect(events[0].restoreHours).toBe(12);
+  });
+
+  it("ignores unmerged revert PRs", () => {
+    const nodes = [
+      makePRNode({ number: 30, title: 'Revert "Fix thing"', state: "CLOSED", mergedAt: null }),
+    ];
+    expect(buildRevertEvents(nodes)).toEqual([]);
   });
 });
 

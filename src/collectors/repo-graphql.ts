@@ -20,7 +20,15 @@ export interface GraphQLPRNode {
   comments: { totalCount: number };
   /** Inline review comment threads (maps to REST `review_comments` count). */
   reviewThreads: { totalCount: number };
-  reviews: { nodes: Array<{ author: { login: string } | null }> };
+  reviews: {
+    nodes: Array<{
+      author: { login: string } | null;
+      /** ISO-8601 timestamp when the review was submitted (null for pending). */
+      submittedAt?: string | null;
+      /** Review state, e.g. "APPROVED" | "CHANGES_REQUESTED" | "COMMENTED". */
+      state?: string;
+    }>;
+  };
   /** Merge commit for MERGED PRs — null for CLOSED/OPEN PRs. */
   mergeCommit: { message: string } | null;
 }
@@ -86,7 +94,7 @@ const REPO_DATA_QUERY = `
           comments(first: 1) { totalCount }
           reviewThreads(first: 1) { totalCount }
           reviews(first: 100) {
-            nodes { author { login } }
+            nodes { author { login } submittedAt state }
           }
           mergeCommit { message }
         }
