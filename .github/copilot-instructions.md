@@ -7,7 +7,7 @@
 ## Tech stack
 
 - **Language**: TypeScript (strict mode, ES2022 target, Node16 module resolution)
-- **Runtime**: Node.js 20, ESM (`"type": "module"` in package.json)
+- **Runtime**: Node.js 22, ESM (`"type": "module"` in package.json)
 - **GitHub API**: `@octokit/rest` + `@octokit/auth-app` + `@octokit/plugin-throttling`
 - **Tests**: Vitest with globals enabled (`vitest.config.ts`)
 - **Build**: `tsc` → `dist/`
