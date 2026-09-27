@@ -2,14 +2,14 @@
   "schemaVersion": 12,
   "owner": "vyas-demo",
   "ownerType": "org",
-  "collectedAt": "2026-09-26T06:32:45.760Z",
+  "collectedAt": "2026-09-27T06:34:15.182Z",
   "repoCount": 103,
   "repos": [
     {
       "name": "github-actions-goat",
       "fullName": "vyas-demo/github-actions-goat",
       "pushedAt": "2025-04-15T19:44:07Z",
-      "collectedAt": "2026-09-26T06:25:58.058Z",
+      "collectedAt": "2026-09-27T06:27:20.154Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -992,7 +992,7 @@
       "name": "llmtool",
       "fullName": "vyas-demo/llmtool",
       "pushedAt": "2024-08-09T08:58:41Z",
-      "collectedAt": "2026-09-26T06:26:01.210Z",
+      "collectedAt": "2026-09-27T06:27:23.446Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -1975,7 +1975,7 @@
       "name": "promptflow-docs",
       "fullName": "vyas-demo/promptflow-docs",
       "pushedAt": "2024-08-10T01:37:36Z",
-      "collectedAt": "2026-09-26T06:26:04.256Z",
+      "collectedAt": "2026-09-27T06:27:26.442Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -2958,7 +2958,7 @@
       "name": "assistant",
       "fullName": "vyas-demo/assistant",
       "pushedAt": "2024-08-15T04:18:39Z",
-      "collectedAt": "2026-09-26T06:26:07.331Z",
+      "collectedAt": "2026-09-27T06:27:29.682Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -3941,7 +3941,7 @@
       "name": "assistant2",
       "fullName": "vyas-demo/assistant2",
       "pushedAt": "2024-08-15T10:44:12Z",
-      "collectedAt": "2026-09-26T06:26:10.377Z",
+      "collectedAt": "2026-09-27T06:27:32.670Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -4924,7 +4924,7 @@
       "name": "assistant3",
       "fullName": "vyas-demo/assistant3",
       "pushedAt": "2024-08-18T23:51:55Z",
-      "collectedAt": "2026-09-26T06:26:13.341Z",
+      "collectedAt": "2026-09-27T06:27:35.723Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -5907,7 +5907,7 @@
       "name": "a4",
       "fullName": "vyas-demo/a4",
       "pushedAt": "2024-11-06T04:13:18Z",
-      "collectedAt": "2026-09-26T06:26:16.389Z",
+      "collectedAt": "2026-09-27T06:27:38.908Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -6890,7 +6890,7 @@
       "name": "ghas-bootcamp",
       "fullName": "vyas-demo/ghas-bootcamp",
       "pushedAt": "2024-09-20T20:17:52Z",
-      "collectedAt": "2026-09-26T06:26:19.463Z",
+      "collectedAt": "2026-09-27T06:27:42.104Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -7873,7 +7873,7 @@
       "name": "demo-webgoat",
       "fullName": "vyas-demo/demo-webgoat",
       "pushedAt": "2025-08-17T06:06:30Z",
-      "collectedAt": "2026-09-26T06:26:23.889Z",
+      "collectedAt": "2026-09-27T06:27:46.218Z",
       "issues": {
         "open": 1,
         "closed": 0
@@ -8914,7 +8914,7 @@
       "name": "demo-webgoat2",
       "fullName": "vyas-demo/demo-webgoat2",
       "pushedAt": "2024-11-06T01:41:47Z",
-      "collectedAt": "2026-09-26T06:26:28.248Z",
+      "collectedAt": "2026-09-27T06:27:50.042Z",
       "issues": {
         "open": 2,
         "closed": 0
@@ -9931,7 +9931,7 @@
       "name": "a4-f",
       "fullName": "vyas-demo/a4-f",
       "pushedAt": "2024-08-18T23:57:33Z",
-      "collectedAt": "2026-09-26T06:26:31.286Z",
+      "collectedAt": "2026-09-27T06:27:52.818Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -10914,7 +10914,7 @@
       "name": "next-saas-starter",
       "fullName": "vyas-demo/next-saas-starter",
       "pushedAt": "2024-11-01T21:30:15Z",
-      "collectedAt": "2026-09-26T06:26:34.235Z",
+      "collectedAt": "2026-09-27T06:27:55.777Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -11897,7 +11897,7 @@
       "name": "demo-webgoat3",
       "fullName": "vyas-demo/demo-webgoat3",
       "pushedAt": "2024-12-09T18:22:21Z",
-      "collectedAt": "2026-09-26T06:26:37.441Z",
+      "collectedAt": "2026-09-27T06:27:59.179Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -12880,7 +12880,7 @@
       "name": "demo-webgoat4",
       "fullName": "vyas-demo/demo-webgoat4",
       "pushedAt": "2024-12-09T18:22:58Z",
-      "collectedAt": "2026-09-26T06:26:40.425Z",
+      "collectedAt": "2026-09-27T06:28:02.208Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -13863,7 +13863,7 @@
       "name": "demo-webgoat5",
       "fullName": "vyas-demo/demo-webgoat5",
       "pushedAt": "2025-02-27T03:51:18Z",
-      "collectedAt": "2026-09-26T06:26:43.551Z",
+      "collectedAt": "2026-09-27T06:28:05.276Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -14846,7 +14846,7 @@
       "name": "mona-demo",
       "fullName": "vyas-demo/mona-demo",
       "pushedAt": "2025-04-15T19:50:26Z",
-      "collectedAt": "2026-09-26T06:26:46.704Z",
+      "collectedAt": "2026-09-27T06:28:08.655Z",
       "issues": {
         "open": 1,
         "closed": 0
@@ -15829,7 +15829,7 @@
       "name": "clark-actions",
       "fullName": "vyas-demo/clark-actions",
       "pushedAt": "2025-04-10T14:39:15Z",
-      "collectedAt": "2026-09-26T06:26:49.882Z",
+      "collectedAt": "2026-09-27T06:28:12.085Z",
       "issues": {
         "open": 5,
         "closed": 0
@@ -16812,7 +16812,7 @@
       "name": "gravity-game",
       "fullName": "vyas-demo/gravity-game",
       "pushedAt": "2026-01-08T23:08:47Z",
-      "collectedAt": "2026-09-26T06:26:58.692Z",
+      "collectedAt": "2026-09-27T06:28:20.631Z",
       "issues": {
         "open": 0,
         "closed": 2
@@ -18833,7 +18833,7 @@
       "name": "sturdy-doodle",
       "fullName": "vyas-demo/sturdy-doodle",
       "pushedAt": "2025-02-20T17:13:33Z",
-      "collectedAt": "2026-09-26T06:27:01.660Z",
+      "collectedAt": "2026-09-27T06:28:23.754Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -19816,7 +19816,7 @@
       "name": "juice-jf",
       "fullName": "vyas-demo/juice-jf",
       "pushedAt": "2025-02-26T00:57:17Z",
-      "collectedAt": "2026-09-26T06:27:04.702Z",
+      "collectedAt": "2026-09-27T06:28:27.284Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -20799,7 +20799,7 @@
       "name": "jfrog-github-example",
       "fullName": "vyas-demo/jfrog-github-example",
       "pushedAt": "2024-08-01T10:11:48Z",
-      "collectedAt": "2026-09-26T06:27:07.742Z",
+      "collectedAt": "2026-09-27T06:28:29.896Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -21782,7 +21782,7 @@
       "name": "jf-example",
       "fullName": "vyas-demo/jf-example",
       "pushedAt": "2025-02-27T10:18:32Z",
-      "collectedAt": "2026-09-26T06:27:10.878Z",
+      "collectedAt": "2026-09-27T06:28:33.114Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -22765,7 +22765,7 @@
       "name": "mvn-jf",
       "fullName": "vyas-demo/mvn-jf",
       "pushedAt": "2025-03-11T02:43:45Z",
-      "collectedAt": "2026-09-26T06:27:13.957Z",
+      "collectedAt": "2026-09-27T06:28:36.133Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -23748,7 +23748,7 @@
       "name": "real-deal",
       "fullName": "vyas-demo/real-deal",
       "pushedAt": "2025-05-02T17:44:57Z",
-      "collectedAt": "2026-09-26T06:27:16.965Z",
+      "collectedAt": "2026-09-27T06:28:39.375Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -24731,7 +24731,7 @@
       "name": "ghas-boot",
       "fullName": "vyas-demo/ghas-boot",
       "pushedAt": "2025-05-02T19:37:54Z",
-      "collectedAt": "2026-09-26T06:27:20.015Z",
+      "collectedAt": "2026-09-27T06:28:42.474Z",
       "issues": {
         "open": 1,
         "closed": 0
@@ -25714,7 +25714,7 @@
       "name": "mona-demo1",
       "fullName": "vyas-demo/mona-demo1",
       "pushedAt": "2025-01-22T04:36:04Z",
-      "collectedAt": "2026-09-26T06:27:23.042Z",
+      "collectedAt": "2026-09-27T06:28:45.471Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -26697,7 +26697,7 @@
       "name": "ghas-demo1",
       "fullName": "vyas-demo/ghas-demo1",
       "pushedAt": "2025-05-30T16:04:46Z",
-      "collectedAt": "2026-09-26T06:27:26.326Z",
+      "collectedAt": "2026-09-27T06:28:48.847Z",
       "issues": {
         "open": 1,
         "closed": 0
@@ -27680,7 +27680,7 @@
       "name": "gl-migrate",
       "fullName": "vyas-demo/gl-migrate",
       "pushedAt": "2025-06-10T20:51:12Z",
-      "collectedAt": "2026-09-26T06:27:29.409Z",
+      "collectedAt": "2026-09-27T06:28:51.897Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -28663,7 +28663,7 @@
       "name": "ensight",
       "fullName": "vyas-demo/ensight",
       "pushedAt": "2025-06-13T05:10:44Z",
-      "collectedAt": "2026-09-26T06:27:32.540Z",
+      "collectedAt": "2026-09-27T06:28:54.988Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -29646,7 +29646,7 @@
       "name": "copilot-metrics-viewer",
       "fullName": "vyas-demo/copilot-metrics-viewer",
       "pushedAt": "2025-06-14T08:32:49Z",
-      "collectedAt": "2026-09-26T06:27:35.473Z",
+      "collectedAt": "2026-09-27T06:28:58.096Z",
       "issues": {
         "open": 1,
         "closed": 0
@@ -30629,7 +30629,7 @@
       "name": "copilot-insights-pilot-view",
       "fullName": "vyas-demo/copilot-insights-pilot-view",
       "pushedAt": "2025-06-22T08:11:04Z",
-      "collectedAt": "2026-09-26T06:27:38.816Z",
+      "collectedAt": "2026-09-27T06:29:01.370Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -31612,7 +31612,7 @@
       "name": "vnet-runner",
       "fullName": "vyas-demo/vnet-runner",
       "pushedAt": "2025-07-23T08:19:13Z",
-      "collectedAt": "2026-09-26T06:27:41.946Z",
+      "collectedAt": "2026-09-27T06:29:04.388Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -32595,7 +32595,7 @@
       "name": "gh-secrets-migrator",
       "fullName": "vyas-demo/gh-secrets-migrator",
       "pushedAt": "2025-07-17T02:23:41Z",
-      "collectedAt": "2026-09-26T06:27:45.211Z",
+      "collectedAt": "2026-09-27T06:29:07.328Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -33601,7 +33601,7 @@
       "name": "hello-world-js",
       "fullName": "vyas-demo/hello-world-js",
       "pushedAt": "2025-08-27T13:56:34Z",
-      "collectedAt": "2026-09-26T06:27:48.190Z",
+      "collectedAt": "2026-09-27T06:29:10.399Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -34584,7 +34584,7 @@
       "name": "losslesscut-web",
       "fullName": "vyas-demo/losslesscut-web",
       "pushedAt": "2025-09-04T15:26:53Z",
-      "collectedAt": "2026-09-26T06:27:51.576Z",
+      "collectedAt": "2026-09-27T06:29:13.893Z",
       "issues": {
         "open": 1,
         "closed": 0
@@ -35567,7 +35567,7 @@
       "name": "ado-test",
       "fullName": "vyas-demo/ado-test",
       "pushedAt": "2025-09-25T19:56:54Z",
-      "collectedAt": "2026-09-26T06:27:54.597Z",
+      "collectedAt": "2026-09-27T06:29:16.840Z",
       "issues": {
         "open": 1,
         "closed": 0
@@ -36550,7 +36550,7 @@
       "name": "ado-test2",
       "fullName": "vyas-demo/ado-test2",
       "pushedAt": "2025-09-25T20:22:32Z",
-      "collectedAt": "2026-09-26T06:27:57.663Z",
+      "collectedAt": "2026-09-27T06:29:20.110Z",
       "issues": {
         "open": 1,
         "closed": 0
@@ -37533,7 +37533,7 @@
       "name": "Project2-test",
       "fullName": "vyas-demo/Project2-test",
       "pushedAt": "2025-09-26T14:28:20Z",
-      "collectedAt": "2026-09-26T06:28:00.831Z",
+      "collectedAt": "2026-09-27T06:29:23.312Z",
       "issues": {
         "open": 1,
         "closed": 0
@@ -38516,7 +38516,7 @@
       "name": "fiesta-max",
       "fullName": "vyas-demo/fiesta-max",
       "pushedAt": "2025-12-08T18:40:31Z",
-      "collectedAt": "2026-09-26T06:28:03.981Z",
+      "collectedAt": "2026-09-27T06:29:26.281Z",
       "issues": {
         "open": 4,
         "closed": 0
@@ -39499,7 +39499,7 @@
       "name": "probable-octo-chainsaw",
       "fullName": "vyas-demo/probable-octo-chainsaw",
       "pushedAt": "2025-12-09T06:01:11Z",
-      "collectedAt": "2026-09-26T06:28:07.208Z",
+      "collectedAt": "2026-09-27T06:29:29.596Z",
       "issues": {
         "open": 2,
         "closed": 0
@@ -40482,7 +40482,7 @@
       "name": "github-app-workflow",
       "fullName": "vyas-demo/github-app-workflow",
       "pushedAt": "2025-12-09T15:16:21Z",
-      "collectedAt": "2026-09-26T06:28:10.208Z",
+      "collectedAt": "2026-09-27T06:29:33.604Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -41465,7 +41465,7 @@
       "name": "github-app-action",
       "fullName": "vyas-demo/github-app-action",
       "pushedAt": "2025-12-09T15:25:29Z",
-      "collectedAt": "2026-09-26T06:28:13.381Z",
+      "collectedAt": "2026-09-27T06:29:36.754Z",
       "issues": {
         "open": 3,
         "closed": 0
@@ -42448,7 +42448,7 @@
       "name": "special-sniffle",
       "fullName": "vyas-demo/special-sniffle",
       "pushedAt": "2025-12-10T16:59:26Z",
-      "collectedAt": "2026-09-26T06:28:16.397Z",
+      "collectedAt": "2026-09-27T06:29:39.789Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -43431,7 +43431,7 @@
       "name": "TBS-TimeWarp",
       "fullName": "vyas-demo/TBS-TimeWarp",
       "pushedAt": "2026-02-21T09:01:09Z",
-      "collectedAt": "2026-09-26T06:28:19.433Z",
+      "collectedAt": "2026-09-27T06:29:42.863Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -44414,7 +44414,7 @@
       "name": "real-deal-ercot",
       "fullName": "vyas-demo/real-deal-ercot",
       "pushedAt": "2026-04-21T20:23:07Z",
-      "collectedAt": "2026-09-26T06:28:23.472Z",
+      "collectedAt": "2026-09-27T06:29:46.764Z",
       "issues": {
         "open": 0,
         "closed": 1
@@ -45455,7 +45455,7 @@
       "name": "ubiquitous-octo-guacamole",
       "fullName": "vyas-demo/ubiquitous-octo-guacamole",
       "pushedAt": "2026-04-22T19:17:49Z",
-      "collectedAt": "2026-09-26T06:28:26.551Z",
+      "collectedAt": "2026-09-27T06:29:49.834Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -46438,7 +46438,7 @@
       "name": "refactored-spork",
       "fullName": "vyas-demo/refactored-spork",
       "pushedAt": "2026-04-28T18:56:26Z",
-      "collectedAt": "2026-09-26T06:28:29.625Z",
+      "collectedAt": "2026-09-27T06:29:53.299Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -47421,7 +47421,7 @@
       "name": "ghas-boot1",
       "fullName": "vyas-demo/ghas-boot1",
       "pushedAt": "2026-08-25T18:23:02Z",
-      "collectedAt": "2026-09-26T06:28:33.267Z",
+      "collectedAt": "2026-09-27T06:29:56.847Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -48434,7 +48434,7 @@
       "name": "coop",
       "fullName": "vyas-demo/coop",
       "pushedAt": "2026-08-18T22:46:41Z",
-      "collectedAt": "2026-09-26T06:28:48.539Z",
+      "collectedAt": "2026-09-27T06:30:11.929Z",
       "issues": {
         "open": 100,
         "closed": 12
@@ -50543,7 +50543,7 @@
       "name": "webgoat9",
       "fullName": "vyas-demo/webgoat9",
       "pushedAt": "2026-08-28T18:22:54Z",
-      "collectedAt": "2026-09-26T06:28:52.857Z",
+      "collectedAt": "2026-09-27T06:30:16.172Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -51557,8 +51557,8 @@
     {
       "name": "devex-metrics",
       "fullName": "vyas-demo/devex-metrics",
-      "pushedAt": "2026-09-25T06:37:23Z",
-      "collectedAt": "2026-09-26T06:29:09.627Z",
+      "pushedAt": "2026-09-26T06:32:51Z",
+      "collectedAt": "2026-09-27T06:30:32.796Z",
       "issues": {
         "open": 0,
         "closed": 1
@@ -51566,9 +51566,25 @@
       "pullRequests": {
         "open": 8,
         "closed": 23,
-        "merged": 93
+        "merged": 94
       },
       "pullRequestDetails": [
+        {
+          "number": 126,
+          "title": "chore: update vyas-demo fixture data",
+          "state": "merged",
+          "createdAt": "2026-09-26T06:32:49Z",
+          "author": "github-actions",
+          "isCopilotAuthored": false,
+          "hasCopilotReview": false,
+          "linesAdded": 1002,
+          "linesDeleted": 647,
+          "commentCount": 0,
+          "commitCount": 1,
+          "actionsMinutes": 0.95,
+          "timeToMergeHours": 0,
+          "mergedAt": "2026-09-26T06:32:52Z"
+        },
         {
           "number": 125,
           "title": "chore: update vyas-demo fixture data",
@@ -51712,25 +51728,21 @@
           "actionsMinutes": 0.97,
           "timeToMergeHours": 0,
           "mergedAt": "2026-09-17T06:36:29Z"
-        },
-        {
-          "number": 112,
-          "title": "chore: update vyas-demo fixture data",
-          "state": "merged",
-          "createdAt": "2026-09-16T06:35:35Z",
-          "author": "github-actions",
-          "isCopilotAuthored": false,
-          "hasCopilotReview": false,
-          "linesAdded": 407,
-          "linesDeleted": 223,
-          "commentCount": 0,
-          "commitCount": 1,
-          "actionsMinutes": 0.73,
-          "timeToMergeHours": 0,
-          "mergedAt": "2026-09-16T06:35:39Z"
         }
       ],
       "mergedPRTimeline": [
+        {
+          "number": 126,
+          "createdAt": "2026-09-26T06:32:49Z",
+          "mergedAt": "2026-09-26T06:32:52Z",
+          "author": "github-actions",
+          "isBotAuthor": true,
+          "isCopilotAuthored": false,
+          "timeToMergeHours": 0,
+          "closesIssues": [],
+          "linesAdded": 1002,
+          "linesDeleted": 647
+        },
         {
           "number": 125,
           "createdAt": "2026-09-25T06:37:18Z",
@@ -52863,7 +52875,7 @@
       "copilotAdoption": {
         "copilotAuthoredPRs": 0,
         "copilotReviewedPRs": 0,
-        "totalMergedPRs": 93,
+        "totalMergedPRs": 94,
         "totalDetailedPRs": 10
       },
       "issueLeadTimes": [],
@@ -52886,6 +52898,12 @@
         "agentActionsMinutes": 0
       },
       "deployments": [
+        {
+          "createdAt": "2026-09-26T06:32:57Z",
+          "source": "deployment",
+          "environment": "github-pages",
+          "state": "success"
+        },
         {
           "createdAt": "2026-09-25T06:37:30Z",
           "source": "deployment",
@@ -54323,12 +54341,12 @@
         },
         {
           "week": "2026-W39",
-          "prsOpened": 6,
-          "prsMerged": 5,
+          "prsOpened": 7,
+          "prsMerged": 6,
           "issuesOpened": 0,
           "issuesClosed": 0,
-          "linesAdded": 5362,
-          "linesDeleted": 5853
+          "linesAdded": 6364,
+          "linesDeleted": 6500
         }
       ]
     },
@@ -54336,7 +54354,7 @@
       "name": "ghas-boot2",
       "fullName": "vyas-demo/ghas-boot2",
       "pushedAt": "2026-06-17T17:59:09Z",
-      "collectedAt": "2026-09-26T06:29:13.477Z",
+      "collectedAt": "2026-09-27T06:30:36.115Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -55349,7 +55367,7 @@
       "name": "arc-scale-set-demo",
       "fullName": "vyas-demo/arc-scale-set-demo",
       "pushedAt": "2026-06-26T13:43:00Z",
-      "collectedAt": "2026-09-26T06:29:16.446Z",
+      "collectedAt": "2026-09-27T06:30:39.376Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -56332,7 +56350,7 @@
       "name": "devcloud_gha_aks_infra",
       "fullName": "vyas-demo/devcloud_gha_aks_infra",
       "pushedAt": "2026-09-16T12:02:00Z",
-      "collectedAt": "2026-09-26T06:29:26.108Z",
+      "collectedAt": "2026-09-27T06:30:49.509Z",
       "issues": {
         "open": 18,
         "closed": 13
@@ -58174,7 +58192,7 @@
       "name": "toy-orders",
       "fullName": "vyas-demo/toy-orders",
       "pushedAt": "2026-07-07T20:33:00Z",
-      "collectedAt": "2026-09-26T06:29:29.746Z",
+      "collectedAt": "2026-09-27T06:30:52.955Z",
       "issues": {
         "open": 1,
         "closed": 0
@@ -59164,7 +59182,7 @@
       "name": "game",
       "fullName": "vyas-demo/game",
       "pushedAt": "2026-07-19T02:46:06Z",
-      "collectedAt": "2026-09-26T06:29:33.237Z",
+      "collectedAt": "2026-09-27T06:30:56.334Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -60346,7 +60364,7 @@
       "name": "portal-smoke",
       "fullName": "vyas-demo/portal-smoke",
       "pushedAt": "2026-07-09T13:45:35Z",
-      "collectedAt": "2026-09-26T06:29:36.117Z",
+      "collectedAt": "2026-09-27T06:30:59.564Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -61329,7 +61347,7 @@
       "name": "portal-smoke-infra",
       "fullName": "vyas-demo/portal-smoke-infra",
       "pushedAt": "2026-07-09T13:45:42Z",
-      "collectedAt": "2026-09-26T06:29:39.164Z",
+      "collectedAt": "2026-09-27T06:31:02.768Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -62312,7 +62330,7 @@
       "name": "portal-smoke2",
       "fullName": "vyas-demo/portal-smoke2",
       "pushedAt": "2026-07-09T13:54:27Z",
-      "collectedAt": "2026-09-26T06:29:42.085Z",
+      "collectedAt": "2026-09-27T06:31:05.880Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -63295,7 +63313,7 @@
       "name": "portal-smoke2-infra",
       "fullName": "vyas-demo/portal-smoke2-infra",
       "pushedAt": "2026-07-09T13:54:34Z",
-      "collectedAt": "2026-09-26T06:29:45.142Z",
+      "collectedAt": "2026-09-27T06:31:09.108Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -64278,7 +64296,7 @@
       "name": "portal-smoke3",
       "fullName": "vyas-demo/portal-smoke3",
       "pushedAt": "2026-07-09T13:58:52Z",
-      "collectedAt": "2026-09-26T06:29:48.178Z",
+      "collectedAt": "2026-09-27T06:31:12.309Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -65261,7 +65279,7 @@
       "name": "portal-smoke3-infra",
       "fullName": "vyas-demo/portal-smoke3-infra",
       "pushedAt": "2026-07-09T13:58:59Z",
-      "collectedAt": "2026-09-26T06:29:51.236Z",
+      "collectedAt": "2026-09-27T06:31:15.674Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -66244,7 +66262,7 @@
       "name": "portal-smoke4",
       "fullName": "vyas-demo/portal-smoke4",
       "pushedAt": "2026-07-09T14:01:03Z",
-      "collectedAt": "2026-09-26T06:29:54.309Z",
+      "collectedAt": "2026-09-27T06:31:18.628Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -67227,7 +67245,7 @@
       "name": "portal-smoke4-infra",
       "fullName": "vyas-demo/portal-smoke4-infra",
       "pushedAt": "2026-07-09T14:01:09Z",
-      "collectedAt": "2026-09-26T06:29:57.348Z",
+      "collectedAt": "2026-09-27T06:31:22.233Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -68210,7 +68228,7 @@
       "name": "orders-api-infra",
       "fullName": "vyas-demo/orders-api-infra",
       "pushedAt": "2026-07-09T15:32:58Z",
-      "collectedAt": "2026-09-26T06:30:00.292Z",
+      "collectedAt": "2026-09-27T06:31:25.132Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -69200,7 +69218,7 @@
       "name": "spoke-demo-infra",
       "fullName": "vyas-demo/spoke-demo-infra",
       "pushedAt": "2026-07-09T15:35:58Z",
-      "collectedAt": "2026-09-26T06:30:03.368Z",
+      "collectedAt": "2026-09-27T06:31:28.202Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -70190,7 +70208,7 @@
       "name": "devcloud-backstage",
       "fullName": "vyas-demo/devcloud-backstage",
       "pushedAt": "2026-09-16T12:10:20Z",
-      "collectedAt": "2026-09-26T06:30:12.477Z",
+      "collectedAt": "2026-09-27T06:31:38.363Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -71774,7 +71792,7 @@
       "name": "secret-test",
       "fullName": "vyas-demo/secret-test",
       "pushedAt": "2026-07-09T19:27:00Z",
-      "collectedAt": "2026-09-26T06:30:15.675Z",
+      "collectedAt": "2026-09-27T06:31:41.656Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -72757,7 +72775,7 @@
       "name": "dc-smoke-0712",
       "fullName": "vyas-demo/dc-smoke-0712",
       "pushedAt": "2026-07-12T15:57:35Z",
-      "collectedAt": "2026-09-26T06:30:18.707Z",
+      "collectedAt": "2026-09-27T06:31:44.930Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -73747,7 +73765,7 @@
       "name": "dc-smoke-0712-infra",
       "fullName": "vyas-demo/dc-smoke-0712-infra",
       "pushedAt": "2026-07-22T20:09:18Z",
-      "collectedAt": "2026-09-26T06:30:22.936Z",
+      "collectedAt": "2026-09-27T06:31:49.370Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -74845,7 +74863,7 @@
       "name": "repo1",
       "fullName": "vyas-demo/repo1",
       "pushedAt": "2026-07-21T11:47:28Z",
-      "collectedAt": "2026-09-26T06:30:26.071Z",
+      "collectedAt": "2026-09-27T06:31:52.437Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -75828,7 +75846,7 @@
       "name": "repo1-infra",
       "fullName": "vyas-demo/repo1-infra",
       "pushedAt": "2026-07-24T03:47:51Z",
-      "collectedAt": "2026-09-26T06:30:29.153Z",
+      "collectedAt": "2026-09-27T06:31:55.648Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -76818,7 +76836,7 @@
       "name": "repo2",
       "fullName": "vyas-demo/repo2",
       "pushedAt": "2026-07-21T12:53:18Z",
-      "collectedAt": "2026-09-26T06:30:32.174Z",
+      "collectedAt": "2026-09-27T06:31:58.772Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -77801,7 +77819,7 @@
       "name": "repo2-infra",
       "fullName": "vyas-demo/repo2-infra",
       "pushedAt": "2026-07-24T03:47:58Z",
-      "collectedAt": "2026-09-26T06:30:35.300Z",
+      "collectedAt": "2026-09-27T06:32:01.791Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -78791,7 +78809,7 @@
       "name": "dev-metrics",
       "fullName": "vyas-demo/dev-metrics",
       "pushedAt": "2026-09-24T18:33:25Z",
-      "collectedAt": "2026-09-26T06:30:46.761Z",
+      "collectedAt": "2026-09-27T06:32:12.757Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -80580,7 +80598,7 @@
       "name": "repo5",
       "fullName": "vyas-demo/repo5",
       "pushedAt": "2026-07-24T17:19:53Z",
-      "collectedAt": "2026-09-26T06:30:49.805Z",
+      "collectedAt": "2026-09-27T06:32:15.860Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -81563,7 +81581,7 @@
       "name": "repo5-infra",
       "fullName": "vyas-demo/repo5-infra",
       "pushedAt": "2026-07-30T17:38:28Z",
-      "collectedAt": "2026-09-26T06:30:52.916Z",
+      "collectedAt": "2026-09-27T06:32:19.005Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -82546,7 +82564,7 @@
       "name": "repo6",
       "fullName": "vyas-demo/repo6",
       "pushedAt": "2026-07-28T20:31:53Z",
-      "collectedAt": "2026-09-26T06:30:55.958Z",
+      "collectedAt": "2026-09-27T06:32:22.519Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -83529,7 +83547,7 @@
       "name": "repo6-infra",
       "fullName": "vyas-demo/repo6-infra",
       "pushedAt": "2026-07-27T13:41:16Z",
-      "collectedAt": "2026-09-26T06:30:58.986Z",
+      "collectedAt": "2026-09-27T06:32:26.117Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -84512,7 +84530,7 @@
       "name": "hike",
       "fullName": "vyas-demo/hike",
       "pushedAt": "2026-07-28T06:00:05Z",
-      "collectedAt": "2026-09-26T06:31:02.081Z",
+      "collectedAt": "2026-09-27T06:32:29.219Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -85508,7 +85526,7 @@
       "name": "under",
       "fullName": "vyas-demo/under",
       "pushedAt": "2026-07-28T00:20:03Z",
-      "collectedAt": "2026-09-26T06:31:05.089Z",
+      "collectedAt": "2026-09-27T06:32:32.213Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -86498,7 +86516,7 @@
       "name": "repo7",
       "fullName": "vyas-demo/repo7",
       "pushedAt": "2026-08-04T13:26:15Z",
-      "collectedAt": "2026-09-26T06:31:08.084Z",
+      "collectedAt": "2026-09-27T06:32:35.303Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -87488,7 +87506,7 @@
       "name": "repo7-infra",
       "fullName": "vyas-demo/repo7-infra",
       "pushedAt": "2026-08-04T13:26:21Z",
-      "collectedAt": "2026-09-26T06:31:11.117Z",
+      "collectedAt": "2026-09-27T06:32:38.506Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -88471,7 +88489,7 @@
       "name": "demo-repo",
       "fullName": "vyas-demo/demo-repo",
       "pushedAt": "2026-08-04T13:51:43Z",
-      "collectedAt": "2026-09-26T06:31:14.124Z",
+      "collectedAt": "2026-09-27T06:32:41.575Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -89461,7 +89479,7 @@
       "name": "demo-repo-infra",
       "fullName": "vyas-demo/demo-repo-infra",
       "pushedAt": "2026-08-04T13:51:50Z",
-      "collectedAt": "2026-09-26T06:31:17.223Z",
+      "collectedAt": "2026-09-27T06:32:44.561Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -90444,7 +90462,7 @@
       "name": "repo8",
       "fullName": "vyas-demo/repo8",
       "pushedAt": "2026-08-04T14:42:01Z",
-      "collectedAt": "2026-09-26T06:31:20.543Z",
+      "collectedAt": "2026-09-27T06:32:47.735Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -91434,7 +91452,7 @@
       "name": "repo8-infra",
       "fullName": "vyas-demo/repo8-infra",
       "pushedAt": "2026-08-04T14:42:08Z",
-      "collectedAt": "2026-09-26T06:31:23.587Z",
+      "collectedAt": "2026-09-27T06:32:50.845Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -92417,7 +92435,7 @@
       "name": "poc-test-app",
       "fullName": "vyas-demo/poc-test-app",
       "pushedAt": "2026-08-07T04:47:12Z",
-      "collectedAt": "2026-09-26T06:31:26.666Z",
+      "collectedAt": "2026-09-27T06:32:53.963Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -93400,7 +93418,7 @@
       "name": "poc-outsider-app",
       "fullName": "vyas-demo/poc-outsider-app",
       "pushedAt": "2026-08-07T04:47:13Z",
-      "collectedAt": "2026-09-26T06:31:29.784Z",
+      "collectedAt": "2026-09-27T06:32:58.531Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -94383,7 +94401,7 @@
       "name": "platformx-gha-runners-aws",
       "fullName": "vyas-demo/platformx-gha-runners-aws",
       "pushedAt": "2026-08-07T06:10:09Z",
-      "collectedAt": "2026-09-26T06:31:33.425Z",
+      "collectedAt": "2026-09-27T06:33:02.216Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -95403,7 +95421,7 @@
       "name": "forge-provision-probe-1786254818",
       "fullName": "vyas-demo/forge-provision-probe-1786254818",
       "pushedAt": "2026-08-15T20:21:04Z",
-      "collectedAt": "2026-09-26T06:31:36.443Z",
+      "collectedAt": "2026-09-27T06:33:05.434Z",
       "issues": {
         "open": 4,
         "closed": 1
@@ -96386,7 +96404,7 @@
       "name": "potential-fiesta",
       "fullName": "vyas-demo/potential-fiesta",
       "pushedAt": "2026-08-18T19:32:52Z",
-      "collectedAt": "2026-09-26T06:31:39.580Z",
+      "collectedAt": "2026-09-27T06:33:08.647Z",
       "issues": {
         "open": 3,
         "closed": 0
@@ -97369,7 +97387,7 @@
       "name": "pipe",
       "fullName": "vyas-demo/pipe",
       "pushedAt": "2026-08-16T22:33:33Z",
-      "collectedAt": "2026-09-26T06:31:42.725Z",
+      "collectedAt": "2026-09-27T06:33:11.861Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -98352,7 +98370,7 @@
       "name": "forge-calculate",
       "fullName": "vyas-demo/forge-calculate",
       "pushedAt": "2026-08-17T18:21:09Z",
-      "collectedAt": "2026-09-26T06:31:45.730Z",
+      "collectedAt": "2026-09-27T06:33:15.351Z",
       "issues": {
         "open": 2,
         "closed": 0
@@ -99335,7 +99353,7 @@
       "name": "repo31",
       "fullName": "vyas-demo/repo31",
       "pushedAt": "2026-08-21T16:11:37Z",
-      "collectedAt": "2026-09-26T06:31:48.768Z",
+      "collectedAt": "2026-09-27T06:33:18.068Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -100318,7 +100336,7 @@
       "name": "repo31-infra",
       "fullName": "vyas-demo/repo31-infra",
       "pushedAt": "2026-08-21T16:11:44Z",
-      "collectedAt": "2026-09-26T06:31:51.896Z",
+      "collectedAt": "2026-09-27T06:33:21.058Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -101301,7 +101319,7 @@
       "name": "celld",
       "fullName": "vyas-demo/celld",
       "pushedAt": "2026-08-22T22:00:48Z",
-      "collectedAt": "2026-09-26T06:31:54.932Z",
+      "collectedAt": "2026-09-27T06:33:24.223Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -102284,7 +102302,7 @@
       "name": "cal",
       "fullName": "vyas-demo/cal",
       "pushedAt": "2026-09-07T15:38:40Z",
-      "collectedAt": "2026-09-26T06:32:01.105Z",
+      "collectedAt": "2026-09-27T06:33:30.619Z",
       "issues": {
         "open": 2,
         "closed": 0
@@ -103502,7 +103520,7 @@
       "name": "forge-tetris-e2e-20260912012141",
       "fullName": "vyas-demo/forge-tetris-e2e-20260912012141",
       "pushedAt": "2026-09-12T03:07:56Z",
-      "collectedAt": "2026-09-26T06:32:04.364Z",
+      "collectedAt": "2026-09-27T06:33:33.688Z",
       "issues": {
         "open": 2,
         "closed": 1
@@ -104485,7 +104503,7 @@
       "name": "forge-space-shooter-20260913110355",
       "fullName": "vyas-demo/forge-space-shooter-20260913110355",
       "pushedAt": "2026-09-13T15:55:50Z",
-      "collectedAt": "2026-09-26T06:32:07.947Z",
+      "collectedAt": "2026-09-27T06:33:37.792Z",
       "issues": {
         "open": 0,
         "closed": 2
@@ -105507,7 +105525,7 @@
       "name": "dc-demo-existing-0916",
       "fullName": "vyas-demo/dc-demo-existing-0916",
       "pushedAt": "2026-09-16T11:44:15Z",
-      "collectedAt": "2026-09-26T06:32:11.579Z",
+      "collectedAt": "2026-09-27T06:33:41.185Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -106520,7 +106538,7 @@
       "name": "dc-demo-0916",
       "fullName": "vyas-demo/dc-demo-0916",
       "pushedAt": "2026-09-16T11:38:42Z",
-      "collectedAt": "2026-09-26T06:32:14.755Z",
+      "collectedAt": "2026-09-27T06:33:44.432Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -107503,7 +107521,7 @@
       "name": "dc-demo-0916-infra",
       "fullName": "vyas-demo/dc-demo-0916-infra",
       "pushedAt": "2026-09-16T11:32:00Z",
-      "collectedAt": "2026-09-26T06:32:17.831Z",
+      "collectedAt": "2026-09-27T06:33:47.406Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -109462,21 +109480,21 @@
     },
     {
       "week": "2026-W39",
-      "prsOpened": 23,
-      "prsMerged": 22,
+      "prsOpened": 24,
+      "prsMerged": 23,
       "issuesOpened": 0,
       "issuesClosed": 0,
-      "linesAdded": 88472,
-      "linesDeleted": 7758
+      "linesAdded": 89474,
+      "linesDeleted": 8405
     }
   ],
   "copilotUsageScope": "organization:vyas-demo",
   "copilotUsage": {
     "scope": "organization",
     "scopeName": "vyas-demo",
-    "reportStartDay": "2026-08-29",
-    "reportEndDay": "2026-09-25",
-    "collectedAt": "2026-09-26T06:32:45.757Z",
+    "reportStartDay": "2026-08-30",
+    "reportEndDay": "2026-09-26",
+    "collectedAt": "2026-09-27T06:34:15.179Z",
     "totals": {
       "userInitiatedInteractions": 626,
       "codeGenerations": 5956,
@@ -109546,10 +109564,10 @@
       "monthlyPassiveUsers": 0
     },
     "repositoryReport": {
-      "reportDay": "2026-09-25",
+      "reportDay": "2026-09-26",
       "repositories": [
         {
-          "day": "2026-09-25",
+          "day": "2026-09-26",
           "enterpriseId": "5811",
           "organizationId": "176652172",
           "repoId": "1244882870",
@@ -109561,7 +109579,7 @@
             "totalCreated": 1,
             "totalReviewed": 0,
             "totalMerged": 1,
-            "medianMinutesToMerge": 0.08,
+            "medianMinutesToMerge": 0.05,
             "totalSuggestions": 0,
             "totalAppliedSuggestions": 0,
             "totalCreatedByCopilot": 0,
@@ -109800,60 +109818,6 @@
       }
     ],
     "dailyTotals": [
-      {
-        "userInitiatedInteractions": 0,
-        "codeGenerations": 0,
-        "codeAcceptances": 0,
-        "locSuggestedToAdd": 0,
-        "locSuggestedToDelete": 0,
-        "locAdded": 0,
-        "locDeleted": 0,
-        "acceptanceRate": 0,
-        "day": "2026-08-29",
-        "dailyActiveUsers": 0,
-        "weeklyActiveUsers": 6,
-        "monthlyActiveUsers": 6,
-        "dailyActiveCliUsers": 0,
-        "dailyActiveChatUsers": 0,
-        "dailyActiveAgentUsers": 0,
-        "weeklyActiveChatUsers": 0,
-        "weeklyActiveAgentUsers": 0,
-        "monthlyActiveChatUsers": 5,
-        "monthlyActiveAgentUsers": 5,
-        "codeReview": {
-          "dailyActiveUsers": 0,
-          "dailyPassiveUsers": 0,
-          "weeklyActiveUsers": 0,
-          "weeklyPassiveUsers": 0,
-          "monthlyActiveUsers": 0,
-          "monthlyPassiveUsers": 1
-        },
-        "cli": {
-          "sessionCount": 0,
-          "requestCount": 0,
-          "promptCount": 0,
-          "promptTokens": 0,
-          "outputTokens": 0,
-          "avgTokensPerRequest": 0
-        },
-        "pullRequests": {
-          "totalCreated": 1,
-          "totalReviewed": 0,
-          "totalMerged": 1,
-          "medianMinutesToMerge": 0.08,
-          "totalSuggestions": 0,
-          "totalAppliedSuggestions": 0,
-          "totalCreatedByCopilot": 0,
-          "totalReviewedByCopilot": 0,
-          "totalMergedCreatedByCopilot": 0,
-          "totalMergedReviewedByCopilot": 0,
-          "medianMinutesToMergeCopilotAuthored": null,
-          "medianMinutesToMergeCopilotReviewed": null,
-          "totalCopilotSuggestions": 0,
-          "totalCopilotAppliedSuggestions": 0,
-          "copilotSuggestionsByCommentType": []
-        }
-      },
       {
         "userInitiatedInteractions": 2,
         "codeGenerations": 1,
@@ -112453,6 +112417,130 @@
             "avgPullRequestsReviewCycles": 0
           }
         ]
+      },
+      {
+        "userInitiatedInteractions": 0,
+        "codeGenerations": 0,
+        "codeAcceptances": 0,
+        "locSuggestedToAdd": 0,
+        "locSuggestedToDelete": 0,
+        "locAdded": 0,
+        "locDeleted": 0,
+        "acceptanceRate": 0,
+        "day": "2026-09-26",
+        "dailyActiveUsers": 0,
+        "weeklyActiveUsers": 4,
+        "monthlyActiveUsers": 7,
+        "dailyActiveCliUsers": 0,
+        "dailyActiveChatUsers": 0,
+        "dailyActiveAgentUsers": 0,
+        "weeklyActiveChatUsers": 0,
+        "weeklyActiveAgentUsers": 0,
+        "monthlyActiveChatUsers": 5,
+        "monthlyActiveAgentUsers": 5,
+        "codeReview": {
+          "dailyActiveUsers": 0,
+          "dailyPassiveUsers": 0,
+          "weeklyActiveUsers": 0,
+          "weeklyPassiveUsers": 0,
+          "monthlyActiveUsers": 0,
+          "monthlyPassiveUsers": 0
+        },
+        "cli": {
+          "sessionCount": 0,
+          "requestCount": 0,
+          "promptCount": 0,
+          "promptTokens": 0,
+          "outputTokens": 0,
+          "avgTokensPerRequest": 0
+        },
+        "pullRequests": {
+          "totalCreated": 1,
+          "totalReviewed": 0,
+          "totalMerged": 1,
+          "medianMinutesToMerge": 0.05,
+          "totalSuggestions": 0,
+          "totalAppliedSuggestions": 0,
+          "totalCreatedByCopilot": 0,
+          "totalReviewedByCopilot": 0,
+          "totalMergedCreatedByCopilot": 0,
+          "totalMergedReviewedByCopilot": 0,
+          "medianMinutesToMergeCopilotAuthored": null,
+          "medianMinutesToMergeCopilotReviewed": null,
+          "totalCopilotSuggestions": 0,
+          "totalCopilotAppliedSuggestions": 0,
+          "copilotSuggestionsByCommentType": []
+        },
+        "aiAdoptionPhases": [
+          {
+            "phaseNumber": 0,
+            "phase": "No Cohort",
+            "totalEngagedUsers": 0,
+            "avgUserInitiatedInteractions": 0,
+            "avgCodeGenerationActivities": 0,
+            "avgCodeAcceptanceActivities": 0,
+            "avgLocAdded": 0,
+            "avgLocDeleted": 0,
+            "avgPullRequestsReviewed": 0,
+            "avgPullRequestsCreated": 0,
+            "avgPullRequestsMerged": 0,
+            "totalPullRequestsMerged": 0,
+            "avgPullRequestsMedianMinutesToMerge": 0,
+            "avgPullRequestsMinutesToReview": 0,
+            "avgPullRequestsReviewCycles": 0
+          },
+          {
+            "phaseNumber": 1,
+            "phase": "Phase 1",
+            "totalEngagedUsers": 0,
+            "avgUserInitiatedInteractions": 0,
+            "avgCodeGenerationActivities": 0,
+            "avgCodeAcceptanceActivities": 0,
+            "avgLocAdded": 0,
+            "avgLocDeleted": 0,
+            "avgPullRequestsReviewed": 0,
+            "avgPullRequestsCreated": 0,
+            "avgPullRequestsMerged": 0,
+            "totalPullRequestsMerged": 0,
+            "avgPullRequestsMedianMinutesToMerge": 0,
+            "avgPullRequestsMinutesToReview": 0,
+            "avgPullRequestsReviewCycles": 0
+          },
+          {
+            "phaseNumber": 2,
+            "phase": "Phase 2",
+            "totalEngagedUsers": 0,
+            "avgUserInitiatedInteractions": 0,
+            "avgCodeGenerationActivities": 0,
+            "avgCodeAcceptanceActivities": 0,
+            "avgLocAdded": 0,
+            "avgLocDeleted": 0,
+            "avgPullRequestsReviewed": 0,
+            "avgPullRequestsCreated": 0,
+            "avgPullRequestsMerged": 0,
+            "totalPullRequestsMerged": 0,
+            "avgPullRequestsMedianMinutesToMerge": 0,
+            "avgPullRequestsMinutesToReview": 0,
+            "avgPullRequestsReviewCycles": 0
+          },
+          {
+            "phaseNumber": 3,
+            "phase": "Phase 3",
+            "totalEngagedUsers": 0,
+            "avgUserInitiatedInteractions": 0,
+            "avgCodeGenerationActivities": 0,
+            "avgCodeAcceptanceActivities": 0,
+            "avgLocAdded": 0,
+            "avgLocDeleted": 0,
+            "avgPullRequestsReviewed": 0,
+            "avgPullRequestsCreated": 0,
+            "avgPullRequestsMerged": 0,
+            "totalPullRequestsMerged": 0,
+            "avgPullRequestsMedianMinutesToMerge": 0,
+            "avgPullRequestsMinutesToReview": 0,
+            "avgPullRequestsReviewCycles": 0
+          }
+        ]
       }
     ],
     "byFeature": [
@@ -113071,7 +113159,7 @@
         "acceptanceRate": 11.79,
         "name": "claude-opus-4.8",
         "users": 4,
-        "feature": "chat_panel_agent_mode",
+        "feature": "agent_edit",
         "model": "claude-opus-4.8"
       },
       {
@@ -113099,7 +113187,7 @@
         "acceptanceRate": 0,
         "name": "gpt-5.6-luna",
         "users": 3,
-        "feature": "agent_edit",
+        "feature": "chat_panel_agent_mode",
         "model": "gpt-5.6-luna"
       },
       {
@@ -113141,7 +113229,7 @@
         "acceptanceRate": 0,
         "name": "claude-opus-5",
         "users": 2,
-        "feature": "copilot_cli",
+        "feature": "chat_panel_agent_mode",
         "model": "claude-opus-5"
       },
       {
@@ -113211,7 +113299,7 @@
         "acceptanceRate": 0,
         "name": "gpt-6-astra",
         "users": 1,
-        "feature": "chat_panel_agent_mode",
+        "feature": "agent_edit",
         "model": "gpt-6-astra"
       },
       {
@@ -116134,18 +116222,18 @@
       },
       {
         "ide": "vscode",
-        "ideVersion": "1.131.0",
-        "plugin": "copilot-chat",
-        "pluginVersion": "0.59.0",
-        "sampledAt": "2026-09-25T12:31:49.384Z",
-        "users": 1
-      },
-      {
-        "ide": "vscode",
         "ideVersion": "1.136.2",
         "plugin": "copilot-chat",
         "pluginVersion": "0.64.1",
         "sampledAt": "2026-09-10T10:10:55.272Z",
+        "users": 1
+      },
+      {
+        "ide": "vscode",
+        "ideVersion": "1.131.0",
+        "plugin": "copilot-chat",
+        "pluginVersion": "0.59.0",
+        "sampledAt": "2026-09-25T12:31:49.384Z",
         "users": 1
       },
       {
