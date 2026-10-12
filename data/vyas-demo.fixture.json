@@ -2,14 +2,14 @@
   "schemaVersion": 12,
   "owner": "vyas-demo",
   "ownerType": "org",
-  "collectedAt": "2026-10-11T06:34:36.795Z",
+  "collectedAt": "2026-10-12T06:51:33.285Z",
   "repoCount": 104,
   "repos": [
     {
       "name": "github-actions-goat",
       "fullName": "vyas-demo/github-actions-goat",
       "pushedAt": "2025-04-15T19:44:07Z",
-      "collectedAt": "2026-10-11T06:27:45.322Z",
+      "collectedAt": "2026-10-12T06:43:08.493Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -50,15 +50,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -979,6 +970,15 @@
         },
         {
           "week": "2026-W41",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
@@ -992,7 +992,7 @@
       "name": "llmtool",
       "fullName": "vyas-demo/llmtool",
       "pushedAt": "2024-08-09T08:58:41Z",
-      "collectedAt": "2026-10-11T06:27:48.388Z",
+      "collectedAt": "2026-10-12T06:43:11.882Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -1033,15 +1033,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -1962,6 +1953,15 @@
         },
         {
           "week": "2026-W41",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
@@ -1975,7 +1975,7 @@
       "name": "promptflow-docs",
       "fullName": "vyas-demo/promptflow-docs",
       "pushedAt": "2024-08-10T01:37:36Z",
-      "collectedAt": "2026-10-11T06:27:51.452Z",
+      "collectedAt": "2026-10-12T06:43:15.101Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -2016,15 +2016,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -2945,6 +2936,15 @@
         },
         {
           "week": "2026-W41",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
@@ -2958,7 +2958,7 @@
       "name": "assistant",
       "fullName": "vyas-demo/assistant",
       "pushedAt": "2024-08-15T04:18:39Z",
-      "collectedAt": "2026-10-11T06:27:54.477Z",
+      "collectedAt": "2026-10-12T06:43:18.696Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -2999,15 +2999,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -3928,6 +3919,15 @@
         },
         {
           "week": "2026-W41",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
@@ -3941,7 +3941,7 @@
       "name": "assistant2",
       "fullName": "vyas-demo/assistant2",
       "pushedAt": "2024-08-15T10:44:12Z",
-      "collectedAt": "2026-10-11T06:27:57.529Z",
+      "collectedAt": "2026-10-12T06:43:21.809Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -3982,15 +3982,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -4911,6 +4902,15 @@
         },
         {
           "week": "2026-W41",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
@@ -4924,7 +4924,7 @@
       "name": "assistant3",
       "fullName": "vyas-demo/assistant3",
       "pushedAt": "2024-08-18T23:51:55Z",
-      "collectedAt": "2026-10-11T06:28:00.511Z",
+      "collectedAt": "2026-10-12T06:43:25.060Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -4965,15 +4965,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -5894,6 +5885,15 @@
         },
         {
           "week": "2026-W41",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
@@ -5907,7 +5907,7 @@
       "name": "a4",
       "fullName": "vyas-demo/a4",
       "pushedAt": "2024-11-06T04:13:18Z",
-      "collectedAt": "2026-10-11T06:28:03.548Z",
+      "collectedAt": "2026-10-12T06:43:28.380Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -5948,15 +5948,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -6883,6 +6874,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -6890,7 +6890,7 @@
       "name": "ghas-bootcamp",
       "fullName": "vyas-demo/ghas-bootcamp",
       "pushedAt": "2024-09-20T20:17:52Z",
-      "collectedAt": "2026-10-11T06:28:06.667Z",
+      "collectedAt": "2026-10-12T06:43:31.927Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -6932,15 +6932,6 @@
       "incidents": [],
       "weeklyTrends": [
         {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
-        {
           "week": "2024-W43",
           "prsOpened": 0,
           "prsMerged": 0,
@@ -7866,6 +7857,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -7873,7 +7873,7 @@
       "name": "demo-webgoat",
       "fullName": "vyas-demo/demo-webgoat",
       "pushedAt": "2025-08-17T06:06:30Z",
-      "collectedAt": "2026-10-11T06:28:10.535Z",
+      "collectedAt": "2026-10-12T06:43:36.055Z",
       "issues": {
         "open": 1,
         "closed": 0
@@ -7972,15 +7972,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 2,
@@ -8907,6 +8898,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -8914,7 +8914,7 @@
       "name": "demo-webgoat2",
       "fullName": "vyas-demo/demo-webgoat2",
       "pushedAt": "2024-11-06T01:41:47Z",
-      "collectedAt": "2026-10-11T06:28:14.074Z",
+      "collectedAt": "2026-10-12T06:43:40.437Z",
       "issues": {
         "open": 2,
         "closed": 0
@@ -8989,15 +8989,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -9924,6 +9915,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -9931,7 +9931,7 @@
       "name": "a4-f",
       "fullName": "vyas-demo/a4-f",
       "pushedAt": "2024-08-18T23:57:33Z",
-      "collectedAt": "2026-10-11T06:28:17.102Z",
+      "collectedAt": "2026-10-12T06:43:44.105Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -9972,15 +9972,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -10901,6 +10892,15 @@
         },
         {
           "week": "2026-W41",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
@@ -10914,7 +10914,7 @@
       "name": "next-saas-starter",
       "fullName": "vyas-demo/next-saas-starter",
       "pushedAt": "2024-11-01T21:30:15Z",
-      "collectedAt": "2026-10-11T06:28:20.052Z",
+      "collectedAt": "2026-10-12T06:43:47.294Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -10955,15 +10955,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -11884,6 +11875,15 @@
         },
         {
           "week": "2026-W41",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
@@ -11897,7 +11897,7 @@
       "name": "demo-webgoat3",
       "fullName": "vyas-demo/demo-webgoat3",
       "pushedAt": "2024-12-09T18:22:21Z",
-      "collectedAt": "2026-10-11T06:28:23.111Z",
+      "collectedAt": "2026-10-12T06:43:50.563Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -11938,15 +11938,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -12867,6 +12858,15 @@
         },
         {
           "week": "2026-W41",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
@@ -12880,7 +12880,7 @@
       "name": "demo-webgoat4",
       "fullName": "vyas-demo/demo-webgoat4",
       "pushedAt": "2024-12-09T18:22:58Z",
-      "collectedAt": "2026-10-11T06:28:26.129Z",
+      "collectedAt": "2026-10-12T06:43:53.839Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -12921,15 +12921,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -13856,6 +13847,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -13863,7 +13863,7 @@
       "name": "demo-webgoat5",
       "fullName": "vyas-demo/demo-webgoat5",
       "pushedAt": "2025-02-27T03:51:18Z",
-      "collectedAt": "2026-10-11T06:28:29.228Z",
+      "collectedAt": "2026-10-12T06:43:57.297Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -13905,15 +13905,6 @@
       "incidents": [],
       "weeklyTrends": [
         {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
-        {
           "week": "2024-W43",
           "prsOpened": 0,
           "prsMerged": 0,
@@ -14839,6 +14830,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -14846,7 +14846,7 @@
       "name": "mona-demo",
       "fullName": "vyas-demo/mona-demo",
       "pushedAt": "2025-04-15T19:50:26Z",
-      "collectedAt": "2026-10-11T06:28:32.403Z",
+      "collectedAt": "2026-10-12T06:44:00.997Z",
       "issues": {
         "open": 1,
         "closed": 0
@@ -14887,15 +14887,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -15822,6 +15813,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -15829,7 +15829,7 @@
       "name": "clark-actions",
       "fullName": "vyas-demo/clark-actions",
       "pushedAt": "2025-04-10T14:39:15Z",
-      "collectedAt": "2026-10-11T06:28:35.541Z",
+      "collectedAt": "2026-10-12T06:44:04.509Z",
       "issues": {
         "open": 5,
         "closed": 0
@@ -15870,15 +15870,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -16805,6 +16796,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -16812,7 +16812,7 @@
       "name": "gravity-game",
       "fullName": "vyas-demo/gravity-game",
       "pushedAt": "2026-01-08T23:08:47Z",
-      "collectedAt": "2026-10-11T06:28:43.845Z",
+      "collectedAt": "2026-10-12T06:44:15.292Z",
       "issues": {
         "open": 0,
         "closed": 2
@@ -17892,15 +17892,6 @@
       "incidents": [],
       "weeklyTrends": [
         {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
-        {
           "week": "2024-W43",
           "prsOpened": 0,
           "prsMerged": 0,
@@ -18826,6 +18817,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -18833,7 +18833,7 @@
       "name": "sturdy-doodle",
       "fullName": "vyas-demo/sturdy-doodle",
       "pushedAt": "2025-02-20T17:13:33Z",
-      "collectedAt": "2026-10-11T06:28:46.873Z",
+      "collectedAt": "2026-10-12T06:44:18.500Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -18874,15 +18874,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -19803,6 +19794,15 @@
         },
         {
           "week": "2026-W41",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
@@ -19816,7 +19816,7 @@
       "name": "juice-jf",
       "fullName": "vyas-demo/juice-jf",
       "pushedAt": "2025-02-26T00:57:17Z",
-      "collectedAt": "2026-10-11T06:28:49.842Z",
+      "collectedAt": "2026-10-12T06:44:21.522Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -19857,15 +19857,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -20786,6 +20777,15 @@
         },
         {
           "week": "2026-W41",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
@@ -20799,7 +20799,7 @@
       "name": "jfrog-github-example",
       "fullName": "vyas-demo/jfrog-github-example",
       "pushedAt": "2024-08-01T10:11:48Z",
-      "collectedAt": "2026-10-11T06:28:52.845Z",
+      "collectedAt": "2026-10-12T06:44:24.656Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -20840,15 +20840,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -21769,6 +21760,15 @@
         },
         {
           "week": "2026-W41",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
@@ -21782,7 +21782,7 @@
       "name": "jf-example",
       "fullName": "vyas-demo/jf-example",
       "pushedAt": "2025-02-27T10:18:32Z",
-      "collectedAt": "2026-10-11T06:28:55.895Z",
+      "collectedAt": "2026-10-12T06:44:28.003Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -21823,15 +21823,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -22752,6 +22743,15 @@
         },
         {
           "week": "2026-W41",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
@@ -22765,7 +22765,7 @@
       "name": "mvn-jf",
       "fullName": "vyas-demo/mvn-jf",
       "pushedAt": "2025-03-11T02:43:45Z",
-      "collectedAt": "2026-10-11T06:28:58.956Z",
+      "collectedAt": "2026-10-12T06:44:31.310Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -22806,15 +22806,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -23735,6 +23726,15 @@
         },
         {
           "week": "2026-W41",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
@@ -23748,7 +23748,7 @@
       "name": "real-deal",
       "fullName": "vyas-demo/real-deal",
       "pushedAt": "2025-05-02T17:44:57Z",
-      "collectedAt": "2026-10-11T06:29:02.003Z",
+      "collectedAt": "2026-10-12T06:44:34.669Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -23789,15 +23789,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -24718,6 +24709,15 @@
         },
         {
           "week": "2026-W41",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
@@ -24731,7 +24731,7 @@
       "name": "ghas-boot",
       "fullName": "vyas-demo/ghas-boot",
       "pushedAt": "2025-05-02T19:37:54Z",
-      "collectedAt": "2026-10-11T06:29:05.051Z",
+      "collectedAt": "2026-10-12T06:44:37.946Z",
       "issues": {
         "open": 1,
         "closed": 0
@@ -24772,15 +24772,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -25701,6 +25692,15 @@
         },
         {
           "week": "2026-W41",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
@@ -25714,7 +25714,7 @@
       "name": "mona-demo1",
       "fullName": "vyas-demo/mona-demo1",
       "pushedAt": "2025-01-22T04:36:04Z",
-      "collectedAt": "2026-10-11T06:29:08.044Z",
+      "collectedAt": "2026-10-12T06:44:40.917Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -25755,15 +25755,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -26684,6 +26675,15 @@
         },
         {
           "week": "2026-W41",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
@@ -26697,7 +26697,7 @@
       "name": "ghas-demo1",
       "fullName": "vyas-demo/ghas-demo1",
       "pushedAt": "2025-05-30T16:04:46Z",
-      "collectedAt": "2026-10-11T06:29:11.188Z",
+      "collectedAt": "2026-10-12T06:44:44.571Z",
       "issues": {
         "open": 1,
         "closed": 0
@@ -26738,15 +26738,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -27667,6 +27658,15 @@
         },
         {
           "week": "2026-W41",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
@@ -27680,7 +27680,7 @@
       "name": "gl-migrate",
       "fullName": "vyas-demo/gl-migrate",
       "pushedAt": "2025-06-10T20:51:12Z",
-      "collectedAt": "2026-10-11T06:29:14.628Z",
+      "collectedAt": "2026-10-12T06:44:47.860Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -27721,15 +27721,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -28650,6 +28641,15 @@
         },
         {
           "week": "2026-W41",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
@@ -28663,7 +28663,7 @@
       "name": "ensight",
       "fullName": "vyas-demo/ensight",
       "pushedAt": "2025-06-13T05:10:44Z",
-      "collectedAt": "2026-10-11T06:29:18.041Z",
+      "collectedAt": "2026-10-12T06:44:51.051Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -28704,15 +28704,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -29639,6 +29630,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -29646,7 +29646,7 @@
       "name": "copilot-metrics-viewer",
       "fullName": "vyas-demo/copilot-metrics-viewer",
       "pushedAt": "2025-06-14T08:32:49Z",
-      "collectedAt": "2026-10-11T06:29:21.046Z",
+      "collectedAt": "2026-10-12T06:44:54.398Z",
       "issues": {
         "open": 1,
         "closed": 0
@@ -29687,15 +29687,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -30622,6 +30613,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -30629,7 +30629,7 @@
       "name": "copilot-insights-pilot-view",
       "fullName": "vyas-demo/copilot-insights-pilot-view",
       "pushedAt": "2025-06-22T08:11:04Z",
-      "collectedAt": "2026-10-11T06:29:24.154Z",
+      "collectedAt": "2026-10-12T06:44:57.883Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -30670,15 +30670,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -31599,6 +31590,15 @@
         },
         {
           "week": "2026-W41",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
@@ -31612,7 +31612,7 @@
       "name": "vnet-runner",
       "fullName": "vyas-demo/vnet-runner",
       "pushedAt": "2025-07-23T08:19:13Z",
-      "collectedAt": "2026-10-11T06:29:27.171Z",
+      "collectedAt": "2026-10-12T06:45:01.562Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -31653,15 +31653,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -32588,6 +32579,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -32595,7 +32595,7 @@
       "name": "gh-secrets-migrator",
       "fullName": "vyas-demo/gh-secrets-migrator",
       "pushedAt": "2025-07-17T02:23:41Z",
-      "collectedAt": "2026-10-11T06:29:30.200Z",
+      "collectedAt": "2026-10-12T06:45:04.624Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -32660,15 +32660,6 @@
       "incidents": [],
       "weeklyTrends": [
         {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
-        {
           "week": "2024-W43",
           "prsOpened": 0,
           "prsMerged": 0,
@@ -33594,6 +33585,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -33601,7 +33601,7 @@
       "name": "hello-world-js",
       "fullName": "vyas-demo/hello-world-js",
       "pushedAt": "2025-08-27T13:56:34Z",
-      "collectedAt": "2026-10-11T06:29:33.159Z",
+      "collectedAt": "2026-10-12T06:45:07.671Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -33643,15 +33643,6 @@
       "incidents": [],
       "weeklyTrends": [
         {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
-        {
           "week": "2024-W43",
           "prsOpened": 0,
           "prsMerged": 0,
@@ -34577,6 +34568,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -34584,7 +34584,7 @@
       "name": "losslesscut-web",
       "fullName": "vyas-demo/losslesscut-web",
       "pushedAt": "2025-09-04T15:26:53Z",
-      "collectedAt": "2026-10-11T06:29:36.164Z",
+      "collectedAt": "2026-10-12T06:45:11.081Z",
       "issues": {
         "open": 1,
         "closed": 0
@@ -34626,15 +34626,6 @@
       "incidents": [],
       "weeklyTrends": [
         {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
-        {
           "week": "2024-W43",
           "prsOpened": 0,
           "prsMerged": 0,
@@ -35554,6 +35545,15 @@
         },
         {
           "week": "2026-W41",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
@@ -35567,7 +35567,7 @@
       "name": "ado-test",
       "fullName": "vyas-demo/ado-test",
       "pushedAt": "2025-09-25T19:56:54Z",
-      "collectedAt": "2026-10-11T06:29:39.223Z",
+      "collectedAt": "2026-10-12T06:45:14.250Z",
       "issues": {
         "open": 1,
         "closed": 0
@@ -35608,15 +35608,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -36537,6 +36528,15 @@
         },
         {
           "week": "2026-W41",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
@@ -36550,7 +36550,7 @@
       "name": "ado-test2",
       "fullName": "vyas-demo/ado-test2",
       "pushedAt": "2025-09-25T20:22:32Z",
-      "collectedAt": "2026-10-11T06:29:42.183Z",
+      "collectedAt": "2026-10-12T06:45:17.329Z",
       "issues": {
         "open": 1,
         "closed": 0
@@ -36591,15 +36591,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -37520,6 +37511,15 @@
         },
         {
           "week": "2026-W41",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
@@ -37533,7 +37533,7 @@
       "name": "Project2-test",
       "fullName": "vyas-demo/Project2-test",
       "pushedAt": "2025-09-26T14:28:20Z",
-      "collectedAt": "2026-10-11T06:29:45.220Z",
+      "collectedAt": "2026-10-12T06:45:20.392Z",
       "issues": {
         "open": 1,
         "closed": 0
@@ -37574,15 +37574,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -38509,6 +38500,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -38516,7 +38516,7 @@
       "name": "fiesta-max",
       "fullName": "vyas-demo/fiesta-max",
       "pushedAt": "2025-12-08T18:40:31Z",
-      "collectedAt": "2026-10-11T06:29:48.183Z",
+      "collectedAt": "2026-10-12T06:45:23.825Z",
       "issues": {
         "open": 4,
         "closed": 0
@@ -38557,15 +38557,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -39492,6 +39483,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -39499,7 +39499,7 @@
       "name": "probable-octo-chainsaw",
       "fullName": "vyas-demo/probable-octo-chainsaw",
       "pushedAt": "2025-12-09T06:01:11Z",
-      "collectedAt": "2026-10-11T06:29:51.288Z",
+      "collectedAt": "2026-10-12T06:45:27.357Z",
       "issues": {
         "open": 2,
         "closed": 0
@@ -39540,15 +39540,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -40475,6 +40466,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -40482,7 +40482,7 @@
       "name": "github-app-workflow",
       "fullName": "vyas-demo/github-app-workflow",
       "pushedAt": "2025-12-09T15:16:21Z",
-      "collectedAt": "2026-10-11T06:29:54.303Z",
+      "collectedAt": "2026-10-12T06:45:30.389Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -40523,15 +40523,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -41458,6 +41449,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -41465,7 +41465,7 @@
       "name": "github-app-action",
       "fullName": "vyas-demo/github-app-action",
       "pushedAt": "2025-12-09T15:25:29Z",
-      "collectedAt": "2026-10-11T06:29:57.346Z",
+      "collectedAt": "2026-10-12T06:45:33.650Z",
       "issues": {
         "open": 3,
         "closed": 0
@@ -41506,15 +41506,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -42441,6 +42432,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -42448,7 +42448,7 @@
       "name": "special-sniffle",
       "fullName": "vyas-demo/special-sniffle",
       "pushedAt": "2025-12-10T16:59:26Z",
-      "collectedAt": "2026-10-11T06:30:00.455Z",
+      "collectedAt": "2026-10-12T06:45:37.110Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -42489,15 +42489,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -43418,6 +43409,15 @@
         },
         {
           "week": "2026-W41",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
@@ -43431,7 +43431,7 @@
       "name": "TBS-TimeWarp",
       "fullName": "vyas-demo/TBS-TimeWarp",
       "pushedAt": "2026-02-21T09:01:09Z",
-      "collectedAt": "2026-10-11T06:30:03.648Z",
+      "collectedAt": "2026-10-12T06:45:41.112Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -43472,15 +43472,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -44407,6 +44398,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -44414,7 +44414,7 @@
       "name": "real-deal-ercot",
       "fullName": "vyas-demo/real-deal-ercot",
       "pushedAt": "2026-04-21T20:23:07Z",
-      "collectedAt": "2026-10-11T06:30:07.674Z",
+      "collectedAt": "2026-10-12T06:45:45.852Z",
       "issues": {
         "open": 0,
         "closed": 1
@@ -44513,15 +44513,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -45448,6 +45439,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -45455,7 +45455,7 @@
       "name": "ubiquitous-octo-guacamole",
       "fullName": "vyas-demo/ubiquitous-octo-guacamole",
       "pushedAt": "2026-04-22T19:17:49Z",
-      "collectedAt": "2026-10-11T06:30:11.045Z",
+      "collectedAt": "2026-10-12T06:45:50.219Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -45496,15 +45496,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -46431,6 +46422,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -46438,7 +46438,7 @@
       "name": "refactored-spork",
       "fullName": "vyas-demo/refactored-spork",
       "pushedAt": "2026-04-28T18:56:26Z",
-      "collectedAt": "2026-10-11T06:30:14.154Z",
+      "collectedAt": "2026-10-12T06:45:53.751Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -46480,15 +46480,6 @@
       "incidents": [],
       "weeklyTrends": [
         {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
-        {
           "week": "2024-W43",
           "prsOpened": 0,
           "prsMerged": 0,
@@ -47414,6 +47405,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -47421,7 +47421,7 @@
       "name": "ghas-boot1",
       "fullName": "vyas-demo/ghas-boot1",
       "pushedAt": "2026-08-25T18:23:02Z",
-      "collectedAt": "2026-10-11T06:30:17.701Z",
+      "collectedAt": "2026-10-12T06:45:57.461Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -47492,15 +47492,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -48427,6 +48418,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -48434,7 +48434,7 @@
       "name": "coop",
       "fullName": "vyas-demo/coop",
       "pushedAt": "2026-08-18T22:46:41Z",
-      "collectedAt": "2026-10-11T06:30:33.363Z",
+      "collectedAt": "2026-10-12T06:46:14.717Z",
       "issues": {
         "open": 100,
         "closed": 12
@@ -49602,15 +49602,6 @@
       "incidents": [],
       "weeklyTrends": [
         {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
-        {
           "week": "2024-W43",
           "prsOpened": 0,
           "prsMerged": 0,
@@ -50536,6 +50527,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -50543,7 +50543,7 @@
       "name": "webgoat9",
       "fullName": "vyas-demo/webgoat9",
       "pushedAt": "2026-08-28T18:22:54Z",
-      "collectedAt": "2026-10-11T06:30:36.977Z",
+      "collectedAt": "2026-10-12T06:46:18.732Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -50614,15 +50614,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -51549,14 +51540,23 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
     {
       "name": "devex-metrics",
       "fullName": "vyas-demo/devex-metrics",
-      "pushedAt": "2026-10-10T06:35:07Z",
-      "collectedAt": "2026-10-11T06:30:55.315Z",
+      "pushedAt": "2026-10-11T06:34:42Z",
+      "collectedAt": "2026-10-12T06:47:14.169Z",
       "issues": {
         "open": 0,
         "closed": 1
@@ -51564,9 +51564,25 @@
       "pullRequests": {
         "open": 8,
         "closed": 27,
-        "merged": 108
+        "merged": 109
       },
       "pullRequestDetails": [
+        {
+          "number": 145,
+          "title": "chore: update vyas-demo fixture data",
+          "state": "merged",
+          "createdAt": "2026-10-11T06:34:39Z",
+          "author": "github-actions",
+          "isCopilotAuthored": false,
+          "hasCopilotReview": false,
+          "linesAdded": 359,
+          "linesDeleted": 413,
+          "commentCount": 0,
+          "commitCount": 1,
+          "actionsMinutes": 0.87,
+          "timeToMergeHours": 0,
+          "mergedAt": "2026-10-11T06:34:43Z"
+        },
         {
           "number": 144,
           "title": "chore: update vyas-demo fixture data",
@@ -51710,25 +51726,21 @@
           "actionsMinutes": 0.77,
           "timeToMergeHours": 0,
           "mergedAt": "2026-10-02T06:37:12Z"
-        },
-        {
-          "number": 133,
-          "title": "chore: update vyas-demo fixture data",
-          "state": "merged",
-          "createdAt": "2026-10-01T06:37:32Z",
-          "author": "github-actions",
-          "isCopilotAuthored": false,
-          "hasCopilotReview": false,
-          "linesAdded": 1374,
-          "linesDeleted": 928,
-          "commentCount": 0,
-          "commitCount": 1,
-          "actionsMinutes": 0.97,
-          "timeToMergeHours": 0,
-          "mergedAt": "2026-10-01T06:37:36Z"
         }
       ],
       "mergedPRTimeline": [
+        {
+          "number": 145,
+          "createdAt": "2026-10-11T06:34:39Z",
+          "mergedAt": "2026-10-11T06:34:43Z",
+          "author": "github-actions",
+          "isBotAuthor": true,
+          "isCopilotAuthored": false,
+          "timeToMergeHours": 0,
+          "closesIssues": [],
+          "linesAdded": 359,
+          "linesDeleted": 413
+        },
         {
           "number": 144,
           "createdAt": "2026-10-10T06:35:03Z",
@@ -53041,7 +53053,7 @@
       "copilotAdoption": {
         "copilotAuthoredPRs": 0,
         "copilotReviewedPRs": 0,
-        "totalMergedPRs": 108,
+        "totalMergedPRs": 109,
         "totalDetailedPRs": 10
       },
       "issueLeadTimes": [],
@@ -53064,6 +53076,12 @@
         "agentActionsMinutes": 0
       },
       "deployments": [
+        {
+          "createdAt": "2026-10-11T06:34:48Z",
+          "source": "deployment",
+          "environment": "github-pages",
+          "state": "success"
+        },
         {
           "createdAt": "2026-10-10T06:35:17Z",
           "source": "deployment",
@@ -53633,26 +53651,11 @@
           "source": "deployment",
           "environment": "github-pages",
           "state": "inactive"
-        },
-        {
-          "createdAt": "2026-05-23T07:07:04Z",
-          "source": "deployment",
-          "environment": "github-pages",
-          "state": "inactive"
         }
       ],
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -54573,12 +54576,21 @@
         },
         {
           "week": "2026-W41",
-          "prsOpened": 6,
-          "prsMerged": 6,
+          "prsOpened": 7,
+          "prsMerged": 7,
           "issuesOpened": 0,
           "issuesClosed": 0,
-          "linesAdded": 5813,
-          "linesDeleted": 5504
+          "linesAdded": 6172,
+          "linesDeleted": 5917
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -54586,7 +54598,7 @@
       "name": "ghas-boot2",
       "fullName": "vyas-demo/ghas-boot2",
       "pushedAt": "2026-06-17T17:59:09Z",
-      "collectedAt": "2026-10-11T06:30:58.976Z",
+      "collectedAt": "2026-10-12T06:47:18.464Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -54657,15 +54669,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -55592,6 +55595,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -55599,7 +55611,7 @@
       "name": "arc-scale-set-demo",
       "fullName": "vyas-demo/arc-scale-set-demo",
       "pushedAt": "2026-06-26T13:43:00Z",
-      "collectedAt": "2026-10-11T06:31:01.988Z",
+      "collectedAt": "2026-10-12T06:47:21.764Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -55640,15 +55652,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -56575,6 +56578,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -56582,7 +56594,7 @@
       "name": "devcloud_gha_aks_infra",
       "fullName": "vyas-demo/devcloud_gha_aks_infra",
       "pushedAt": "2026-09-30T12:26:24Z",
-      "collectedAt": "2026-10-11T06:31:12.106Z",
+      "collectedAt": "2026-10-12T06:47:33.134Z",
       "issues": {
         "open": 18,
         "closed": 13
@@ -57585,15 +57597,6 @@
       "incidents": [],
       "weeklyTrends": [
         {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
-        {
           "week": "2024-W43",
           "prsOpened": 0,
           "prsMerged": 0,
@@ -58519,6 +58522,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -58526,7 +58538,7 @@
       "name": "toy-orders",
       "fullName": "vyas-demo/toy-orders",
       "pushedAt": "2026-07-07T20:33:00Z",
-      "collectedAt": "2026-10-11T06:31:15.511Z",
+      "collectedAt": "2026-10-12T06:47:36.396Z",
       "issues": {
         "open": 1,
         "closed": 0
@@ -58574,15 +58586,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -59509,6 +59512,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -59516,7 +59528,7 @@
       "name": "game",
       "fullName": "vyas-demo/game",
       "pushedAt": "2026-10-01T13:10:13Z",
-      "collectedAt": "2026-10-11T06:31:18.521Z",
+      "collectedAt": "2026-10-12T06:47:39.641Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -59763,15 +59775,6 @@
       "incidents": [],
       "weeklyTrends": [
         {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
-        {
           "week": "2024-W43",
           "prsOpened": 0,
           "prsMerged": 0,
@@ -60691,6 +60694,15 @@
         },
         {
           "week": "2026-W41",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
@@ -60704,7 +60716,7 @@
       "name": "portal-smoke",
       "fullName": "vyas-demo/portal-smoke",
       "pushedAt": "2026-07-09T13:45:35Z",
-      "collectedAt": "2026-10-11T06:31:21.784Z",
+      "collectedAt": "2026-10-12T06:47:42.862Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -60745,15 +60757,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -61674,6 +61677,15 @@
         },
         {
           "week": "2026-W41",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
@@ -61687,7 +61699,7 @@
       "name": "portal-smoke-infra",
       "fullName": "vyas-demo/portal-smoke-infra",
       "pushedAt": "2026-07-09T13:45:42Z",
-      "collectedAt": "2026-10-11T06:31:24.850Z",
+      "collectedAt": "2026-10-12T06:47:46.184Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -61728,15 +61740,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -62657,6 +62660,15 @@
         },
         {
           "week": "2026-W41",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
@@ -62670,7 +62682,7 @@
       "name": "portal-smoke2",
       "fullName": "vyas-demo/portal-smoke2",
       "pushedAt": "2026-07-09T13:54:27Z",
-      "collectedAt": "2026-10-11T06:31:27.853Z",
+      "collectedAt": "2026-10-12T06:47:49.366Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -62711,15 +62723,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -63640,6 +63643,15 @@
         },
         {
           "week": "2026-W41",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
@@ -63653,7 +63665,7 @@
       "name": "portal-smoke2-infra",
       "fullName": "vyas-demo/portal-smoke2-infra",
       "pushedAt": "2026-07-09T13:54:34Z",
-      "collectedAt": "2026-10-11T06:31:30.891Z",
+      "collectedAt": "2026-10-12T06:47:52.666Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -63694,15 +63706,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -64623,6 +64626,15 @@
         },
         {
           "week": "2026-W41",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
@@ -64636,7 +64648,7 @@
       "name": "portal-smoke3",
       "fullName": "vyas-demo/portal-smoke3",
       "pushedAt": "2026-07-09T13:58:52Z",
-      "collectedAt": "2026-10-11T06:31:33.988Z",
+      "collectedAt": "2026-10-12T06:47:55.747Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -64677,15 +64689,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -65606,6 +65609,15 @@
         },
         {
           "week": "2026-W41",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
@@ -65619,7 +65631,7 @@
       "name": "portal-smoke3-infra",
       "fullName": "vyas-demo/portal-smoke3-infra",
       "pushedAt": "2026-07-09T13:58:59Z",
-      "collectedAt": "2026-10-11T06:31:36.977Z",
+      "collectedAt": "2026-10-12T06:47:59.107Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -65660,15 +65672,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -66589,6 +66592,15 @@
         },
         {
           "week": "2026-W41",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
@@ -66602,7 +66614,7 @@
       "name": "portal-smoke4",
       "fullName": "vyas-demo/portal-smoke4",
       "pushedAt": "2026-07-09T14:01:03Z",
-      "collectedAt": "2026-10-11T06:31:40.002Z",
+      "collectedAt": "2026-10-12T06:48:02.355Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -66643,15 +66655,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -67572,6 +67575,15 @@
         },
         {
           "week": "2026-W41",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
@@ -67585,7 +67597,7 @@
       "name": "portal-smoke4-infra",
       "fullName": "vyas-demo/portal-smoke4-infra",
       "pushedAt": "2026-07-09T14:01:09Z",
-      "collectedAt": "2026-10-11T06:31:43.037Z",
+      "collectedAt": "2026-10-12T06:48:05.951Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -67626,15 +67638,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -68561,6 +68564,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -68568,7 +68580,7 @@
       "name": "orders-api-infra",
       "fullName": "vyas-demo/orders-api-infra",
       "pushedAt": "2026-07-09T15:32:58Z",
-      "collectedAt": "2026-10-11T06:31:46.016Z",
+      "collectedAt": "2026-10-12T06:48:09.088Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -68617,15 +68629,6 @@
       "incidents": [],
       "weeklyTrends": [
         {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
-        {
           "week": "2024-W43",
           "prsOpened": 0,
           "prsMerged": 0,
@@ -69551,6 +69554,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -69558,7 +69570,7 @@
       "name": "spoke-demo-infra",
       "fullName": "vyas-demo/spoke-demo-infra",
       "pushedAt": "2026-07-09T15:35:58Z",
-      "collectedAt": "2026-10-11T06:31:49.473Z",
+      "collectedAt": "2026-10-12T06:48:19.042Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -69607,15 +69619,6 @@
       "incidents": [],
       "weeklyTrends": [
         {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
-        {
           "week": "2024-W43",
           "prsOpened": 0,
           "prsMerged": 0,
@@ -70541,6 +70544,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -70548,7 +70560,7 @@
       "name": "devcloud-backstage",
       "fullName": "vyas-demo/devcloud-backstage",
       "pushedAt": "2026-09-30T12:40:23Z",
-      "collectedAt": "2026-10-11T06:31:58.168Z",
+      "collectedAt": "2026-10-12T06:48:28.590Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -71304,15 +71316,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -72239,6 +72242,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -72246,7 +72258,7 @@
       "name": "secret-test",
       "fullName": "vyas-demo/secret-test",
       "pushedAt": "2026-07-09T19:27:00Z",
-      "collectedAt": "2026-10-11T06:32:01.211Z",
+      "collectedAt": "2026-10-12T06:48:32.111Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -72287,15 +72299,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -73222,6 +73225,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -73229,7 +73241,7 @@
       "name": "dc-smoke-0712",
       "fullName": "vyas-demo/dc-smoke-0712",
       "pushedAt": "2026-07-12T15:57:35Z",
-      "collectedAt": "2026-10-11T06:32:04.548Z",
+      "collectedAt": "2026-10-12T06:48:35.200Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -73278,15 +73290,6 @@
       "incidents": [],
       "weeklyTrends": [
         {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
-        {
           "week": "2024-W43",
           "prsOpened": 0,
           "prsMerged": 0,
@@ -74212,6 +74215,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -74219,7 +74231,7 @@
       "name": "dc-smoke-0712-infra",
       "fullName": "vyas-demo/dc-smoke-0712-infra",
       "pushedAt": "2026-07-22T20:09:18Z",
-      "collectedAt": "2026-10-11T06:32:08.717Z",
+      "collectedAt": "2026-10-12T06:48:39.986Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -74375,15 +74387,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -75310,6 +75313,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -75317,7 +75329,7 @@
       "name": "repo1",
       "fullName": "vyas-demo/repo1",
       "pushedAt": "2026-07-21T11:47:28Z",
-      "collectedAt": "2026-10-11T06:32:11.890Z",
+      "collectedAt": "2026-10-12T06:48:44.313Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -75358,15 +75370,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -76293,6 +76296,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -76300,7 +76312,7 @@
       "name": "repo1-infra",
       "fullName": "vyas-demo/repo1-infra",
       "pushedAt": "2026-07-24T03:47:51Z",
-      "collectedAt": "2026-10-11T06:32:14.919Z",
+      "collectedAt": "2026-10-12T06:48:46.889Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -76349,15 +76361,6 @@
       "incidents": [],
       "weeklyTrends": [
         {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
-        {
           "week": "2024-W43",
           "prsOpened": 0,
           "prsMerged": 0,
@@ -77283,6 +77286,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -77290,7 +77302,7 @@
       "name": "repo2",
       "fullName": "vyas-demo/repo2",
       "pushedAt": "2026-07-21T12:53:18Z",
-      "collectedAt": "2026-10-11T06:32:17.970Z",
+      "collectedAt": "2026-10-12T06:48:50.072Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -77332,15 +77344,6 @@
       "incidents": [],
       "weeklyTrends": [
         {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
-        {
           "week": "2024-W43",
           "prsOpened": 0,
           "prsMerged": 0,
@@ -78266,6 +78269,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -78273,7 +78285,7 @@
       "name": "repo2-infra",
       "fullName": "vyas-demo/repo2-infra",
       "pushedAt": "2026-07-24T03:47:58Z",
-      "collectedAt": "2026-10-11T06:32:21.124Z",
+      "collectedAt": "2026-10-12T06:48:53.425Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -78322,15 +78334,6 @@
       "incidents": [],
       "weeklyTrends": [
         {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
-        {
           "week": "2024-W43",
           "prsOpened": 0,
           "prsMerged": 0,
@@ -79256,6 +79259,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -79263,7 +79275,7 @@
       "name": "dev-metrics",
       "fullName": "vyas-demo/dev-metrics",
       "pushedAt": "2026-10-09T14:48:30Z",
-      "collectedAt": "2026-10-11T06:32:35.253Z",
+      "collectedAt": "2026-10-12T06:49:20.377Z",
       "issues": {
         "open": 3,
         "closed": 0
@@ -80948,15 +80960,6 @@
       "incidents": [],
       "weeklyTrends": [
         {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
-        {
           "week": "2024-W43",
           "prsOpened": 0,
           "prsMerged": 0,
@@ -81882,6 +81885,15 @@
           "issuesClosed": 0,
           "linesAdded": 203735,
           "linesDeleted": 10037
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -81889,7 +81901,7 @@
       "name": "repo5",
       "fullName": "vyas-demo/repo5",
       "pushedAt": "2026-07-24T17:19:53Z",
-      "collectedAt": "2026-10-11T06:32:38.266Z",
+      "collectedAt": "2026-10-12T06:49:23.670Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -81930,15 +81942,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -82865,6 +82868,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -82872,7 +82884,7 @@
       "name": "repo5-infra",
       "fullName": "vyas-demo/repo5-infra",
       "pushedAt": "2026-07-30T17:38:28Z",
-      "collectedAt": "2026-10-11T06:32:41.344Z",
+      "collectedAt": "2026-10-12T06:49:27.645Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -82914,15 +82926,6 @@
       "incidents": [],
       "weeklyTrends": [
         {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
-        {
           "week": "2024-W43",
           "prsOpened": 0,
           "prsMerged": 0,
@@ -83848,6 +83851,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -83855,7 +83867,7 @@
       "name": "repo6",
       "fullName": "vyas-demo/repo6",
       "pushedAt": "2026-07-28T20:31:53Z",
-      "collectedAt": "2026-10-11T06:32:44.375Z",
+      "collectedAt": "2026-10-12T06:49:30.963Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -83897,15 +83909,6 @@
       "incidents": [],
       "weeklyTrends": [
         {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
-        {
           "week": "2024-W43",
           "prsOpened": 0,
           "prsMerged": 0,
@@ -84831,6 +84834,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -84838,7 +84850,7 @@
       "name": "repo6-infra",
       "fullName": "vyas-demo/repo6-infra",
       "pushedAt": "2026-07-27T13:41:16Z",
-      "collectedAt": "2026-10-11T06:32:47.387Z",
+      "collectedAt": "2026-10-12T06:49:34.373Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -84880,15 +84892,6 @@
       "incidents": [],
       "weeklyTrends": [
         {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
-        {
           "week": "2024-W43",
           "prsOpened": 0,
           "prsMerged": 0,
@@ -85814,6 +85817,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -85821,7 +85833,7 @@
       "name": "hike",
       "fullName": "vyas-demo/hike",
       "pushedAt": "2026-07-28T06:00:05Z",
-      "collectedAt": "2026-10-11T06:32:50.412Z",
+      "collectedAt": "2026-10-12T06:49:37.399Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -85876,15 +85888,6 @@
       "incidents": [],
       "weeklyTrends": [
         {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
-        {
           "week": "2024-W43",
           "prsOpened": 0,
           "prsMerged": 0,
@@ -86810,6 +86813,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -86817,7 +86829,7 @@
       "name": "under",
       "fullName": "vyas-demo/under",
       "pushedAt": "2026-07-28T00:20:03Z",
-      "collectedAt": "2026-10-11T06:32:53.438Z",
+      "collectedAt": "2026-10-12T06:49:40.430Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -86866,15 +86878,6 @@
       "incidents": [],
       "weeklyTrends": [
         {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
-        {
           "week": "2024-W43",
           "prsOpened": 0,
           "prsMerged": 0,
@@ -87800,6 +87803,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -87807,7 +87819,7 @@
       "name": "repo7",
       "fullName": "vyas-demo/repo7",
       "pushedAt": "2026-08-04T13:26:15Z",
-      "collectedAt": "2026-10-11T06:32:56.481Z",
+      "collectedAt": "2026-10-12T06:49:43.563Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -87856,15 +87868,6 @@
       "incidents": [],
       "weeklyTrends": [
         {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
-        {
           "week": "2024-W43",
           "prsOpened": 0,
           "prsMerged": 0,
@@ -88790,6 +88793,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -88797,7 +88809,7 @@
       "name": "repo7-infra",
       "fullName": "vyas-demo/repo7-infra",
       "pushedAt": "2026-08-04T13:26:21Z",
-      "collectedAt": "2026-10-11T06:32:59.475Z",
+      "collectedAt": "2026-10-12T06:49:46.919Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -88839,15 +88851,6 @@
       "incidents": [],
       "weeklyTrends": [
         {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
-        {
           "week": "2024-W43",
           "prsOpened": 0,
           "prsMerged": 0,
@@ -89773,6 +89776,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -89780,7 +89792,7 @@
       "name": "demo-repo",
       "fullName": "vyas-demo/demo-repo",
       "pushedAt": "2026-08-04T13:51:43Z",
-      "collectedAt": "2026-10-11T06:33:02.577Z",
+      "collectedAt": "2026-10-12T06:49:49.951Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -89829,15 +89841,6 @@
       "incidents": [],
       "weeklyTrends": [
         {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
-        {
           "week": "2024-W43",
           "prsOpened": 0,
           "prsMerged": 0,
@@ -90763,6 +90766,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -90770,7 +90782,7 @@
       "name": "demo-repo-infra",
       "fullName": "vyas-demo/demo-repo-infra",
       "pushedAt": "2026-08-04T13:51:50Z",
-      "collectedAt": "2026-10-11T06:33:05.561Z",
+      "collectedAt": "2026-10-12T06:49:53.353Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -90812,15 +90824,6 @@
       "incidents": [],
       "weeklyTrends": [
         {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
-        {
           "week": "2024-W43",
           "prsOpened": 0,
           "prsMerged": 0,
@@ -91746,6 +91749,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -91753,7 +91765,7 @@
       "name": "repo8",
       "fullName": "vyas-demo/repo8",
       "pushedAt": "2026-08-04T14:42:01Z",
-      "collectedAt": "2026-10-11T06:33:08.613Z",
+      "collectedAt": "2026-10-12T06:49:56.491Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -91802,15 +91814,6 @@
       "incidents": [],
       "weeklyTrends": [
         {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
-        {
           "week": "2024-W43",
           "prsOpened": 0,
           "prsMerged": 0,
@@ -92730,6 +92733,15 @@
         },
         {
           "week": "2026-W41",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
@@ -92743,7 +92755,7 @@
       "name": "repo8-infra",
       "fullName": "vyas-demo/repo8-infra",
       "pushedAt": "2026-08-04T14:42:08Z",
-      "collectedAt": "2026-10-11T06:33:12.458Z",
+      "collectedAt": "2026-10-12T06:49:59.800Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -92784,15 +92796,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -93713,6 +93716,15 @@
         },
         {
           "week": "2026-W41",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
@@ -93726,7 +93738,7 @@
       "name": "poc-test-app",
       "fullName": "vyas-demo/poc-test-app",
       "pushedAt": "2026-08-07T04:47:12Z",
-      "collectedAt": "2026-10-11T06:33:15.462Z",
+      "collectedAt": "2026-10-12T06:50:02.985Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -93767,15 +93779,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -94696,6 +94699,15 @@
         },
         {
           "week": "2026-W41",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
@@ -94709,7 +94721,7 @@
       "name": "poc-outsider-app",
       "fullName": "vyas-demo/poc-outsider-app",
       "pushedAt": "2026-08-07T04:47:13Z",
-      "collectedAt": "2026-10-11T06:33:18.504Z",
+      "collectedAt": "2026-10-12T06:50:06.516Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -94750,15 +94762,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -95685,6 +95688,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -95692,7 +95704,7 @@
       "name": "platformx-gha-runners-aws",
       "fullName": "vyas-demo/platformx-gha-runners-aws",
       "pushedAt": "2026-08-07T06:10:09Z",
-      "collectedAt": "2026-10-11T06:33:22.077Z",
+      "collectedAt": "2026-10-12T06:50:10.497Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -95770,15 +95782,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -96705,6 +96708,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -96712,7 +96724,7 @@
       "name": "forge-provision-probe-1786254818",
       "fullName": "vyas-demo/forge-provision-probe-1786254818",
       "pushedAt": "2026-08-15T20:21:04Z",
-      "collectedAt": "2026-10-11T06:33:25.043Z",
+      "collectedAt": "2026-10-12T06:50:13.652Z",
       "issues": {
         "open": 4,
         "closed": 1
@@ -96753,15 +96765,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -97688,6 +97691,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -97695,7 +97707,7 @@
       "name": "potential-fiesta",
       "fullName": "vyas-demo/potential-fiesta",
       "pushedAt": "2026-08-18T19:32:52Z",
-      "collectedAt": "2026-10-11T06:33:28.055Z",
+      "collectedAt": "2026-10-12T06:50:16.873Z",
       "issues": {
         "open": 3,
         "closed": 0
@@ -97736,15 +97748,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -98671,6 +98674,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -98678,7 +98690,7 @@
       "name": "pipe",
       "fullName": "vyas-demo/pipe",
       "pushedAt": "2026-08-16T22:33:33Z",
-      "collectedAt": "2026-10-11T06:33:31.125Z",
+      "collectedAt": "2026-10-12T06:50:20.146Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -98719,15 +98731,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -99654,6 +99657,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -99661,7 +99673,7 @@
       "name": "forge-calculate",
       "fullName": "vyas-demo/forge-calculate",
       "pushedAt": "2026-08-17T18:21:09Z",
-      "collectedAt": "2026-10-11T06:33:34.128Z",
+      "collectedAt": "2026-10-12T06:50:23.518Z",
       "issues": {
         "open": 2,
         "closed": 0
@@ -99702,15 +99714,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -100637,6 +100640,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -100644,7 +100656,7 @@
       "name": "repo31",
       "fullName": "vyas-demo/repo31",
       "pushedAt": "2026-08-21T16:11:37Z",
-      "collectedAt": "2026-10-11T06:33:37.144Z",
+      "collectedAt": "2026-10-12T06:50:26.657Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -100685,15 +100697,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -101614,6 +101617,15 @@
         },
         {
           "week": "2026-W41",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
@@ -101627,7 +101639,7 @@
       "name": "repo31-infra",
       "fullName": "vyas-demo/repo31-infra",
       "pushedAt": "2026-08-21T16:11:44Z",
-      "collectedAt": "2026-10-11T06:33:40.166Z",
+      "collectedAt": "2026-10-12T06:50:29.800Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -101668,15 +101680,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -102603,6 +102606,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -102610,7 +102622,7 @@
       "name": "celld",
       "fullName": "vyas-demo/celld",
       "pushedAt": "2026-08-22T22:00:48Z",
-      "collectedAt": "2026-10-11T06:33:43.293Z",
+      "collectedAt": "2026-10-12T06:50:32.981Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -102652,15 +102664,6 @@
       "incidents": [],
       "weeklyTrends": [
         {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
-        {
           "week": "2024-W43",
           "prsOpened": 0,
           "prsMerged": 0,
@@ -103586,6 +103589,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -103593,7 +103605,7 @@
       "name": "cal",
       "fullName": "vyas-demo/cal",
       "pushedAt": "2026-09-07T15:38:40Z",
-      "collectedAt": "2026-10-11T06:33:49.564Z",
+      "collectedAt": "2026-10-12T06:50:39.731Z",
       "issues": {
         "open": 2,
         "closed": 0
@@ -103869,15 +103881,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -104804,6 +104807,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -104811,7 +104823,7 @@
       "name": "forge-tetris-e2e-20260912012141",
       "fullName": "vyas-demo/forge-tetris-e2e-20260912012141",
       "pushedAt": "2026-09-29T02:12:33Z",
-      "collectedAt": "2026-10-11T06:33:52.994Z",
+      "collectedAt": "2026-10-12T06:50:43.332Z",
       "issues": {
         "open": 1,
         "closed": 2
@@ -104882,15 +104894,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -105817,6 +105820,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -105824,7 +105836,7 @@
       "name": "forge-space-shooter-20260913110355",
       "fullName": "vyas-demo/forge-space-shooter-20260913110355",
       "pushedAt": "2026-09-13T15:55:50Z",
-      "collectedAt": "2026-10-11T06:33:56.705Z",
+      "collectedAt": "2026-10-12T06:50:47.993Z",
       "issues": {
         "open": 7,
         "closed": 2
@@ -105904,15 +105916,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -106839,6 +106842,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -106846,7 +106858,7 @@
       "name": "dc-demo-existing-0916",
       "fullName": "vyas-demo/dc-demo-existing-0916",
       "pushedAt": "2026-09-16T11:44:15Z",
-      "collectedAt": "2026-10-11T06:34:00.219Z",
+      "collectedAt": "2026-10-12T06:50:51.875Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -106917,15 +106929,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -107852,6 +107855,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -107859,7 +107871,7 @@
       "name": "dc-demo-0916",
       "fullName": "vyas-demo/dc-demo-0916",
       "pushedAt": "2026-09-30T13:13:02Z",
-      "collectedAt": "2026-10-11T06:34:03.818Z",
+      "collectedAt": "2026-10-12T06:50:55.667Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -107940,15 +107952,6 @@
       "incidents": [],
       "weeklyTrends": [
         {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
-        {
           "week": "2024-W43",
           "prsOpened": 0,
           "prsMerged": 0,
@@ -108874,6 +108877,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -108881,7 +108893,7 @@
       "name": "dc-demo-0916-infra",
       "fullName": "vyas-demo/dc-demo-0916-infra",
       "pushedAt": "2026-09-30T12:37:24Z",
-      "collectedAt": "2026-10-11T06:34:07.626Z",
+      "collectedAt": "2026-10-12T06:50:59.635Z",
       "issues": {
         "open": 1,
         "closed": 0
@@ -108981,6 +108993,12 @@
         "agentActionsMinutes": 0
       },
       "deployments": [
+        {
+          "createdAt": "2026-10-12T03:45:51Z",
+          "source": "deployment",
+          "environment": "dev",
+          "state": "success"
+        },
         {
           "createdAt": "2026-10-11T03:39:40Z",
           "source": "deployment",
@@ -109123,15 +109141,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -110058,6 +110067,15 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     },
@@ -110065,7 +110083,7 @@
       "name": "CopilotHackathon",
       "fullName": "vyas-demo/CopilotHackathon",
       "pushedAt": "2026-08-24T20:17:42Z",
-      "collectedAt": "2026-10-11T06:34:10.593Z",
+      "collectedAt": "2026-10-12T06:51:02.741Z",
       "issues": {
         "open": 0,
         "closed": 0
@@ -110106,15 +110124,6 @@
       "reverts": [],
       "incidents": [],
       "weeklyTrends": [
-        {
-          "week": "2024-W42",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "linesAdded": 0,
-          "linesDeleted": 0
-        },
         {
           "week": "2024-W43",
           "prsOpened": 0,
@@ -111041,20 +111050,20 @@
           "issuesClosed": 0,
           "linesAdded": 0,
           "linesDeleted": 0
+        },
+        {
+          "week": "2026-W42",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "linesAdded": 0,
+          "linesDeleted": 0
         }
       ]
     }
   ],
   "weeklyTrends": [
-    {
-      "week": "2024-W42",
-      "prsOpened": 0,
-      "prsMerged": 0,
-      "issuesOpened": 0,
-      "issuesClosed": 0,
-      "linesAdded": 0,
-      "linesDeleted": 0
-    },
     {
       "week": "2024-W43",
       "prsOpened": 2,
@@ -111975,34 +111984,43 @@
     },
     {
       "week": "2026-W41",
-      "prsOpened": 19,
-      "prsMerged": 19,
+      "prsOpened": 20,
+      "prsMerged": 20,
       "issuesOpened": 3,
       "issuesClosed": 0,
-      "linesAdded": 209548,
-      "linesDeleted": 15541
+      "linesAdded": 209907,
+      "linesDeleted": 15954
+    },
+    {
+      "week": "2026-W42",
+      "prsOpened": 0,
+      "prsMerged": 0,
+      "issuesOpened": 0,
+      "issuesClosed": 0,
+      "linesAdded": 0,
+      "linesDeleted": 0
     }
   ],
   "copilotUsageScope": "organization:vyas-demo",
   "copilotUsage": {
     "scope": "organization",
     "scopeName": "vyas-demo",
-    "reportStartDay": "2026-09-13",
-    "reportEndDay": "2026-10-10",
-    "collectedAt": "2026-10-11T06:34:36.792Z",
+    "reportStartDay": "2026-09-14",
+    "reportEndDay": "2026-10-11",
+    "collectedAt": "2026-10-12T06:51:33.283Z",
     "totals": {
-      "userInitiatedInteractions": 547,
-      "codeGenerations": 1325,
+      "userInitiatedInteractions": 541,
+      "codeGenerations": 700,
       "codeAcceptances": 57,
       "locSuggestedToAdd": 1532,
       "locSuggestedToDelete": 0,
-      "locAdded": 73604,
-      "locDeleted": 52484,
-      "acceptanceRate": 4.3,
+      "locAdded": 19079,
+      "locDeleted": 17244,
+      "acceptanceRate": 8.14,
       "totalUsers": 9,
       "activeUsers": 9,
       "chatUsers": 7,
-      "agentUsers": 7,
+      "agentUsers": 6,
       "cliUsers": 2,
       "codeReviewActiveUsers": 0,
       "codeReviewPassiveUsers": 0,
@@ -112034,9 +112052,9 @@
       "lastKnownCliVersionSampledAt": "2026-09-24T13:47:47.072Z"
     },
     "pullRequests": {
-      "totalCreated": 141,
+      "totalCreated": 138,
       "totalReviewed": 11,
-      "totalMerged": 120,
+      "totalMerged": 119,
       "medianMinutesToMerge": 10.45,
       "totalSuggestions": 22,
       "totalAppliedSuggestions": 0,
@@ -112059,10 +112077,10 @@
       "monthlyPassiveUsers": 0
     },
     "repositoryReport": {
-      "reportDay": "2026-10-10",
+      "reportDay": "2026-10-11",
       "repositories": [
         {
-          "day": "2026-10-10",
+          "day": "2026-10-11",
           "enterpriseId": "5811",
           "organizationId": "176652172",
           "repoId": "1244882870",
@@ -112093,7 +112111,7 @@
     "repositoryReportStatus": "available",
     "users": [
       {
-        "userInitiatedInteractions": 274,
+        "userInitiatedInteractions": 272,
         "codeGenerations": 370,
         "codeAcceptances": 49,
         "locSuggestedToAdd": 978,
@@ -112103,7 +112121,7 @@
         "acceptanceRate": 13.24,
         "login": "v-rajkumarinfomagnus",
         "userId": "109267052",
-        "activeDays": 15,
+        "activeDays": 14,
         "lastUsageDay": "2026-10-09",
         "aiAdoptionPhase": {
           "phaseNumber": 1,
@@ -112263,8 +112281,8 @@
         "acceptanceRate": 0,
         "login": "umeshm-infomagnus",
         "userId": "210345089",
-        "activeDays": 2,
-        "lastUsageDay": "2026-10-10",
+        "activeDays": 3,
+        "lastUsageDay": "2026-10-11",
         "aiAdoptionPhase": {
           "phaseNumber": 0,
           "phase": "No Cohort",
@@ -112281,17 +112299,17 @@
         "lastKnownPlugin": "copilot-chat"
       },
       {
-        "userInitiatedInteractions": 4,
-        "codeGenerations": 763,
+        "userInitiatedInteractions": 0,
+        "codeGenerations": 138,
         "codeAcceptances": 0,
         "locSuggestedToAdd": 0,
         "locSuggestedToDelete": 0,
-        "locAdded": 61281,
-        "locDeleted": 43804,
+        "locAdded": 6756,
+        "locDeleted": 8564,
         "acceptanceRate": 0,
         "login": "vvaths",
         "userId": "104807916",
-        "activeDays": 16,
+        "activeDays": 15,
         "lastUsageDay": "2026-10-09",
         "aiAdoptionPhase": {
           "phaseNumber": 1,
@@ -112300,7 +112318,7 @@
         },
         "teams": [],
         "usedChat": true,
-        "usedAgent": true,
+        "usedAgent": false,
         "usedCli": false,
         "usedCodeReviewActive": false,
         "usedCodeReviewPassive": false,
@@ -112359,96 +112377,6 @@
       }
     ],
     "dailyTotals": [
-      {
-        "userInitiatedInteractions": 6,
-        "codeGenerations": 625,
-        "codeAcceptances": 0,
-        "locSuggestedToAdd": 0,
-        "locSuggestedToDelete": 0,
-        "locAdded": 54525,
-        "locDeleted": 35240,
-        "acceptanceRate": 0,
-        "day": "2026-09-13",
-        "dailyActiveUsers": 2,
-        "weeklyActiveUsers": 2,
-        "monthlyActiveUsers": 4,
-        "dailyActiveCliUsers": 0,
-        "dailyActiveChatUsers": 0,
-        "dailyActiveAgentUsers": 0,
-        "weeklyActiveChatUsers": 0,
-        "weeklyActiveAgentUsers": 0,
-        "monthlyActiveChatUsers": 4,
-        "monthlyActiveAgentUsers": 4,
-        "codeReview": {
-          "dailyActiveUsers": 0,
-          "dailyPassiveUsers": 0,
-          "weeklyActiveUsers": 0,
-          "weeklyPassiveUsers": 0,
-          "monthlyActiveUsers": 0,
-          "monthlyPassiveUsers": 0
-        },
-        "cli": {
-          "sessionCount": 0,
-          "requestCount": 0,
-          "promptCount": 0,
-          "promptTokens": 0,
-          "outputTokens": 0,
-          "avgTokensPerRequest": 0
-        },
-        "pullRequests": {
-          "totalCreated": 4,
-          "totalReviewed": 0,
-          "totalMerged": 2,
-          "medianMinutesToMerge": 0.53,
-          "totalSuggestions": 0,
-          "totalAppliedSuggestions": 0,
-          "totalCreatedByCopilot": 0,
-          "totalReviewedByCopilot": 0,
-          "totalMergedCreatedByCopilot": 0,
-          "totalMergedReviewedByCopilot": 0,
-          "medianMinutesToMergeCopilotAuthored": null,
-          "medianMinutesToMergeCopilotReviewed": null,
-          "totalCopilotSuggestions": 0,
-          "totalCopilotAppliedSuggestions": 0,
-          "copilotSuggestionsByCommentType": []
-        },
-        "aiAdoptionPhases": [
-          {
-            "phaseNumber": 1,
-            "phase": "Phase 1",
-            "totalEngagedUsers": 1,
-            "avgUserInitiatedInteractions": 2,
-            "avgCodeGenerationActivities": 0,
-            "avgCodeAcceptanceActivities": 0,
-            "avgLocAdded": 0,
-            "avgLocDeleted": 0,
-            "avgPullRequestsReviewed": 0,
-            "avgPullRequestsCreated": 0,
-            "avgPullRequestsMerged": 0,
-            "totalPullRequestsMerged": 0,
-            "avgPullRequestsMedianMinutesToMerge": 0,
-            "avgPullRequestsMinutesToReview": 0,
-            "avgPullRequestsReviewCycles": 0
-          },
-          {
-            "phaseNumber": 3,
-            "phase": "Phase 3",
-            "totalEngagedUsers": 1,
-            "avgUserInitiatedInteractions": 4,
-            "avgCodeGenerationActivities": 625,
-            "avgCodeAcceptanceActivities": 0,
-            "avgLocAdded": 54525,
-            "avgLocDeleted": 35240,
-            "avgPullRequestsReviewed": 0,
-            "avgPullRequestsCreated": 1,
-            "avgPullRequestsMerged": 0,
-            "totalPullRequestsMerged": 0,
-            "avgPullRequestsMedianMinutesToMerge": 0,
-            "avgPullRequestsMinutesToReview": 0,
-            "avgPullRequestsReviewCycles": 0
-          }
-        ]
-      },
       {
         "userInitiatedInteractions": 0,
         "codeGenerations": 138,
@@ -115388,11 +115316,101 @@
             "avgPullRequestsReviewCycles": 0
           }
         ]
+      },
+      {
+        "userInitiatedInteractions": 0,
+        "codeGenerations": 0,
+        "codeAcceptances": 0,
+        "locSuggestedToAdd": 0,
+        "locSuggestedToDelete": 0,
+        "locAdded": 0,
+        "locDeleted": 0,
+        "acceptanceRate": 0,
+        "day": "2026-10-11",
+        "dailyActiveUsers": 1,
+        "weeklyActiveUsers": 1,
+        "monthlyActiveUsers": 7,
+        "dailyActiveCliUsers": 0,
+        "dailyActiveChatUsers": 0,
+        "dailyActiveAgentUsers": 0,
+        "weeklyActiveChatUsers": 0,
+        "weeklyActiveAgentUsers": 0,
+        "monthlyActiveChatUsers": 6,
+        "monthlyActiveAgentUsers": 5,
+        "codeReview": {
+          "dailyActiveUsers": 0,
+          "dailyPassiveUsers": 0,
+          "weeklyActiveUsers": 0,
+          "weeklyPassiveUsers": 0,
+          "monthlyActiveUsers": 0,
+          "monthlyPassiveUsers": 0
+        },
+        "cli": {
+          "sessionCount": 0,
+          "requestCount": 0,
+          "promptCount": 0,
+          "promptTokens": 0,
+          "outputTokens": 0,
+          "avgTokensPerRequest": 0
+        },
+        "pullRequests": {
+          "totalCreated": 1,
+          "totalReviewed": 0,
+          "totalMerged": 1,
+          "medianMinutesToMerge": 0.07,
+          "totalSuggestions": 0,
+          "totalAppliedSuggestions": 0,
+          "totalCreatedByCopilot": 0,
+          "totalReviewedByCopilot": 0,
+          "totalMergedCreatedByCopilot": 0,
+          "totalMergedReviewedByCopilot": 0,
+          "medianMinutesToMergeCopilotAuthored": null,
+          "medianMinutesToMergeCopilotReviewed": null,
+          "totalCopilotSuggestions": 0,
+          "totalCopilotAppliedSuggestions": 0,
+          "copilotSuggestionsByCommentType": []
+        },
+        "aiAdoptionPhases": [
+          {
+            "phaseNumber": 0,
+            "phase": "No Cohort",
+            "totalEngagedUsers": 1,
+            "avgUserInitiatedInteractions": 0,
+            "avgCodeGenerationActivities": 0,
+            "avgCodeAcceptanceActivities": 0,
+            "avgLocAdded": 0,
+            "avgLocDeleted": 0,
+            "avgPullRequestsReviewed": 0,
+            "avgPullRequestsCreated": 0,
+            "avgPullRequestsMerged": 0,
+            "totalPullRequestsMerged": 0,
+            "avgPullRequestsMedianMinutesToMerge": 0,
+            "avgPullRequestsMinutesToReview": 0,
+            "avgPullRequestsReviewCycles": 0
+          },
+          {
+            "phaseNumber": 1,
+            "phase": "Phase 1",
+            "totalEngagedUsers": 0,
+            "avgUserInitiatedInteractions": 0,
+            "avgCodeGenerationActivities": 0,
+            "avgCodeAcceptanceActivities": 0,
+            "avgLocAdded": 0,
+            "avgLocDeleted": 0,
+            "avgPullRequestsReviewed": 0,
+            "avgPullRequestsCreated": 0,
+            "avgPullRequestsMerged": 0,
+            "totalPullRequestsMerged": 0,
+            "avgPullRequestsMedianMinutesToMerge": 0,
+            "avgPullRequestsMinutesToReview": 0,
+            "avgPullRequestsReviewCycles": 0
+          }
+        ]
       }
     ],
     "byFeature": [
       {
-        "userInitiatedInteractions": 431,
+        "userInitiatedInteractions": 425,
         "codeGenerations": 346,
         "codeAcceptances": 48,
         "locSuggestedToAdd": 1308,
@@ -115401,7 +115419,7 @@
         "locDeleted": 0,
         "acceptanceRate": 13.87,
         "name": "chat_panel_agent_mode",
-        "users": 7,
+        "users": 6,
         "feature": "chat_panel_agent_mode"
       },
       {
@@ -115458,12 +115476,12 @@
       },
       {
         "userInitiatedInteractions": 0,
-        "codeGenerations": 928,
+        "codeGenerations": 303,
         "codeAcceptances": 0,
         "locSuggestedToAdd": 0,
         "locSuggestedToDelete": 0,
-        "locAdded": 73355,
-        "locDeleted": 52484,
+        "locAdded": 18830,
+        "locDeleted": 17244,
         "acceptanceRate": 0,
         "name": "agent_edit",
         "users": 7,
@@ -115485,7 +115503,7 @@
     ],
     "byIde": [
       {
-        "userInitiatedInteractions": 545,
+        "userInitiatedInteractions": 539,
         "codeGenerations": 552,
         "codeAcceptances": 57,
         "locSuggestedToAdd": 1532,
@@ -115494,17 +115512,17 @@
         "locDeleted": 8171,
         "acceptanceRate": 10.33,
         "name": "vscode",
-        "users": 7,
+        "users": 6,
         "ide": "vscode"
       },
       {
         "userInitiatedInteractions": 0,
-        "codeGenerations": 763,
+        "codeGenerations": 138,
         "codeAcceptances": 0,
         "locSuggestedToAdd": 0,
         "locSuggestedToDelete": 0,
-        "locAdded": 61281,
-        "locDeleted": 43804,
+        "locAdded": 6756,
+        "locDeleted": 8564,
         "acceptanceRate": 0,
         "name": "1.137.0:",
         "users": 1,
@@ -115540,13 +115558,13 @@
     "byLanguage": [
       {
         "userInitiatedInteractions": 0,
-        "codeGenerations": 839,
+        "codeGenerations": 214,
         "codeAcceptances": 4,
         "locSuggestedToAdd": 18,
         "locSuggestedToDelete": 0,
-        "locAdded": 69141,
-        "locDeleted": 51448,
-        "acceptanceRate": 0.48,
+        "locAdded": 14616,
+        "locDeleted": 16208,
+        "acceptanceRate": 1.87,
         "name": "unknown",
         "users": 6,
         "language": "unknown"
@@ -115696,19 +115714,6 @@
       },
       {
         "userInitiatedInteractions": 0,
-        "codeGenerations": 0,
-        "codeAcceptances": 0,
-        "locSuggestedToAdd": 0,
-        "locSuggestedToDelete": 0,
-        "locAdded": 0,
-        "locDeleted": 0,
-        "acceptanceRate": 0,
-        "name": "github-actions-workflow",
-        "users": 1,
-        "language": "github-actions-workflow"
-      },
-      {
-        "userInitiatedInteractions": 0,
         "codeGenerations": 2,
         "codeAcceptances": 0,
         "locSuggestedToAdd": 13,
@@ -115719,19 +115724,6 @@
         "name": "ini",
         "users": 1,
         "language": "ini"
-      },
-      {
-        "userInitiatedInteractions": 0,
-        "codeGenerations": 0,
-        "codeAcceptances": 0,
-        "locSuggestedToAdd": 0,
-        "locSuggestedToDelete": 0,
-        "locAdded": 0,
-        "locDeleted": 0,
-        "acceptanceRate": 0,
-        "name": "instructions",
-        "users": 1,
-        "language": "instructions"
       },
       {
         "userInitiatedInteractions": 0,
@@ -115866,17 +115858,17 @@
     ],
     "byModel": [
       {
-        "userInitiatedInteractions": 234,
-        "codeGenerations": 324,
+        "userInitiatedInteractions": 233,
+        "codeGenerations": 242,
         "codeAcceptances": 21,
         "locSuggestedToAdd": 805,
         "locSuggestedToDelete": 0,
-        "locAdded": 7860,
-        "locDeleted": 544,
-        "acceptanceRate": 6.48,
+        "locAdded": 1410,
+        "locDeleted": 159,
+        "acceptanceRate": 8.68,
         "name": "claude-opus-4.8",
-        "users": 4,
-        "feature": "chat_panel_agent_mode",
+        "users": 3,
+        "feature": "agent_edit",
         "model": "claude-opus-4.8"
       },
       {
@@ -115890,7 +115882,7 @@
         "acceptanceRate": 0,
         "name": "gpt-5.6-luna",
         "users": 2,
-        "feature": "agent_edit",
+        "feature": "copilot_cli",
         "model": "gpt-5.6-luna"
       },
       {
@@ -115908,32 +115900,32 @@
         "model": "gpt-6-luna"
       },
       {
-        "userInitiatedInteractions": 42,
-        "codeGenerations": 277,
-        "codeAcceptances": 2,
-        "locSuggestedToAdd": 150,
-        "locSuggestedToDelete": 0,
-        "locAdded": 18153,
-        "locDeleted": 12766,
-        "acceptanceRate": 0.72,
-        "name": "gpt-5.6-sol",
-        "users": 3,
-        "feature": "chat_panel_custom_mode",
-        "model": "gpt-5.6-sol"
-      },
-      {
         "userInitiatedInteractions": 40,
-        "codeGenerations": 554,
+        "codeGenerations": 165,
         "codeAcceptances": 21,
         "locSuggestedToAdd": 151,
         "locSuggestedToDelete": 0,
-        "locAdded": 45180,
-        "locDeleted": 38432,
-        "acceptanceRate": 3.79,
+        "locAdded": 5514,
+        "locDeleted": 7907,
+        "acceptanceRate": 12.73,
         "name": "gpt-6-astra",
         "users": 2,
         "feature": "chat_panel_agent_mode",
         "model": "gpt-6-astra"
+      },
+      {
+        "userInitiatedInteractions": 39,
+        "codeGenerations": 123,
+        "codeAcceptances": 2,
+        "locSuggestedToAdd": 150,
+        "locSuggestedToDelete": 0,
+        "locAdded": 9744,
+        "locDeleted": 8436,
+        "acceptanceRate": 1.63,
+        "name": "gpt-5.6-sol",
+        "users": 3,
+        "feature": "chat_panel_custom_mode",
+        "model": "gpt-5.6-sol"
       },
       {
         "userInitiatedInteractions": 32,
@@ -116016,7 +116008,7 @@
         "acceptanceRate": 0,
         "name": "gpt-5.6-terra",
         "users": 2,
-        "feature": "agent_edit",
+        "feature": "chat_panel_agent_mode",
         "model": "gpt-5.6-terra"
       },
       {
@@ -116046,20 +116038,6 @@
         "users": 2,
         "feature": "chat_panel_custom_mode",
         "model": "claude-4.5-haiku"
-      },
-      {
-        "userInitiatedInteractions": 2,
-        "codeGenerations": 0,
-        "codeAcceptances": 0,
-        "locSuggestedToAdd": 0,
-        "locSuggestedToDelete": 0,
-        "locAdded": 0,
-        "locDeleted": 0,
-        "acceptanceRate": 0,
-        "name": "claude-opus-5",
-        "users": 1,
-        "feature": "chat_panel_agent_mode",
-        "model": "claude-opus-5"
       },
       {
         "userInitiatedInteractions": 0,
@@ -116094,12 +116072,12 @@
     "byLanguageFeature": [
       {
         "userInitiatedInteractions": 0,
-        "codeGenerations": 826,
+        "codeGenerations": 201,
         "codeAcceptances": 0,
         "locSuggestedToAdd": 0,
         "locSuggestedToDelete": 0,
-        "locAdded": 69137,
-        "locDeleted": 51448,
+        "locAdded": 14612,
+        "locDeleted": 16208,
         "acceptanceRate": 0,
         "name": "unknown / agent_edit",
         "users": 3,
@@ -116346,20 +116324,6 @@
       },
       {
         "userInitiatedInteractions": 0,
-        "codeGenerations": 0,
-        "codeAcceptances": 0,
-        "locSuggestedToAdd": 0,
-        "locSuggestedToDelete": 0,
-        "locAdded": 0,
-        "locDeleted": 0,
-        "acceptanceRate": 0,
-        "name": "github-actions-workflow / chat_panel_agent_mode",
-        "users": 1,
-        "feature": "chat_panel_agent_mode",
-        "language": "github-actions-workflow"
-      },
-      {
-        "userInitiatedInteractions": 0,
         "codeGenerations": 1,
         "codeAcceptances": 0,
         "locSuggestedToAdd": 8,
@@ -116385,20 +116349,6 @@
         "users": 1,
         "feature": "chat_panel_agent_mode",
         "language": "ini"
-      },
-      {
-        "userInitiatedInteractions": 0,
-        "codeGenerations": 0,
-        "codeAcceptances": 0,
-        "locSuggestedToAdd": 0,
-        "locSuggestedToDelete": 0,
-        "locAdded": 0,
-        "locDeleted": 0,
-        "acceptanceRate": 0,
-        "name": "instructions / chat_panel_agent_mode",
-        "users": 1,
-        "feature": "chat_panel_agent_mode",
-        "language": "instructions"
       },
       {
         "userInitiatedInteractions": 0,
@@ -116754,26 +116704,12 @@
     "byLanguageModel": [
       {
         "userInitiatedInteractions": 0,
-        "codeGenerations": 495,
+        "codeGenerations": 78,
         "codeAcceptances": 0,
         "locSuggestedToAdd": 0,
         "locSuggestedToDelete": 0,
-        "locAdded": 45118,
-        "locDeleted": 38432,
-        "acceptanceRate": 0,
-        "name": "unknown / gpt-6-astra",
-        "users": 2,
-        "language": "unknown",
-        "model": "gpt-6-astra"
-      },
-      {
-        "userInitiatedInteractions": 0,
-        "codeGenerations": 232,
-        "codeAcceptances": 0,
-        "locSuggestedToAdd": 0,
-        "locSuggestedToDelete": 0,
-        "locAdded": 16650,
-        "locDeleted": 12602,
+        "locAdded": 8241,
+        "locDeleted": 8272,
         "acceptanceRate": 0,
         "name": "unknown / gpt-5.6-sol",
         "users": 3,
@@ -116782,17 +116718,17 @@
       },
       {
         "userInitiatedInteractions": 0,
-        "codeGenerations": 109,
-        "codeAcceptances": 4,
-        "locSuggestedToAdd": 17,
+        "codeGenerations": 106,
+        "codeAcceptances": 0,
+        "locSuggestedToAdd": 0,
         "locSuggestedToDelete": 0,
-        "locAdded": 7156,
-        "locDeleted": 414,
-        "acceptanceRate": 3.67,
-        "name": "unknown / claude-opus-4.8",
-        "users": 4,
+        "locAdded": 5452,
+        "locDeleted": 7907,
+        "acceptanceRate": 0,
+        "name": "unknown / gpt-6-astra",
+        "users": 2,
         "language": "unknown",
-        "model": "claude-opus-4.8"
+        "model": "gpt-6-astra"
       },
       {
         "userInitiatedInteractions": 0,
@@ -116821,6 +116757,20 @@
         "users": 2,
         "language": "python",
         "model": "gpt-5.6-sol"
+      },
+      {
+        "userInitiatedInteractions": 0,
+        "codeGenerations": 27,
+        "codeAcceptances": 4,
+        "locSuggestedToAdd": 17,
+        "locSuggestedToDelete": 0,
+        "locAdded": 706,
+        "locDeleted": 29,
+        "acceptanceRate": 14.81,
+        "name": "unknown / claude-opus-4.8",
+        "users": 3,
+        "language": "unknown",
+        "model": "claude-opus-4.8"
       },
       {
         "userInitiatedInteractions": 0,
@@ -117209,20 +117159,6 @@
         "locAdded": 0,
         "locDeleted": 0,
         "acceptanceRate": 0,
-        "name": "github-actions-workflow / gpt-5.6-sol",
-        "users": 1,
-        "language": "github-actions-workflow",
-        "model": "gpt-5.6-sol"
-      },
-      {
-        "userInitiatedInteractions": 0,
-        "codeGenerations": 0,
-        "codeAcceptances": 0,
-        "locSuggestedToAdd": 0,
-        "locSuggestedToDelete": 0,
-        "locAdded": 0,
-        "locDeleted": 0,
-        "acceptanceRate": 0,
         "name": "html / gpt-5.6-luna",
         "users": 1,
         "language": "html",
@@ -117241,34 +117177,6 @@
         "users": 1,
         "language": "ini",
         "model": "claude-opus-4.8"
-      },
-      {
-        "userInitiatedInteractions": 0,
-        "codeGenerations": 0,
-        "codeAcceptances": 0,
-        "locSuggestedToAdd": 0,
-        "locSuggestedToDelete": 0,
-        "locAdded": 0,
-        "locDeleted": 0,
-        "acceptanceRate": 0,
-        "name": "instructions / claude-opus-5",
-        "users": 1,
-        "language": "instructions",
-        "model": "claude-opus-5"
-      },
-      {
-        "userInitiatedInteractions": 0,
-        "codeGenerations": 0,
-        "codeAcceptances": 0,
-        "locSuggestedToAdd": 0,
-        "locSuggestedToDelete": 0,
-        "locAdded": 0,
-        "locDeleted": 0,
-        "acceptanceRate": 0,
-        "name": "instructions / gpt-5.6-sol",
-        "users": 1,
-        "language": "instructions",
-        "model": "gpt-5.6-sol"
       },
       {
         "userInitiatedInteractions": 0,
@@ -117791,7 +117699,7 @@
     ],
     "byModelFeature": [
       {
-        "userInitiatedInteractions": 224,
+        "userInitiatedInteractions": 223,
         "codeGenerations": 204,
         "codeAcceptances": 21,
         "locSuggestedToAdd": 802,
@@ -117847,20 +117755,6 @@
         "model": "gpt-6-astra"
       },
       {
-        "userInitiatedInteractions": 34,
-        "codeGenerations": 24,
-        "codeAcceptances": 0,
-        "locSuggestedToAdd": 40,
-        "locSuggestedToDelete": 0,
-        "locAdded": 0,
-        "locDeleted": 0,
-        "acceptanceRate": 0,
-        "name": "gpt-5.6-sol / chat_panel_agent_mode",
-        "users": 3,
-        "feature": "chat_panel_agent_mode",
-        "model": "gpt-5.6-sol"
-      },
-      {
         "userInitiatedInteractions": 32,
         "codeGenerations": 14,
         "codeAcceptances": 2,
@@ -117873,6 +117767,20 @@
         "users": 2,
         "feature": "chat_panel_agent_mode",
         "model": "claude-sonnet-5"
+      },
+      {
+        "userInitiatedInteractions": 31,
+        "codeGenerations": 24,
+        "codeAcceptances": 0,
+        "locSuggestedToAdd": 40,
+        "locSuggestedToDelete": 0,
+        "locAdded": 0,
+        "locDeleted": 0,
+        "acceptanceRate": 0,
+        "name": "gpt-5.6-sol / chat_panel_agent_mode",
+        "users": 2,
+        "feature": "chat_panel_agent_mode",
+        "model": "gpt-5.6-sol"
       },
       {
         "userInitiatedInteractions": 25,
@@ -118015,20 +117923,6 @@
         "model": "gpt-5.6-terra"
       },
       {
-        "userInitiatedInteractions": 2,
-        "codeGenerations": 0,
-        "codeAcceptances": 0,
-        "locSuggestedToAdd": 0,
-        "locSuggestedToDelete": 0,
-        "locAdded": 0,
-        "locDeleted": 0,
-        "acceptanceRate": 0,
-        "name": "claude-opus-5 / chat_panel_agent_mode",
-        "users": 1,
-        "feature": "chat_panel_agent_mode",
-        "model": "claude-opus-5"
-      },
-      {
         "userInitiatedInteractions": 1,
         "codeGenerations": 0,
         "codeAcceptances": 0,
@@ -118114,26 +118008,12 @@
       },
       {
         "userInitiatedInteractions": 0,
-        "codeGenerations": 495,
+        "codeGenerations": 97,
         "codeAcceptances": 0,
         "locSuggestedToAdd": 0,
         "locSuggestedToDelete": 0,
-        "locAdded": 45118,
-        "locDeleted": 38432,
-        "acceptanceRate": 0,
-        "name": "gpt-6-astra / agent_edit",
-        "users": 1,
-        "feature": "agent_edit",
-        "model": "gpt-6-astra"
-      },
-      {
-        "userInitiatedInteractions": 0,
-        "codeGenerations": 251,
-        "codeAcceptances": 0,
-        "locSuggestedToAdd": 0,
-        "locSuggestedToDelete": 0,
-        "locAdded": 18043,
-        "locDeleted": 12766,
+        "locAdded": 9634,
+        "locDeleted": 8436,
         "acceptanceRate": 0,
         "name": "gpt-5.6-sol / agent_edit",
         "users": 3,
@@ -118142,17 +118022,17 @@
       },
       {
         "userInitiatedInteractions": 0,
-        "codeGenerations": 119,
+        "codeGenerations": 106,
         "codeAcceptances": 0,
         "locSuggestedToAdd": 0,
         "locSuggestedToDelete": 0,
-        "locAdded": 7816,
-        "locDeleted": 544,
+        "locAdded": 5452,
+        "locDeleted": 7907,
         "acceptanceRate": 0,
-        "name": "claude-opus-4.8 / agent_edit",
-        "users": 4,
+        "name": "gpt-6-astra / agent_edit",
+        "users": 1,
         "feature": "agent_edit",
-        "model": "claude-opus-4.8"
+        "model": "gpt-6-astra"
       },
       {
         "userInitiatedInteractions": 0,
@@ -118167,6 +118047,20 @@
         "users": 1,
         "feature": "agent_edit",
         "model": "gpt-5.6-luna"
+      },
+      {
+        "userInitiatedInteractions": 0,
+        "codeGenerations": 37,
+        "codeAcceptances": 0,
+        "locSuggestedToAdd": 0,
+        "locSuggestedToDelete": 0,
+        "locAdded": 1366,
+        "locDeleted": 159,
+        "acceptanceRate": 0,
+        "name": "claude-opus-4.8 / agent_edit",
+        "users": 3,
+        "feature": "agent_edit",
+        "model": "claude-opus-4.8"
       },
       {
         "userInitiatedInteractions": 0,
@@ -118292,14 +118186,6 @@
       },
       {
         "ide": "vscode",
-        "ideVersion": "1.140.0",
-        "plugin": "copilot-chat",
-        "pluginVersion": "0.68.0",
-        "sampledAt": "2026-10-09T10:00:57.663Z",
-        "users": 2
-      },
-      {
-        "ide": "vscode",
         "ideVersion": "1.139.1",
         "plugin": "copilot-chat",
         "pluginVersion": "0.67.0",
@@ -118308,18 +118194,10 @@
       },
       {
         "ide": "vscode",
-        "ideVersion": "1.135.0",
+        "ideVersion": "1.140.0",
         "plugin": "copilot-chat",
-        "pluginVersion": "0.63.0",
-        "sampledAt": "2026-09-15T11:12:04.242Z",
-        "users": 2
-      },
-      {
-        "ide": "vscode",
-        "ideVersion": "1.141.0",
-        "plugin": "copilot-chat",
-        "pluginVersion": "0.69.0",
-        "sampledAt": "2026-10-10T09:21:34.082Z",
+        "pluginVersion": "0.68.0",
+        "sampledAt": "2026-10-09T10:00:57.663Z",
         "users": 2
       },
       {
@@ -118328,6 +118206,14 @@
         "plugin": "copilot-chat",
         "pluginVersion": "0.65.0",
         "sampledAt": "2026-09-15T22:53:58.765Z",
+        "users": 2
+      },
+      {
+        "ide": "vscode",
+        "ideVersion": "1.141.0",
+        "plugin": "copilot-chat",
+        "pluginVersion": "0.69.0",
+        "sampledAt": "2026-10-10T09:21:34.082Z",
         "users": 2
       },
       {
@@ -118349,6 +118235,14 @@
         "plugin": "unknown",
         "pluginVersion": "unknown",
         "sampledAt": "2026-09-23T11:01:56.934Z",
+        "users": 1
+      },
+      {
+        "ide": "vscode",
+        "ideVersion": "1.139.0",
+        "plugin": "unknown",
+        "pluginVersion": "unknown",
+        "sampledAt": "2026-10-03T04:50:37.784Z",
         "users": 1
       },
       {
@@ -118377,10 +118271,10 @@
       },
       {
         "ide": "vscode",
-        "ideVersion": "1.139.0",
-        "plugin": "unknown",
-        "pluginVersion": "unknown",
-        "sampledAt": "2026-10-03T04:50:37.784Z",
+        "ideVersion": "1.135.0",
+        "plugin": "copilot-chat",
+        "pluginVersion": "0.63.0",
+        "sampledAt": "2026-09-15T11:12:04.242Z",
         "users": 1
       },
       {
