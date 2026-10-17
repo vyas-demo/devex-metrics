@@ -29,7 +29,7 @@
   "homepage": "https://github.com/devex-metrics/devex-metrics#readme",
   "dependencies": {
     "@octokit/auth-app": "^8.2.0",
-    "@octokit/plugin-throttling": "^11.0.3",
+    "@octokit/plugin-throttling": "^11.0.5",
     "@octokit/rest": "^22.0.1",
     "typescript": "^6.0.3"
   },
